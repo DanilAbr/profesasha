@@ -1,0 +1,23 @@
+.button-primary {
+  display: block;
+  width: 100%;
+  padding: 9px;
+  text-decoration: none;
+  text-align: center;
+  color: #ffffff;
+  border: 2px solid $color_red;
+  border-radius: 5px;
+  background-color: $color_red;
+  cursor: pointer;
+
+  @include nunito(16px, 22px, 400);
+
+  &:hover,
+  &:focus {
+    opacity: .8;
+  }
+
+  &:active {
+    opacity: .6;
+  }
+}

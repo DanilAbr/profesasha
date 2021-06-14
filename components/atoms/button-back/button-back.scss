@@ -1,0 +1,30 @@
+.button-back {
+  position: relative;
+  display: block;
+  padding: 10px 15px 10px 85px;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 300;
+  text-decoration: none;
+  color: $color_black_1;
+  border: 1px solid transparent;
+  border-radius: 10px;
+
+  &:hover,
+  &:focus {
+    border: 1px solid $color_black_1;
+  }
+
+  &:active {
+    background-color: $color_yellow;
+  }
+}
+
+.button-back__icon {
+  position: absolute;
+  top: -26px;
+  left: 55px;
+  display: block;
+  transform: rotate(90deg);
+  clip: rect(30px, 8px, 90px, 0);
+}

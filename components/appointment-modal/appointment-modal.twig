@@ -1,0 +1,45 @@
+<section class="appointment-modal">
+  <div class="appointment-modal__container">
+    <h2 class="appointment-modal__title">Запишитесь</h2>
+    <p class="appointment-modal__note">Укажите ваши пожелания к занятиям.<br> Я отвечу вам в ближайшее время</p>
+    <form
+      class="appointment-modal__form"
+      action="send-msg.php"
+      method="POST"
+    >
+      <input
+        class="appointment-modal__name-input"
+        placeholder="Имя"
+        name="username"
+        type="text"
+        required
+      />
+      <input
+        class="appointment-modal__email-input"
+        placeholder="E-mail"
+        name="email"
+        type="email"
+        required
+      />
+      <textarea
+        class="appointment-modal__message-input"
+        name="message"
+        placeholder="Сообщение"
+      ></textarea>
+      <button
+        class="appointment-modal__submit-button button-primary"
+        type="submit"
+      >
+        Отправить
+      </button>
+    </form>
+    <button
+      class="appointment-modal__close-button"
+      aria-label="закрыть окно"
+    >
+      <svg width="22" height="22">
+        <use xlink:href="#icon-close"></use>
+      </svg>
+    </button>
+  </div>
+</section>

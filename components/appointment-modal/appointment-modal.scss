@@ -1,0 +1,137 @@
+.appointment-modal {
+  position: fixed;
+  z-index: 99999;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100vw;
+  max-width: 100%;
+  height: 100vh;
+  background-color: rgba(#000000, .2);
+  overflow: auto;
+}
+
+.appointment-modal__container {
+  position: relative;
+  width: 98%;
+  max-width: 850px;
+  margin: auto;
+  padding: 54px 35px 60px 35px;
+  border-radius: 5px;
+  background-color: $color_pink;
+}
+
+.appointment-modal__title {
+  margin-top: 0;
+  margin-bottom: 76px;
+  font-size: 40px;
+  line-height: 54px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.appointment-modal__note {
+  margin-top: 0;
+  margin-bottom: 70px;
+  font-size: 17px;
+  line-height: 23px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.appointment-modal__form {
+  max-width: 500px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-areas: "name email"
+      "message message"
+      "submit submit";
+    grid-column-gap: 20px;
+  }
+}
+
+.appointment-modal__name-input,
+.appointment-modal__email-input,
+.appointment-modal__message-input {
+  display: block;
+  width: 100%;
+  margin-bottom: 63px;
+  padding: 4px 0;
+  color: $color_black;
+  border-width: 0;
+  border-bottom: 1px solid $color_black_2;
+  outline: none;
+  background-color: transparent;
+
+  @include nunito(15px, 20px, 300);
+
+  &:hover,
+  &:focus {
+    box-shadow: inset 0 -1px 0 0 $color_black_2;
+  }
+
+  &::placeholder {
+    position: relative;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 200;
+  }
+}
+
+.appointment-modal__name-input {
+  grid-area: name;
+}
+
+.appointment-modal__email-input {
+  grid-area: email;
+}
+
+.appointment-modal__message-input {
+  grid-area: message;
+  min-height: 150px;
+  resize: vertical;
+}
+
+.appointment-modal__submit-button {
+  width: 33%;
+  min-width: 177px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    grid-area: submit;
+  }
+}
+
+.appointment-modal__close-button {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  display: flex;
+  width: 35px;
+  height: 35px;
+  border-width: 0;
+  background-color: transparent;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: .8;
+  }
+
+  &:active {
+    opacity: .6;
+  }
+
+  & svg {
+    display: block;
+    margin: auto;
+  }
+}
+
+

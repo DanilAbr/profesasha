@@ -1,0 +1,268 @@
+.course-info {
+  max-width: 550px;
+  margin: 0 auto;
+  padding-top: 28px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 768px;
+    padding-top: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 940px;
+    padding-top: 38px;
+  }
+}
+
+.course-info__title-wrapper {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-bottom: 73px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 162px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 208px;
+  }
+}
+
+.course-info__number-icon {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    margin-right: -28px;
+    opacity: .1;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 180px;
+    height: 117px;
+    margin-right: -45px;
+  }
+}
+
+.course-info__title {
+  max-width: 330px;
+  margin: 0;
+  font-size: 30px;
+  line-height: 32px;
+  font-weight: 700;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    max-width: 100%;
+    padding-top: 12px;
+    font-size: 24px;
+    line-height: 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+    font-size: 36px;
+    line-height: 49px;
+  }
+}
+
+.course-info__content {
+  margin-bottom: 81px;
+  padding: 0 25px;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    margin-bottom: 131px;
+    padding-left: 387px;
+    padding-right: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 117px;
+    padding-left: 488px;
+  }
+}
+
+.course-info__image {
+  display: block;
+  width: 100%;
+  max-width: 340px;
+  margin: 0 auto;
+  object-fit: contain;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: -54px;
+    left: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 50px;
+    left: 0;
+    max-width: 472px;
+    transform: translateY(-30%);
+  }
+}
+
+.course-info__description {
+  margin-bottom: 17px;
+  padding: 0 7px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 15px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 26px;
+  }
+}
+
+.course-info__description-title {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.course-info__description-text {
+  margin-top: 0;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 300;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 4px;
+    font-size: 13px;
+    line-height: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 14px;
+    line-height: 19px;
+  }
+}
+
+.course-info__price {
+  margin-bottom: 42px;
+  padding: 0 7px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 60px;
+  }
+}
+
+.course-info__price-title {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 9px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 10px;
+  }
+}
+
+.course-info__price-list {
+  margin-bottom: 6px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 10px;
+  }
+}
+
+.course-info__price-item {
+  margin-bottom: 5px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 1px;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.course-info__price-value {
+  font-size: 11px;
+  line-height: 15px;
+  font-weight: 600;
+  color: $color_red_bright;
+
+  @media (min-width: $desktop-width) {
+    font-size: 13px;
+    line-height: 17px;
+  }
+}
+
+.course-info__price-duration {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 300;
+  white-space: pre-wrap;
+
+  @media (min-width: $desktop-width) {
+    font-size: 13px;
+    line-height: 17px;
+  }
+}
+
+.course-info__price-notice {
+  margin: 0;
+  font-size: 11px;
+  line-height: 15px;
+  font-weight: 300;
+
+  @media (min-width: $desktop-width) {
+    font-size: 13px;
+    line-height: 17px;
+  }
+}
+
+.course-info__discount-value {
+  font-size: 11px;
+  line-height: 15px;
+  font-weight: 600;
+  color: $color_red_bright;
+
+  @media (min-width: $desktop-width) {
+    font-size: 13px;
+    line-height: 17px;
+  }
+}
+
+.course-info__appointment-button {
+  width: 44%;
+  min-width: 157px;
+  margin-right: auto;
+  font-size: 13px;
+  line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 6px;
+    padding: 7px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 8px;
+  }
+}
+
+.course-info__back {
+  display: flex;
+  padding: 0 25px;
+
+  @media (min-width: $tablet-width) {
+    justify-content: center;
+  }
+}

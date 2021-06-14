@@ -1,0 +1,79 @@
+.default-page__content {
+  margin-bottom: 150px;
+}
+
+.default-page__scroll-button {
+  position: fixed;
+  z-index: 1000;
+  top: 234px;
+  right: 20px;
+}
+
+.default-page--index,
+.default-page--course-info {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -100;
+    left: 50%;
+    display: block;
+    width: 100%;
+    max-width: 1920px;
+    height: 100%;
+    transform: translateX(-50%);
+  }
+}
+
+.default-page--index {
+  &::before {
+    @media (min-width: $tablet-width) {
+      background-image: url("../../assets/images/index-bg-line-4-tablet.png"),
+      url("../../assets/images/index-bg-line-5-tablet.png");
+      background-repeat: no-repeat;
+      background-position: left calc(25% - 89px) bottom -40px,
+      right calc(20% - 135px) bottom -4px;
+    }
+
+    @media (min-width: $desktop-width) {
+      background-image: url("../../assets/images/index-bg-line-4-desktop.png"),
+      url("../../assets/images/index-bg-line-5-desktop.png");
+      background-position: right calc(50% + 300px) bottom -10px,
+      right calc(20% - 291px) bottom -210px;
+    }
+  }
+}
+
+.default-page--course-info {
+  &::before {
+    background-image: url("../../assets/images/bg-header-image-2-mobile.png"),
+    url("../../assets/images/course-info-bg-line-1-mobile.png"),
+    url("../../assets/images/course-info-bg-line-2-mobile.png");
+    background-repeat: no-repeat;
+    background-position: left calc(50% + 37px) top -138px,
+    right calc(20% - 154px) top 178px,
+    right calc(20% - 135px) bottom 225px;
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../../assets/images/bg-header-image-tablet-1.png"),
+      url("../../assets/images/course-info-bg-line-1-tablet.png"),
+      url("../../assets/images/course-info-bg-line-2-tablet.png");
+      background-repeat: no-repeat;
+      background-position: center top -88px,
+      left calc(20% - 185px) bottom 219px,
+      right calc(20% - 182px) bottom 102px;
+    }
+
+    @media (min-width: $desktop-width) {
+      background-image: url("../../assets/images/bg-header-image-desktop-1.png"),
+      url("../../assets/images/course-info-bg-line-1-desktop.png"),
+      url("../../assets/images/course-info-bg-line-2-desktop.png");
+      background-repeat: no-repeat;
+      background-position: left calc(50% + 31px) top -167px,
+      left calc(20% - 255px) bottom 50px,
+      right calc(20% - 185px) top 400px;
+      background-size: 1374px 449px, auto, auto;
+    }
+  }
+}

@@ -1,0 +1,78 @@
+{% extends '../default-page/default-page.tsx' %}
+
+{% block content %}
+
+<div class="course-info">
+
+  <div class="course-info__title-wrapper">
+    <svg class="course-info__number-icon" width="116" height="75">
+      <use xlink:href="#{{ iconId }}"></use>
+    </svg>
+    <h1 class="course-info__title">{{ title }}</h1>
+  </div>
+
+  <div class="course-info__content">
+    <picture>
+      <source
+        media="(min-width: 1152px)"
+        srcset="{{ img.default.desktop }} 1x, {{ img.retina.desktop }} 2x"
+      >
+      <source
+        media="(min-width: 768px)"
+        srcset="{{ img.default.tablet }} 1x, {{ img.retina.tablet }} 2x"
+      >
+      <img
+        class="course-info__image"
+        src="{{ img.default.mobile }}"
+        srcset="{{ img.default.mobile }} 2x"
+        alt="{{ title }}"
+      />
+    </picture>
+    <section class="course-info__description">
+      <h2 class="course-info__description-title">Для кого этот курс?</h2>
+      <p class="course-info__description-text">
+        {{ description }}
+      </p>
+    </section>
+    <section class="course-info__price">
+      <h2 class="course-info__price-title">Стоимость</h2>
+      <ul class="course-info__price-list">
+        <li class="course-info__price-item">
+          <span class="course-info__price-value">1 500 RUB</span>
+          <span class="course-info__price-duration">  /  60 минут</span>
+        </li>
+        <li class="course-info__price-item">
+          <span class="course-info__price-value">2 000 RUB</span>
+          <span class="course-info__price-duration">  /  90 минут</span>
+        </li>
+      </ul>
+      <p class="course-info__price-notice">
+        При единовременной оплате<br>
+        от четырёх занятий, скидка -
+        <span class="course-info__discount-value"> 20%</span>
+      </p>
+    </section>
+    <button
+      class="course-info__appointment-button button-primary js-appointment-button"
+    >
+      Записаться на курс
+    </button>
+  </div>
+
+  <div class="course-info__back">
+    {% include '../../../../Espabila/source/components/atoms/button-back/button-back.twig' with {
+      'url': 'class-options.html'
+    } %}
+  </div>
+
+</div>
+
+<div class="js-appointment-modal" style="display: none">
+  {% include '../../../../Espabila/source/components/appointment-modal/appointment-modal.twig' %}
+</div>
+
+{% endblock %}
+
+{% block script %}
+  <script src="appointment-modal.js"></script>
+{% endblock %}

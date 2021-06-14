@@ -1,0 +1,102 @@
+.class-options {
+  padding-top: 47px;
+  padding-bottom: 180px;
+  background-image: url("../assets/images/bg-header-image-1.png"),
+    url("../assets/images/options-bg-line-1-mobile.png"),
+    url("../assets/images/options-bg-line-2-mobile.png"),
+    url("../assets/images/options-bg-line-3-mobile.png");
+  background-repeat: no-repeat;
+  background-position: left 83% top -112px,
+    left -23px top 883px,
+    right -137px top 66%,
+    left -173px top 98%;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 57px;
+    background-image: url("../assets/images/bg-header-image-tablet-1.png"),
+      url("../assets/images/options-bg-line-1-mobile.png"),
+      url("../assets/images/options-bg-line-2-mobile.png"),
+      url("../assets/images/options-bg-line-3-mobile.png");
+    background-position: left 50% top -109px,
+      left -23px top 589px,
+      right -137px top 61%,
+      left -110px top 96%;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1920px;
+    background-image: url("../assets/images/bg-header-image-desktop-1.png"),
+      url("../assets/images/options-bg-line-1-desktop.png"),
+      url("../assets/images/options-bg-line-2-mobile.png"),
+      url("../assets/images/options-bg-line-3-mobile.png");
+    background-position: left 50% top -254px,
+      left -4% top 36%,
+      right -10% top 64%,
+      left -10% top 96%;
+  }
+
+  @media (min-width: $desktop-width-xl) {
+    margin: 0 auto;
+    background-position: left 50% top -254px,
+      left 10% top 36%,
+      right 10% top 64%,
+      left 10% top 96%;
+  }
+}
+
+.class-options__title {
+  max-width: 330px;
+  margin: 0 auto 90px;
+  font-size: 40px;
+  line-height: 37px;
+  font-weight: 700;
+  text-align: center;
+  color: $color_black_1;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 104px;
+    font-size: 50px;
+    line-height: 91%;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 157px;
+    font-size: 72px;
+    line-height: 95%;
+  }
+}
+
+.class-options__list {
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  padding: 0 7%;
+}
+
+.class-options__item {
+  margin: 0 auto 97px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 73px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 128px;
+  }
+
+  &:nth-child(2) {
+    margin-bottom: 200px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 238px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 169px;
+    }
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

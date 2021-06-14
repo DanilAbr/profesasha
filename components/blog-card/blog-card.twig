@@ -1,0 +1,22 @@
+<div class="blog-card">
+  <p class="blog-card__category">{{ props.category }}</p>
+  <h3 class="blog-card__title">{{ props.title }}</h3>
+  <h4 class="blog-card__subtitle">{{ props.subtitle }}</h4>
+  <picture>
+    <source
+      media="(min-width: 1152px)"
+      srcset="{{ props.img.default.desktop }} 1x, {{ props.img.retina.desktop }} 2x"
+    >
+    <source
+      media="(min-width: 768px)"
+      srcset="{{ props.img.default.tablet }} 1x, {{ props.img.retina.tablet }} 2x"
+    >
+    <img
+      class="blog-card__image"
+      src="{{ props.img.default.mobile }}"
+      srcset="{{ props.img.retina.mobile }} 2x"
+      alt="{{ props.img.alt }}"
+    >
+  </picture>
+  <p class="blog-card__description">{{ props.description }}</p>
+</div>
