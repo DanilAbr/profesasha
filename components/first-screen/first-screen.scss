@@ -2,10 +2,10 @@
   position: relative;
   padding-top: 40px;
   padding-bottom: 30px;
-  background-image: url("../../assets/images/index-bg-line-1-mobile.png"),
-    url("../../assets/images/index-bg-line-2-mobile.png"),
-    url("../../assets/images/index-bg-line-3-mobile.png"),
-    url("../../assets/images/index-bg-line-4-mobile.png");
+  background-image: url("/assets/images/index-bg-line-1-mobile.png"),
+    url("/assets/images/index-bg-line-2-mobile.png"),
+    url("/assets/images/index-bg-line-3-mobile.png"),
+    url("/assets/images/index-bg-line-4-mobile.png");
   background-repeat: no-repeat;
   background-position: right calc(10% - 31px) top -35px,
     left calc(20% - 71px) top 35px,
@@ -13,13 +13,13 @@
     right calc(20% - 103px) top 464px;
 
   @media (min-width: $tablet-width) {
-    background-image: url("../../assets/images/index-bg-line-1-tablet.png");
+    background-image: url("/assets/images/index-bg-line-1-tablet.png");
     background-position: right calc(21% - 23px) top -259px;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 61px;
-    background-image: url("../../assets/images/index-bg-line-1-desktop.png");
+    background-image: url("/assets/images/index-bg-line-1-desktop.png");
   }
 }
 

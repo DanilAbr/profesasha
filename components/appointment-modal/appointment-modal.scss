@@ -11,6 +11,10 @@
   overflow: auto;
 }
 
+.appointment-modal--closed {
+  display: none;
+}
+
 .appointment-modal__container {
   position: relative;
   width: 98%;

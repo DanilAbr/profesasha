@@ -2,7 +2,7 @@ export default {
   "options": [
   {
     "id": 1,
-    "link": "common-course.html",
+    "link": "common-course",
     "title": "Общий курс испанского языка",
     "annotation": "для кого этот курс?",
     "description": "Подойдет для тех кто хочет изучать язык «для себя», путешествий и жизни в Испании. Материал подбирается....",
@@ -26,7 +26,7 @@ export default {
     }
   },{
     "id": 2,
-    "link": "international-exam.html",
+    "link": "international-exam",
     "title": "Подготовка к международному экзамену",
     "annotation": "для кого этот курс?",
     "description": "Подойдет для всех кто готовится к экзамену DELE любого уровня. На занятиях по подготовке к DELE  ...",
@@ -50,7 +50,7 @@ export default {
     }
   },{
     "id": 3,
-    "link": "improvement.html",
+    "link": "improvement",
     "title": "Повышение или поддержание текущего уровня ",
     "annotation": "для кого этот курс?",
     "description": "Подойдет для всех кто готовится к экзамену DELE любого уровня. На занятиях по подготовке к DELE  ...",

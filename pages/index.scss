@@ -1,13 +1,13 @@
 .index {
   @media (min-width: $tablet-width) {
     padding-bottom: 20px;
-    background-image: url("../assets/images/index-bg-line-3-tablet.png");
+    background-image: url("/assets/images/index-bg-line-3-tablet.png");
     background-repeat: no-repeat;
     background-position: right calc(20% - 320px) top 500px;
   }
 
   @media (min-width: $desktop-width) {
-    background-image: url("../assets/images/index-bg-line-3-desktop.png");
+    background-image: url("/assets/images/index-bg-line-3-desktop.png");
     background-position: right calc(20% - 194px) top 667px;
   }
 }

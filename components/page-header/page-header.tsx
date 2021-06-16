@@ -12,14 +12,14 @@ export default function PageHeader() {
     <header className="page-header">
       <div className={ `page-header__menu-pre-wrapper ${!isMenuOpened ? "page-header__menu-pre-wrapper--hide" : ""}` }>
         <div className="page-header__menu-wrapper">
-          <MainNav onItemClick={changeMenuStatus}/>
+          <MainNav onItemClick={ changeMenuStatus }/>
         </div>
       </div>
 
       <div className="page-header__button-wrapper">
         <button
           className={ `page-header__toggle-menu-button ${!isMenuOpened ? "page-header__toggle-menu-button--open-menu" : ""}` }
-          onClick={changeMenuStatus}
+          onClick={ changeMenuStatus }
           type="button"
           aria-label={ `${isMenuOpened ? "Закрыть меню" : "Открыть меню"}` }
         />

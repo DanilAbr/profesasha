@@ -40,7 +40,7 @@ export default function ClassOptions() {
         </ul>
       </section>
     </DefaultPage>
-    // <script src="class-options.js"></script>
+    // <script src="course-info.js"></script>
 
   )
 }

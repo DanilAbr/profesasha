@@ -1,10 +1,10 @@
 .class-options {
   padding-top: 47px;
   padding-bottom: 180px;
-  background-image: url("../assets/images/bg-header-image-1.png"),
-    url("../assets/images/options-bg-line-1-mobile.png"),
-    url("../assets/images/options-bg-line-2-mobile.png"),
-    url("../assets/images/options-bg-line-3-mobile.png");
+  background-image: url("/assets/images/bg-header-image-1.png"),
+    url("/assets/images/options-bg-line-1-mobile.png"),
+    url("/assets/images/options-bg-line-2-mobile.png"),
+    url("/assets/images/options-bg-line-3-mobile.png");
   background-repeat: no-repeat;
   background-position: left 83% top -112px,
     left -23px top 883px,
@@ -13,10 +13,10 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 57px;
-    background-image: url("../assets/images/bg-header-image-tablet-1.png"),
-      url("../assets/images/options-bg-line-1-mobile.png"),
-      url("../assets/images/options-bg-line-2-mobile.png"),
-      url("../assets/images/options-bg-line-3-mobile.png");
+    background-image: url("/assets/images/bg-header-image-tablet-1.png"),
+      url("/assets/images/options-bg-line-1-mobile.png"),
+      url("/assets/images/options-bg-line-2-mobile.png"),
+      url("/assets/images/options-bg-line-3-mobile.png");
     background-position: left 50% top -109px,
       left -23px top 589px,
       right -137px top 61%,
@@ -25,10 +25,10 @@
 
   @media (min-width: $desktop-width) {
     max-width: 1920px;
-    background-image: url("../assets/images/bg-header-image-desktop-1.png"),
-      url("../assets/images/options-bg-line-1-desktop.png"),
-      url("../assets/images/options-bg-line-2-mobile.png"),
-      url("../assets/images/options-bg-line-3-mobile.png");
+    background-image: url("/assets/images/bg-header-image-desktop-1.png"),
+      url("/assets/images/options-bg-line-1-desktop.png"),
+      url("/assets/images/options-bg-line-2-mobile.png"),
+      url("/assets/images/options-bg-line-3-mobile.png");
     background-position: left 50% top -254px,
       left -4% top 36%,
       right -10% top 64%,
