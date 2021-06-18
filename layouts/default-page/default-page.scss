@@ -10,7 +10,8 @@
 }
 
 .default-page--index,
-.default-page--course-info {
+.default-page--course-info,
+.default-page--blog {
   position: relative;
 
   &::before {
@@ -75,5 +76,31 @@
       right calc(20% - 185px) top 400px;
       background-size: 1374px 449px, auto, auto;
     }
+  }
+}
+
+.default-page--blog {
+  &::before {
+    background-image: url("/assets/images/bg-header-image-3-mobile.png"),
+      url("/assets/images/blog-bg-line-1-mobile.png"),
+      url("/assets/images/blog-bg-line-2-mobile.png"),
+      url("/assets/images/blog-bg-line-3-mobile.png"),
+      url("/assets/images/blog-bg-line-4-mobile.png"),
+      url("/assets/images/blog-bg-line-5-mobile.png");
+    background-repeat: no-repeat;
+    background-position: left calc(50% + 37px) top -120px,
+      left calc(20% - 84px) top 709px,
+      right calc(20% - 100px) top 1044px,
+      left calc(20% - 47px) top 1551px,
+      right calc(20% + 62px) top 1987px,
+      left calc(20% - 79px) top 2359px;
+
+    //@media (min-width: $tablet-width) {
+    //
+    //}
+    //
+    //@media (min-width: $desktop-width) {
+    //
+    //}
   }
 }

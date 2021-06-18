@@ -1,0 +1,28 @@
+.blog {
+  padding-top: 54px;
+}
+
+.blog__content {
+  max-width: 414px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.blog__title {
+  margin-top: 0;
+  margin-bottom: 63px;
+  font-size: 40px;
+  line-height: 55px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.blog__note {
+  margin-top: 0;
+  margin-bottom: 90px;
+  white-space: pre-wrap;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 300;
+  text-align: justify;
+}

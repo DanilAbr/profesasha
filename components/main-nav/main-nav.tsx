@@ -15,7 +15,7 @@ export default function MainNav(props: Props) {
           <Link href="/">
             <a
               className="main-nav__link"
-              onClick={onItemClick}
+              onClick={ onItemClick }
             >Главная
               <svg className="main-nav__svg" width="14" height="14">
                 <use xlinkHref="#icon-menu-item-arrow"/>
@@ -28,8 +28,21 @@ export default function MainNav(props: Props) {
           <Link href="/class-options">
             <a
               className="main-nav__link"
-              onClick={onItemClick}
+              onClick={ onItemClick }
             >Варианты занятий
+              <svg className="main-nav__svg" width="14" height="14">
+                <use xlinkHref="#icon-menu-item-arrow"/>
+              </svg>
+            </a>
+          </Link>
+        </li>
+
+        <li className="main-nav__item">
+          <Link href="/blog">
+            <a
+              className="main-nav__link"
+              onClick={ onItemClick }
+            >Блог
               <svg className="main-nav__svg" width="14" height="14">
                 <use xlinkHref="#icon-menu-item-arrow"/>
               </svg>

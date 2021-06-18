@@ -1,4 +1,4 @@
-import {FormEvent, useEffect, useRef, useState} from "react";
+import { FormEvent, useEffect, useRef, useState } from "react";
 
 interface Props {
   isShowed: boolean,
@@ -32,8 +32,8 @@ export default function AppointmentModal(props: Props) {
     fetch('/api/appointment', {
       method: "POST",
       body: JSON.stringify({ username: userName, email, message }),
-      headers: new Headers({"Content-Type": `application/json`}),
-    }).then(() => console.log("YO"));
+      headers: new Headers({ "Content-Type": "application/json" }),
+    }).then(() => onCloseButtonClick());
   }
 
   return (
@@ -44,8 +44,6 @@ export default function AppointmentModal(props: Props) {
         <form
           className="appointment-modal__form"
           onSubmit={ (evt) => sendMessage(evt) }
-          // action="send-msg.php"
-          // method="POST"
         >
           <input
             ref={ nameInput }
@@ -72,7 +70,7 @@ export default function AppointmentModal(props: Props) {
             className="appointment-modal__message-input"
             name="message"
             placeholder="Сообщение"
-          ></textarea>
+          />
           <button
             className="appointment-modal__submit-button button-primary"
             type="submit"
