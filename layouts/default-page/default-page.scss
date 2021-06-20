@@ -11,6 +11,7 @@
 
 .default-page--index,
 .default-page--course-info,
+.default-page--article,
 .default-page--blog {
   position: relative;
 
@@ -95,12 +96,86 @@
       right calc(20% + 62px) top 1987px,
       left calc(20% - 79px) top 2359px;
 
-    //@media (min-width: $tablet-width) {
-    //
-    //}
-    //
-    //@media (min-width: $desktop-width) {
-    //
-    //}
+    @media (min-width: $tablet-width) {
+      background-image: url("/assets/images/bg-header-image-tablet-1.png"),
+        url("/assets/images/blog-bg-line-1-tablet.png"),
+        url("/assets/images/blog-bg-line-2-tablet.png"),
+        url("/assets/images/blog-bg-line-3-tablet.png"),
+        url("/assets/images/blog-bg-line-2-tablet.png");
+      background-position: left 50% top -109px,
+        left calc(20% - 307px) top 334px,
+        right calc(20% - 179px) top 725px,
+        left calc(20% - 155px) top 1104px,
+        right calc(20% - 132px) top 1656px;
+    }
+
+    @media (min-width: $desktop-width) {
+      background-image: url("/assets/images/bg-header-image-desktop-1.png"),
+        url("/assets/images/blog-bg-line-1-tablet.png"),
+        url("/assets/images/blog-bg-line-2-tablet.png"),
+        url("/assets/images/blog-bg-line-3-desktop.png"),
+        url("/assets/images/blog-bg-line-5-desktop.png"),
+        url("/assets/images/blog-bg-line-4-desktop.png");
+      background-position: left calc(50% + 24px) top -272px,
+        left calc(20% - 487px) top 425px,
+        right calc(20% - 227px) top 916px,
+        left calc(20% - 214px) top 1358px,
+        left calc(20% - 163px) top 1709px,
+        right calc(20% - 222px) top 1879px;
+    }
+  }
+}
+
+.default-page--article {
+  &::before {
+    background-image: url("/assets/images/bg-header-image-4-mobile.png"),
+      url("/assets/images/article-bg-line-1-mobile.png"),
+      url("/assets/images/article-bg-line-2-mobile.png"),
+      url("/assets/images/article-bg-line-3-mobile.png"),
+      url("/assets/images/article-bg-line-4-mobile.png"),
+      url("/assets/images/article-bg-line-5-mobile.png");
+    background-repeat: no-repeat;
+    background-position: left calc(50% - 7px) top -137px,
+      left calc(20% - 136px) top 486px,
+      right calc(20% - 134px) top 491px,
+      left calc(20% - 163px) top 1284px,
+      right calc(20% - 139px) top 1067px,
+      right calc(20% - 173px) top 1997px;
+
+    @media (min-width: $tablet-width) {
+      background-image: url("/assets/images/bg-header-image-tablet-1.png"),
+        url("/assets/images/article-bg-line-1-tablet.png"),
+        url("/assets/images/article-bg-line-2-tablet.png"),
+        url("/assets/images/article-bg-line-3-tablet.png"),
+        url("/assets/images/article-bg-line-4-tablet.png"),
+        url("/assets/images/article-bg-line-5-tablet.png"),
+        url("/assets/images/article-bg-line-6-tablet.png");
+      background-position: left calc(50% - 7px) top -179px,
+        left calc(20% - 186px) top 292px,
+        right calc(20% - 182px) top 342px,
+        left calc(20% - 191px) top 874px,
+        right calc(20% - 194px) top 945px,
+        left calc(20% - 165px) top 1649px,
+        right calc(20% - 209px) top 1947px;
+    }
+
+    @media (min-width: $desktop-width) {
+      background-image: url("/assets/images/bg-header-image-desktop-1.png"),
+        url("/assets/images/article-bg-line-1-desktop.png"),
+        url("/assets/images/article-bg-line-2-desktop.png"),
+        url("/assets/images/article-bg-line-3-desktop.png"),
+        url("/assets/images/article-bg-line-4-desktop.png"),
+        url("/assets/images/article-bg-line-5-desktop.png"),
+        url("/assets/images/article-bg-line-6-desktop.png"),
+        url("/assets/images/article-bg-line-7-desktop.png");
+      background-position: left calc(50% + 120px) top -361px,
+        left calc(20% - 356px) top 334px,
+        right calc(20% - 179px) top 111px,
+        left calc(20% - 347px) top 841px,
+        right calc(20% - 248px) top 926px,
+        left calc(20% - 234px) top 1525px,
+        right calc(20% - 244px) top 2075px,
+        left calc(20% - 468px) top 2635px;
+    }
   }
 }

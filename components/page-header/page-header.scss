@@ -54,9 +54,9 @@
   border-radius: 50%;
 
   @media (min-width: $tablet-width) {
-    top: 0;
+    top: 10px;
     bottom: auto;
-    left: 0;
+    left: 10px;
     width: 63px;
     height: 63px;
     border-width: 0;

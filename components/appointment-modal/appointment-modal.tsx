@@ -40,7 +40,7 @@ export default function AppointmentModal(props: Props) {
     <section className={ `appointment-modal ${ !isShowed ? 'appointment-modal--closed' : '' }` }>
       <div className="appointment-modal__container">
         <h2 className="appointment-modal__title">Запишитесь</h2>
-        <p className="appointment-modal__note">Укажите ваши пожелания к занятиям.<br/> Я отвечу вам в ближайшее время</p>
+        <p className="appointment-modal__note">Вы можете указать ваши пожелания в сообщении.<br/> Я отвечу вам в ближайшее время</p>
         <form
           className="appointment-modal__form"
           onSubmit={ (evt) => sendMessage(evt) }

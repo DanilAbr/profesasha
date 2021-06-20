@@ -1,11 +1,28 @@
 .blog {
   padding-top: 54px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 57px;
+  }
+
+  @media (min-width: $desktop-width) {
+    //height: 2379px;
+    padding-top: 72px;
+  }
 }
 
 .blog__content {
   max-width: 414px;
   margin: 0 auto;
   padding: 0 30px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 642px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 882px;
+  }
 }
 
 .blog__title {
@@ -15,6 +32,18 @@
   line-height: 55px;
   font-weight: 700;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 97px;
+    font-size: 50px;
+    line-height: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 130px;
+    font-size: 72px;
+    line-height: 98px;
+  }
 }
 
 .blog__note {
@@ -25,4 +54,41 @@
   line-height: 22px;
   font-weight: 300;
   text-align: justify;
+  background-color: $color_pink;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba($color_pink, .8);
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 54px;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 21px;
+    line-height: 28px;
+  }
+}
+
+.blog__list {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 107px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column-gap: 39px;
+    grid-row-gap: 106px;
+  }
+}
+
+.blog__item {
+  margin-bottom: 71px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    margin-bottom: 0;
+  }
 }
