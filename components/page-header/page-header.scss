@@ -1,3 +1,14 @@
+@keyframes menuSlide {
+  from {
+    top: 100vh;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
 .page-header {
   position: relative;
   z-index: 10;
@@ -13,12 +24,10 @@
   padding: 20px 16%;
   opacity: 1;
   background: $color_yellow;
-  transition: all .7s ease;
+  animation: .7s menuSlide;
 
   &--hide {
-    z-index: -2;
-    top: 100vh;
-    opacity: 0;
+    display: none;
   }
 }
 
