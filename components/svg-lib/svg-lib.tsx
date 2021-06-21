@@ -29,6 +29,9 @@ export default function SvgLib() {
         <symbol id="icon-close" viewBox="0 0 22 22">
           <rect x="1.048" width="29.631" height="1.482" rx=".5" transform="rotate(45 1.048 0)" fill="#2A2A2A"/><rect y="20.952" width="29.631" height="1.482" rx=".5" transform="rotate(-45 0 20.952)" fill="#2A2A2A"/>
         </symbol>
+        <symbol id="icon-toggle-arrow" viewBox="0 0 16 15">
+          <path d="M8 15L.206.75h15.588L8 15z" fill="#5E5E5E"/>
+        </symbol>
       </svg>
     </div>
   )

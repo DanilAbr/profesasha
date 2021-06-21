@@ -1,25 +1,27 @@
 import Link from 'next/link';
 
-export interface Props {
-  article: {
-    id: number,
-    category: string,
-    title: string,
-    subtitle: string,
-    text: string
-    img: {
-      default: {
-        mobile: string,
-        tablet: string,
-        desktop: string,
-      },
-      retina: {
-        mobile: string,
-        tablet: string,
-        desktop: string,
-      }
+export interface ArticleType {
+  id: number,
+  category: string,
+  title: string,
+  subtitle: string,
+  text: string
+  img: {
+    default: {
+      mobile: string,
+      tablet: string,
+      desktop: string,
+    },
+    retina: {
+      mobile: string,
+      tablet: string,
+      desktop: string,
     }
   }
+}
+
+export interface Props {
+  article: ArticleType,
 }
 
 export default function BlogCard(props: Props) {

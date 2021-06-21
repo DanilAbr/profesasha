@@ -1,40 +1,45 @@
 import { useRouter } from 'next/router';
 import { useState } from 'react';
-import { toSnakeCase } from '../../utils';
 import DefaultPage from '../../layouts/default-page/default-page';
 import ButtonBack from '../../components/atoms/button-back/button-back';
 import AppointmentModal from '../../components/appointment-modal/appointment-modal';
-import data from '../../staticData/course-info';
+import data from '../../staticData/classOptions';
 
-interface CourseType {
-  iconId: string,
-  title: string,
-  description: string,
-  img: {
-    default: {
-      mobile: string,
-      tablet: string,
-      desktop: string
+export interface CourseType {
+  "id": number,
+  "title": string,
+  "annotation": string,
+  "description": string,
+  "icon": {
+    "id": string,
+    "width": string,
+    "height": string
+  },
+  "img": {
+    "default": {
+      "mobile": string,
+      "tablet": string,
+      "desktop": string
     },
-    retina: {
-      mobile: string,
-      tablet: string,
-      desktop: string
+    "retina": {
+      "mobile": string,
+      "tablet": string,
+      "desktop": string
     },
-    alt: string
+    "alt": string
   }
-}
-
-interface Props {
-  [key: string]: CourseType
 }
 
 export default function CourseInfo() {
   const { query } = useRouter();
   const [ isModalOpened, setModalStatus ] = useState(false);
 
-  const courseUri = typeof query.id === 'string' ? toSnakeCase(query.id) : 'common-course';
-  const { img, description, iconId, title }: CourseType  = data[courseUri];
+  const courseId = typeof query.id === 'string' ? Number(query.id) : 0;
+  const courseById = data.options.find(( { id } ) => id === courseId );
+  const defaultCourse = data.options[0];
+  const currentCourse: CourseType = courseById ? courseById : defaultCourse;
+
+  const { img, description, icon, title }  = currentCourse;
 
   function handleModalClose() {
     setModalStatus(false);
@@ -45,8 +50,8 @@ export default function CourseInfo() {
       <div className='course-info'>
 
         <div className='course-info__title-wrapper'>
-          <svg className='course-info__number-icon' width='116' height='75'>
-            <use xlinkHref={` #${ iconId } `}/>
+          <svg className='course-info__number-icon' width={ icon.width } height={ icon.height }>
+            <use xlinkHref={` #${ icon.id } `}/>
           </svg>
           <h1 className='course-info__title'>{ title }</h1>
         </div>

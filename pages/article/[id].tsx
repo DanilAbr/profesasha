@@ -2,8 +2,8 @@ import { useRouter } from 'next/router';
 import data from '../../staticData/blog';
 import DefaultPage from '../../layouts/default-page/default-page';
 
-export interface Props {
-  article: {
+interface ArticleType {
+    id: number,
     category: string,
     title: string,
     subtitle: string,
@@ -20,14 +20,21 @@ export interface Props {
         desktop: string,
       }
     }
-  }
+}
+
+export interface Props {
+  articles: ArticleType[],
 }
 
 export default function Article() {
   const { query } = useRouter();
 
-  const articleId = typeof query.id === 'string' ? query.id : '1';
-  const { category, img, title, text }: Props['article'] = data[ Number(articleId) - 1 ];
+  const articleId = typeof query.id === 'string' ? Number(query.id) : 1;
+  const articleById = data.articles.find(( { id } ) => id === articleId );
+  const defaultArticle = data.articles[0];
+  const currentArticle: ArticleType = articleById ? articleById : defaultArticle;
+
+  const { category, img, title, text } = currentArticle;
 
   return (
     <DefaultPage pageModifier='article'>

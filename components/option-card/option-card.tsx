@@ -1,37 +1,14 @@
 import Link from "next/link";
+import { CourseType } from '../../pages/course-info/[id]';
 
 interface Props {
   isReversed: boolean,
-  data: {
-    "id": number,
-    "link": string,
-    "title": string,
-    "annotation": string,
-    "description": string,
-    "icon": {
-      "id": string,
-      "width": string,
-      "height": string
-    },
-    "img": {
-      "default": {
-        "mobile": string,
-        "tablet": string,
-        "desktop": string
-      },
-      "retina": {
-        "mobile": string,
-        "tablet": string,
-        "desktop": string
-      },
-      "alt": string
-    }
-  }
+  data: CourseType,
 }
 
 export default function OptionCard(props: Props) {
   const {data, isReversed} = props;
-  const {id, icon, description, annotation, img, link, title} = data;
+  const {id, icon, description, annotation, img, title} = data;
 
   return (
     <div className={ `option-card ${ isReversed ? 'option-card--reversed' : '' }` }>
@@ -64,7 +41,7 @@ export default function OptionCard(props: Props) {
         <h2 className="option-card__title">{ title }</h2>
         <strong className="option-card__annotation">{ annotation }</strong>
         <p className="option-card__description">{ description }</p>
-        <Link href={ `/course-info/${ link }` }>
+        <Link href={ `/course-info/${ id }` }>
           <a className="option-card__more-button button-secondary">
             Подробнее о курсе
           </a>

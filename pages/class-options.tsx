@@ -2,7 +2,6 @@ import DefaultPage from '../layouts/default-page/default-page';
 import OptionCard from "../components/option-card/option-card";
 import data from '../staticData/classOptions';
 
-
 // interface Option {
 //   id: number,
 //   [key: string]: any
@@ -27,10 +26,10 @@ export default function ClassOptions() {
             return (
               <li
                 className="class-options__item"
-                key={option.id}
+                key={ option.id }
               >
                 <OptionCard
-                  isReversed={ index % 2 > 0 ? false : true }
+                  isReversed={ index % 2 <= 0 }
                   data={ option }
                 />
               </li>
@@ -40,7 +39,5 @@ export default function ClassOptions() {
         </ul>
       </section>
     </DefaultPage>
-    // <script src="course-info.js"></script>
-
   )
 }

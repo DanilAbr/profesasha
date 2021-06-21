@@ -1,7 +1,3 @@
-interface DataType {
-  [key: string]: any;
-}
-
 export default {
   commonCourse: {
     "iconId": "icon-number-1",
@@ -58,4 +54,4 @@ export default {
       "alt": "обучение"
     }
   },
-} as DataType;
+};

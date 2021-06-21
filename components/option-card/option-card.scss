@@ -105,12 +105,17 @@
 }
 
 .option-card__description {
+  display: -webkit-box;
+  max-height: 80px;
   margin-top: 0;
   margin-bottom: 22px;
   font-size: 13px;
   line-height: 18px;
   font-weight: 300;
   color: $color_black_1;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .option-card__more-button {
