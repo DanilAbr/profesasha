@@ -56,6 +56,7 @@
 
 .article__image-wrapper {
   position: relative;
+  z-index: 1;
   margin-bottom: 34px;
   padding-bottom: 44%;
 
@@ -72,16 +73,19 @@
 
 .article__category {
   position: absolute;
+  z-index: 2;
   right: 17px;
   top: 14px;
   width: fit-content;
   margin-top: 0;
   margin-bottom: 0;
   padding: 2px 12px;
-  color: $color_white;
   font-size: 7px;
   line-height: 10px;
   font-weight: 700;
+  color: $color_white;
+  background-color: $color_orange;
+  border-radius: 4px;
 
   @media (min-width: $tablet-width) {
     font-size: 11px;
@@ -96,6 +100,7 @@
 
 .article__image {
   position: absolute;
+  z-index: 1;
   display: block;
   width: 100%;
   height: 100%;

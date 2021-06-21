@@ -1,0 +1,89 @@
+.filter {
+  position: relative;
+  z-index: 2;
+  width: 200px;
+}
+
+.filter--opened {
+  box-shadow: 0px 4px 4px 0px rgba($color_black, .25);
+  border-radius: 7px;
+}
+
+.filter__toggle-button {
+  position: relative;
+  z-index: 2;
+  display: block;
+  width: 100%;
+  padding: 13px 30px;
+  font: inherit;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 600;
+  white-space: nowrap;
+  background-color: $color_pink;
+  border: none;
+
+  &:hover,
+  &:focus {
+    opacity: .8;
+  }
+
+  &:active {
+    opacity: .7;
+  }
+
+  & svg {
+    position: absolute;
+    top: 17px;
+    right: 10px;
+  }
+}
+
+.filter__options-list {
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  bottom: 8px;
+  display: none;
+  width: 100%;
+  padding: 14px 20px 4px;
+  background-color: $color_pink;
+  border-radius: 7px;
+  box-shadow: 0px 4px 4px 0px rgba($color_black, .25);
+  transform: translateY(100%);
+}
+
+.filter__option-picker {
+  display: block;
+  width: 100%;
+  padding: 7px 2px 13px 18px;
+  font: inherit;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 600;
+  text-align: left;
+  background-color: $color_pink;
+  border: none;
+  border-top: 1px solid rgba($color_black, .15);
+
+  &:hover,
+  &:focus {
+    opacity: .7;
+  }
+
+  &:active {
+    opacity: .5;
+  }
+}
+
+.filter--opened {
+  .filter__options-list {
+    display: block;
+  }
+
+  .filter__toggle-button {
+    & svg {
+      transform: rotate(180deg);
+    }
+  }
+}
