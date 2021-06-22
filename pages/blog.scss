@@ -54,7 +54,6 @@
   font-size: 16px;
   line-height: 22px;
   font-weight: 300;
-  text-align: justify;
   background-color: $color_pink;
   border-radius: 10px;
   box-shadow: 0 0 10px 0 rgba($color_pink, .8);
@@ -98,6 +97,10 @@
     grid-column-gap: 39px;
     grid-row-gap: 106px;
   }
+}
+
+.blog__pagination {
+  margin-top: 70px;
 }
 
 .blog__item {

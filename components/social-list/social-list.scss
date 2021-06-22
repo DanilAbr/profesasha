@@ -1,11 +1,16 @@
 .social-list {
+  display: flex;
   overflow: hidden;
 }
 
 .social-list__content {
   display: flex;
-  margin: 0 -5px 0 0;
+  margin: auto -5px auto 0;
   padding-left: 0;
+
+  @media (min-width: $desktop-width) {
+    margin-right: -13px;
+  }
 }
 
 .social-list__item {
@@ -26,6 +31,7 @@
   padding-left: 1px;
   border-radius: 50%;
   background-color: $color_pink;
+  outline: none;
 
   @media (min-width: $desktop-width) {
     width: 37px;

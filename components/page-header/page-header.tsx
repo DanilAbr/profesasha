@@ -1,8 +1,11 @@
 import MainNav from "../main-nav/main-nav";
 import { useState } from "react";
+import useEscKeyListener from '../../hooks/useEscKeyListener';
 
 export default function PageHeader() {
   const [ isMenuOpened, setMenuStatus ] = useState(false);
+
+  useEscKeyListener(() => setMenuStatus(false));
 
   function changeMenuStatus() {
     setMenuStatus((prev) => !prev);

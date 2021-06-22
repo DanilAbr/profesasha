@@ -5,7 +5,7 @@
 }
 
 .filter--opened {
-  box-shadow: 0px 4px 4px 0px rgba($color_black, .25);
+  box-shadow: 0 4px 4px 0 rgba($color_black, .25);
   border-radius: 7px;
 }
 
@@ -19,6 +19,7 @@
   font-size: 18px;
   line-height: 24px;
   font-weight: 600;
+  color: $color_black_1;
   white-space: nowrap;
   background-color: $color_pink;
   border: none;
@@ -49,7 +50,7 @@
   padding: 14px 20px 4px;
   background-color: $color_pink;
   border-radius: 7px;
-  box-shadow: 0px 4px 4px 0px rgba($color_black, .25);
+  box-shadow: 0 4px 4px 0 rgba($color_black, .25);
   transform: translateY(100%);
 }
 

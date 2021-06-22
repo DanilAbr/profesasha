@@ -1,4 +1,5 @@
 import { FormEvent, useEffect, useRef, useState } from "react";
+import useEscKeyListener from '../../hooks/useEscKeyListener';
 
 interface Props {
   isShowed: boolean,
@@ -13,18 +14,12 @@ export default function AppointmentModal(props: Props) {
   const [ email, setEmail ] = useState("");
   const [ message, setMessage ] = useState("");
 
+  useEscKeyListener(onCloseButtonClick);
+
   useEffect(() => {
     if (nameInput.current && isShowed) {
-      nameInput.current.focus()
+      nameInput.current.focus();
     }
-
-    function onEscapePress(evt: KeyboardEvent): void {
-      if (evt.key === 'Escape') { onCloseButtonClick(); }
-    }
-
-    document.addEventListener('keydown', onEscapePress);
-
-    return () => { document.removeEventListener('keydown', onEscapePress); }
   },[ isShowed ]);
 
   function sendMessage(evt: FormEvent) {
@@ -84,7 +79,7 @@ export default function AppointmentModal(props: Props) {
           aria-label="закрыть окно"
         >
           <svg width="22" height="22">
-            <use xlinkHref="#icon-close"></use>
+            <use xlinkHref="#icon-close" />
           </svg>
         </button>
       </div>

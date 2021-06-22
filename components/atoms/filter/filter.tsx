@@ -1,4 +1,5 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
+import useEscKeyListener from '../../../hooks/useEscKeyListener';
 
 interface Props {
   initialValue: string,
@@ -17,15 +18,7 @@ export default function Filter(props: Props) {
     setOpenStatus(false);
   }
 
-  useEffect(() => {
-    function onEscapePress(evt: KeyboardEvent): void {
-      if (evt.key === 'Escape') { setOpenStatus(false); }
-    }
-
-    document.addEventListener('keydown', onEscapePress);
-
-    return () => { document.removeEventListener('keydown', onEscapePress); }
-  },[]);
+  useEscKeyListener(setOpenStatus);
 
   return (
     <div className={ `filter ${ isOpen ? 'filter--opened' : '' }` }>
