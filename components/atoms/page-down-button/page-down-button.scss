@@ -1,11 +1,17 @@
 .page-down-button {
+  position: fixed;
+  right: 20px;
+  top: 30vh;
   justify-content: center;
   align-items: center;
-  display: flex;
-  width: 20px;
-  height: 100px;
+  display: none;
+  padding: 20px;
   border-width: 0;
   background-color: transparent;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 
   &:hover,
   &:focus {

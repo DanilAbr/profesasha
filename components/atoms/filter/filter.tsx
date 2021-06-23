@@ -18,7 +18,7 @@ export default function Filter(props: Props) {
     setOpenStatus(false);
   }
 
-  useEscKeyListener(setOpenStatus);
+  useEscKeyListener(() => setOpenStatus(false));
 
   return (
     <div className={ `filter ${ isOpen ? 'filter--opened' : '' }` }>
