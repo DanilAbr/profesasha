@@ -9,6 +9,7 @@
   padding: 20px;
   border-width: 0;
   background-color: transparent;
+  transition: .2s;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -22,4 +23,9 @@
   &:active {
     opacity: .3;
   }
+}
+
+.page-down-button--hidden {
+  transform: scale(0);
+  transform-origin: bottom;
 }

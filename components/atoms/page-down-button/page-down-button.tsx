@@ -1,14 +1,15 @@
 interface Props {
   onClick: () => void,
+  shouldDisappear: boolean,
 }
 
 export default function PageDownButton( props: Props ) {
-  const { onClick } = props;
+  const { onClick, shouldDisappear } = props;
 
   return (
     <button
       onClick={ onClick }
-      className="page-down-button"
+      className={ `page-down-button ${ shouldDisappear ? 'page-down-button--hidden' : '' }` }
       type="button"
     >
       <svg width="8" height="88" fill="none" xmlns="http://www.w3.org/2000/svg">

@@ -19,15 +19,17 @@ export default function ClassOptions() {
   const { options } = data as Props;
 
   const [ nextOption, setNextOption ] = useState<NextOption>();
+  const [ isLastOption, setLastOptionStatus ] = useState(false);
 
   function handleCardInView( status: boolean, entry: IntersectionObserverEntry, index: number ) {
-    if ( status ) {
-      const nextOptionIndex = (index + 1 >= options.length) ? index : index + 1;
-
+    if ( status && index + 1 < options.length ) {
       setNextOption({
-        index: nextOptionIndex,
+        index: index,
         element: entry.target,
       });
+      if ( isLastOption ) { setLastOptionStatus(false) }
+    } else if ( status ) {
+      setLastOptionStatus(true);
     }
   }
 
@@ -40,7 +42,10 @@ export default function ClassOptions() {
   return (
     <DefaultPage pageModifier='class-options'>
       <section className="class-options">
-        <PageDownButton onClick={ scrollToNextOption } />
+        <PageDownButton
+          onClick={ scrollToNextOption }
+          shouldDisappear={ isLastOption }
+        />
         <h1 className="class-options__title">Варианты занятий</h1>
         <ul className="class-options__list">
 
