@@ -1,4 +1,4 @@
-import {useState, MouseEvent, useEffect} from 'react';
+import { useState, MouseEvent } from 'react';
 
 interface Props {
   pagesCount: number,
@@ -10,20 +10,35 @@ export default function Pagination ( props: Props ) {
 
   const [ currentPage, setCurrentPage ] = useState(1);
 
-  useEffect(() => {
-    onPageLinkClick(currentPage);
-  }, [ currentPage ])
-
   function handlePageNumberClick( evt: MouseEvent,  number: number ): void {
     evt.preventDefault();
     setCurrentPage(number);
+    onPageLinkClick(number);
+  }
+
+  async function handleButtonBackClick() {
+    let followingPage = 0;
+    await setCurrentPage( (prev) => {
+      followingPage = prev -1;
+      return followingPage;
+    });
+    onPageLinkClick( followingPage );
+  }
+
+  async function handleButtonForwardClick() {
+    let followingPage = 0;
+    await setCurrentPage( (prev) => {
+      followingPage = prev + 1;
+      return followingPage;
+    });
+    onPageLinkClick(followingPage);
   }
 
   return (
     <div className='pagination'>
       <a
         className={ `pagination__button-back ${ currentPage === 1 ? 'pagination__button-back--disabled' : '' }` }
-        onClick={ () => setCurrentPage( (prev) => prev - 1 ) }
+        onClick={ handleButtonBackClick }
       >
         <svg width='16' height='15'>
           <use xlinkHref='#icon-toggle-arrow' />
@@ -33,7 +48,6 @@ export default function Pagination ( props: Props ) {
 
         { [...new Array( pagesCount )].map(( number, index ) => {
           const pageNumber = index + 1;
-          console.log('pagination render');
 
           return (
             <li className={ `pagination__item `} key={ pageNumber }>
@@ -51,7 +65,7 @@ export default function Pagination ( props: Props ) {
       </ul>
       <a
         className={ `pagination__button-forward ${ currentPage === pagesCount ? 'pagination__button-forward--disabled' : '' }` }
-        onClick={ () => setCurrentPage( (prev) => prev + 1 ) }
+        onClick={ handleButtonForwardClick }
       >
         <svg width='16' height='15'>
           <use xlinkHref='#icon-toggle-arrow' />
