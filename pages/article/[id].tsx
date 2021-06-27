@@ -15,17 +15,17 @@ export default function Article() {
   const defaultArticle = data.articles[0];
   const currentArticle: ArticleType = articleById ? articleById : defaultArticle;
 
-  const { category, img, title, text } = currentArticle;
+  const { category, img, title, text, subtitle } = currentArticle;
 
   return (
     <DefaultPage pageModifier='article'>
       <div className='article'>
         <article className='article__content'>
           <div className='article__item'>
+            <p className='article__category'>{ category }</p>
             <h1 className='article__title'>{ title }</h1>
-            <div className='article__image-wrapper'>
-              <p className='article__category'>{ category }</p>
-              { img &&
+            { img &&
+              <div className='article__image-wrapper'>
                 <picture>
                   <source
                     media='(min-width: 1152px)'
@@ -42,8 +42,11 @@ export default function Article() {
                     alt={ title }
                   />
                 </picture>
-              }
-            </div>
+              </div>
+            }
+            <p className='article__subtitle'>
+              { subtitle }
+            </p>
             <p className='article__text'>
               { text }
             </p>
