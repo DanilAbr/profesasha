@@ -16,7 +16,7 @@ export default function DefaultPage(props: Props) {
     <>
 
       <Head>
-        <title>Profesasha</title>
+        <title>Александра Абрамова - преподаватель испанского языка</title>
       </Head>
       <div className={ `default-page--${pageModifier}` }>
         <SvgLib />

@@ -3,8 +3,9 @@ import BlogCard, { ArticleType } from '../components/blog-card/blog-card';
 import blogData from '../staticData/blog';
 import Filter from '../components/atoms/filter/filter';
 import { categories } from '../constants';
-import {useRef, useState} from 'react';
+import {useEffect, useRef, useState} from 'react';
 import Pagination from '../components/atoms/pagination/pagination';
+import smoothscroll from 'smoothscroll-polyfill';
 
 interface Props {
   articles: ArticleType[];
@@ -14,6 +15,12 @@ const CARDS_TO_SHOW = 6;
 
 export default function Blog() {
   const { articles } = blogData as Props;
+
+  useEffect(() => {
+    smoothscroll.polyfill();
+    // @ts-ignore
+    window.__forceSmoothScrollPolyfill__ = true;
+  })
 
   const [ activeArticles, setActiveArticles ] = useState( articles );
   const [ showedArticles, setShowedArticles ] = useState( articles.slice(0, CARDS_TO_SHOW) );
@@ -35,8 +42,8 @@ export default function Blog() {
   }
 
   function handlePageChoose( pageNumber: number ): void {
-    const startIndex = pageNumber - 1;
-    setShowedArticles(activeArticles.slice(startIndex, CARDS_TO_SHOW));
+    const startIndex = (pageNumber - 1) * CARDS_TO_SHOW;
+    setShowedArticles(activeArticles.slice(startIndex, CARDS_TO_SHOW + startIndex));
 
     if (filterContainer.current) {
       filterContainer.current.scrollIntoView({ behavior: 'smooth' });
@@ -70,7 +77,7 @@ export default function Blog() {
           { activeArticles.length > CARDS_TO_SHOW &&
           <div className='blog__pagination'>
             <Pagination
-              pagesCount={ Math.floor( activeArticles.length / CARDS_TO_SHOW ) }
+              pagesCount={ Math.ceil( activeArticles.length / CARDS_TO_SHOW ) }
               onPageLinkClick={ handlePageChoose }
             />
           </div>

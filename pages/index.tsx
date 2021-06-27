@@ -18,7 +18,6 @@ export default function Home() {
   }
 
   useEffect(() => {
-    console.log('inview changed', entry?.boundingClientRect.top);
     if (entry) {
       if ( inView || entry.boundingClientRect.top < 0 ) {
         setAboutMeViewedStatus(true);

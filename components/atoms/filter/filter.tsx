@@ -38,7 +38,7 @@ export default function Filter(props: Props) {
           .filter(( value ) => value !== activeValue )
           .map(( value ) => {
           return (
-            <li className='filter__option-item'>
+            <li className='filter__option-item' key={ value }>
               <button
                 className='filter__option-picker'
                 onClick={ () => handleValueChange(value) }
