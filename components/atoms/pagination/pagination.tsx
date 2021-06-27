@@ -1,4 +1,4 @@
-import { useState, MouseEvent } from 'react';
+import {useState, MouseEvent, useEffect} from 'react';
 
 interface Props {
   pagesCount: number,
@@ -10,31 +10,20 @@ export default function Pagination ( props: Props ) {
 
   const [ currentPage, setCurrentPage ] = useState(1);
 
+  useEffect(() => {
+    onPageLinkClick(currentPage);
+  }, [ currentPage ])
+
   function handlePageNumberClick( evt: MouseEvent,  number: number ): void {
     evt.preventDefault();
     setCurrentPage(number);
-    onPageLinkClick(number);
-  }
-
-  function handleButtonBackClick() {
-    setCurrentPage( (prev) => {
-      onPageLinkClick( prev - 1);
-      return prev - 1;
-    })
-  }
-
-  function handleButtonForwardClick() {
-    setCurrentPage( (prev) => {
-      onPageLinkClick( prev + 1);
-      return prev + 1;
-    })
   }
 
   return (
     <div className='pagination'>
       <a
         className={ `pagination__button-back ${ currentPage === 1 ? 'pagination__button-back--disabled' : '' }` }
-        onClick={ handleButtonBackClick }
+        onClick={ () => setCurrentPage( (prev) => prev - 1 ) }
       >
         <svg width='16' height='15'>
           <use xlinkHref='#icon-toggle-arrow' />
@@ -44,9 +33,10 @@ export default function Pagination ( props: Props ) {
 
         { [...new Array( pagesCount )].map(( number, index ) => {
           const pageNumber = index + 1;
+          console.log('pagination render');
 
           return (
-            <li className={ `pagination__item `}>
+            <li className={ `pagination__item `} key={ pageNumber }>
               <a
                 className={ `pagination__link ${ currentPage === pageNumber ? 'pagination__link--active' : ''} `}
                 href='#'
@@ -61,7 +51,7 @@ export default function Pagination ( props: Props ) {
       </ul>
       <a
         className={ `pagination__button-forward ${ currentPage === pagesCount ? 'pagination__button-forward--disabled' : '' }` }
-        onClick={ handleButtonForwardClick }
+        onClick={ () => setCurrentPage( (prev) => prev + 1 ) }
       >
         <svg width='16' height='15'>
           <use xlinkHref='#icon-toggle-arrow' />
