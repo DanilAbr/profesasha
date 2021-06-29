@@ -3,9 +3,8 @@ import BlogCard, { ArticleType } from '../components/blog-card/blog-card';
 import blogData from '../staticData/blog';
 import Filter from '../components/atoms/filter/filter';
 import { categories } from '../constants';
-import {useEffect, useRef, useState} from 'react';
+import { useRef, useState} from 'react';
 import Pagination from '../components/atoms/pagination/pagination';
-import smoothscroll from 'smoothscroll-polyfill';
 
 interface Props {
   articles: ArticleType[];
@@ -15,12 +14,6 @@ const CARDS_TO_SHOW = 6;
 
 export default function Blog() {
   const { articles } = blogData as Props;
-
-  useEffect(() => {
-    smoothscroll.polyfill();
-    // @ts-ignore
-    window.__forceSmoothScrollPolyfill__ = true;
-  })
 
   const [ activeArticles, setActiveArticles ] = useState( articles );
   const [ showedArticles, setShowedArticles ] = useState( articles.slice(0, CARDS_TO_SHOW) );
