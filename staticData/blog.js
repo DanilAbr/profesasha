@@ -5,6 +5,18 @@ export default {
       category: "вокабуляр",
       title: "Las palabras de toda la vida que me han sorprendido en el nivel C2",
       subtitle: "Es sabido que una de las principales condiciones del alto dominio de un idioma es disponer de un amplio repertorio lingüístico conociendo diferentes matices de las palabras o expresiones, a pesar de que su uso sea infrecuente.",
+      img: {
+        default: {
+          mobile: '/assets/images/content/Las-palabras-de-toda-la-vida-mobile@1x.jpg',
+          tablet: '/assets/images/content/Las-palabras-de-toda-la-vida-tablet@1x.jpg',
+          desktop: '/assets/images/content/Las-palabras-de-toda-la-vida-desktop@1x.jpg',
+        },
+        retina: {
+          mobile: '/assets/images/content/Las-palabras-de-toda-la-vida-mobile@2x.jpg',
+          tablet: '/assets/images/content/Las-palabras-de-toda-la-vida-tablet@2x.jpg',
+          desktop: '/assets/images/content/Las-palabras-de-toda-la-vida-desktop@2x.jpg',
+        }
+      },
       text: "Aquí están algunas de las que uso desde hace años, pero que también tienen otros significados .\n" +
         "\n" +
         "1️⃣ Suerte. \n" +
@@ -45,24 +57,24 @@ export default {
         "\n" +
         "¿Hay algo que os haya llamado la atención?\n" +
         "\n" +
-        "No olvidéis de dejar ♥️ si el contenido os ha parecido interesante",
-      img: {
-        default: {
-          mobile: '/assets/images/content/Desafíos.jpg',
-          tablet: 'string',
-          desktop: 'string',
-        },
-        retina: {
-          mobile: '/assets/images/content/Desafíos.jpg',
-          tablet: 'string',
-          desktop: 'string',
-        }
-      }
+        "No olvidéis de dejar ♥️ si el contenido os ha parecido interesante"
     }, {
       id: 1,
       category: "грамматика",
       title: "Tan solo 15 minutos ⌚️ al día para mejorar la comprensión auditiva ",
       subtitle: "Estoy experimentando con los titulares clickbait 😎. ¿Qué os parece?",
+      img: {
+        default: {
+          mobile: '/assets/images/content/Tan-sólo-15-minutos-mobile@1x.jpg',
+          tablet: '/assets/images/content/Tan-sólo-15-minutos-tablet@1x.jpg',
+          desktop: '/assets/images/content/Tan-sólo-15-minutos-desktop@1x.jpg',
+        },
+        retina: {
+          mobile: '/assets/images/content/Tan-sólo-15-minutos-mobile@2x.jpg',
+          tablet: '/assets/images/content/Tan-sólo-15-minutos-tablet@2x.jpg',
+          desktop: '/assets/images/content/Tan-sólo-15-minutos-desktop@2x.jpg',
+        }
+      },
       text: "Ahora en serio. Es cierto que los episodios de la mayoría de los pódcast, al menos los que conozco yo, son algo extensos, con lo cual se pone más difícil la tarea de fomentar el hábito de escuchar algo a diario y recibir tan necesario input a la hora de aprender el idioma.\n" +
         "\n" +
         "Sin embargo, he encontrado canales cuyos episodios no superan 15 minutos y en algunos casos incluso apenas duran 5 minutos. Así que se han acabado las excusas relacionadas con la falta de tiempo.\n" +
@@ -119,12 +131,36 @@ export default {
         '\n' +
         'то вполне можете и здесь обойтись без помощи преподавтеля.\n' +
         '\n' +
-        'Para resumir, если всё-таки вам не хочется постоянно заниматься подготовкой с преподавателем, то в любом случае я бы рекомендовала взять несколько консультаций (в начале, в середине и в финале подготовки) для того чтобы убедиться что вы выбрали правильную стратегию, а ваши письменные работы и устные ответы соответсвуют требованиям экзаменаторов.\n'
+        'Para resumir, если всё-таки вам не хочется постоянно заниматься подготовкой с преподавателем, то в любом случае я бы рекомендовала взять несколько консультаций (в начале, в середине и в финале подготовки) для того чтобы убедиться что вы выбрали правильную стратегию, а ваши письменные работы и устные ответы соответсвуют требованиям экзаменаторов.\n',
+      img: {
+        default: {
+          mobile: '/assets/images/content/Tan-sólo-15-minutos-mobile@1x.jpg',
+          tablet: '/assets/images/content/Tan-sólo-15-minutos-tablet@1x.jpg',
+          desktop: '/assets/images/content/Tan-sólo-15-minutos-desktop@1x.jpg',
+        },
+        retina: {
+          mobile: '/assets/images/content/Tan-sólo-15-minutos-mobile@2x.jpg',
+          tablet: '/assets/images/content/Tan-sólo-15-minutos-tablet@2x.jpg',
+          desktop: '/assets/images/content/Tan-sólo-15-minutos-desktop@2x.jpg',
+        }
+      }
     }, {
       id: 3,
       category: "истории",
       title: " Испанский это весело! 😀",
       subtitle: "Хоть сегодня и не пятница, но хочу поделиться с вами перлами, которые рождались на уроках от моих учеников. К вашему вниманию представлена лишь малая часть того что удалось воскресить в памяти. Жаль что никогда не вела список, ведь некоторые варианты перевода даже интересней своих истинных значений. ",
+      img: {
+        default: {
+          mobile: '/assets/images/content/spanish-is-fun-mobile@1x.jpg',
+          tablet: '/assets/images/content/spanish-is-fun-tablet@1x.jpg',
+          desktop: '/assets/images/content/spanish-is-fun-desktop@1x.jpg',
+        },
+        retina: {
+          mobile: '/assets/images/content/spanish-is-fun-mobile@2x.jpg',
+          tablet: '/assets/images/content/spanish-is-fun-tablet@2x.jpg',
+          desktop: '/assets/images/content/spanish-is-fun-desktop@2x.jpg',
+        }
+      },
       text: "Оцените сами, но по-моему это прекрасно: \n" +
         "\n" +
         "🟡 estoy cansada de mi trabajo - я замужем за работой\n" +
@@ -142,12 +178,24 @@ export default {
         "\n" +
         "🟠 ella tiene el palo largo\n" +
         "\n" +
-        "🟠 me gusta pasear por el parqué\n"
+        "🟠 me gusta pasear por el parqué\n",
     }, {
       id: 4,
       category: "грамматика",
       title: "¿\"CUANDO MENOS\" o \"CUANTO MENOS\"? 🤔",
       subtitle: "Por mucho que leamos frases en las que se usa una en lugar de la otra, \"cuando menos\" y \"cuanto menos\" no son dos expresiones equivalentes, ya que significan cosas distintas. Tal y como indica el Diccionario Panhispánico de Dudas junto la Fundéu RAE:",
+      img: {
+        default: {
+          mobile: '/assets/images/content/random-mobile@1x.jpg',
+          tablet: '/assets/images/content/random-tablet@1x.jpg',
+          desktop: '/assets/images/content/random-desktop@1x.jpg',
+        },
+        retina: {
+          mobile: '/assets/images/content/random-mobile@2x.jpg',
+          tablet: '/assets/images/content/random-tablet@2x.jpg',
+          desktop: '/assets/images/content/random-desktop@2x.jpg',
+        }
+      },
       text: "1️⃣ \"Cuando menos\" es la expresión correcta que indica \"por lo menos\" o \"como mínimo\".\n" +
         "\n" +
         "✅ No hay tecnología que pueda eliminar el problema (CUANDO MENOS ninguna que pueda ser aplicada de forma económica en el tiempo requerido).\n" +
@@ -192,6 +240,18 @@ export default {
       category: "DELE",
       title: "Экзамен DELE C2. Мой опыт.",
       subtitle: "Так как DELE С1 был благополучно сдан в апреле 2019 года, мною было принято решение замахнуться на высший уровень. Идти сдавать в ноябрьскую сессию 2019-го было слишком рано, поэтому записалась на май 2020, чтобы успеть нормально подготовиться в спокойном темпе. По известным причинам все экзамены DELE прошлого года в России были отменены, так что моя подготовка растянулась до полутора лет. ",
+      img: {
+        default: {
+          mobile: '/assets/images/content/DELE-C2-mobile@1x.jpg',
+          tablet: '/assets/images/content/DELE-C2-tablet@1x.jpg',
+          desktop: '/assets/images/content/DELE-C2-desktop@1x.jpg',
+        },
+        retina: {
+          mobile: '/assets/images/content/DELE-C2-mobile@2x.jpg',
+          tablet: '/assets/images/content/DELE-C2-tablet@2x.jpg',
+          desktop: '/assets/images/content/DELE-C2-desktop@2x.jpg',
+        }
+      },
       text: "1️⃣ Prueba oral\n" +
         "\n" +
         "В первую очередь мне предстояло \"отстреляться\" на устном экзамене, который, по моей просьбе, мне перенесли со среды на вечер пятницы. На втором этаже Института Сервантеса я ожидала своей очереди вместе с кандидатами других уровней (A2, B1 и B2). Одна из преподавателей меня любезно предупредила о задержке в 20-30 минут, поэтому я включила в телефоне эпизод передачи La Resistencia с целью хотя бы немного снять напряжение. Едва сдерживая смех я наконец-то дождалась своей очереди. На С2 дают полчаса на подготовку, которые, откровенно говоря пролетают de un tirón.\n" +
@@ -219,6 +279,18 @@ export default {
       category: "истории",
       title: "Desafíos",
       subtitle: "Hoy os cuento sobre una etapa de mi camino profesional que, a pesar de los inconvenientes, me sirvió de mucha utilidad para el desarrollo de mis competencias lingüísticas. Sin embargo, al principio me pareció una auténtica pesadilla.",
+      img: {
+        default: {
+          mobile: '/assets/images/content/Desafíos-mobile@1x.jpg',
+          tablet: '/assets/images/content/Desafíos-tablet@1x.jpg',
+          desktop: '/assets/images/content/Desafíos-desktop@1x.jpg',
+        },
+        retina: {
+          mobile: '/assets/images/content/Desafíos-mobile@2x.jpg',
+          tablet: '/assets/images/content/Desafíos-tablet@2x.jpg',
+          desktop: '/assets/images/content/Desafíos-desktop@2x.jpg',
+        }
+      },
       text: "El día que entré a trabajar como traductora en la fábrica no se me olvidaría nunca. No me enteraba prácticamente de nada, ni siquiera en ruso. La abundancia de tecnicismos en las conversaciones de mis compañeros junto con un ambiente caluroso, húmedo y ruidoso que reinaba allí dentro me afectaba tanto que a duras penas encontraba palabras apropiadas. Y eso que me había graduado con distinción de la universidad, veía series en versión original y no tenía dificultades para comunicarme con los hispanohablantes. Evidentemente eso no fue suficiente para poder hablar con soltura sobre los asuntos relacionados con mecanismos, defectos y demás cosas por el estilo.\n" +
         "\n" +
         "Al volver a casa tenía ganas de cortar mi diploma en mil pedazos y tragármelos con un par de litros de algo muy fuerte, pero no lo hice, ya que al día siguiente madrugaba. Con el paso del tiempo me fui acostumbrando, aunque era consciente de que eso no era lo mío. Primero, porque el tema no molaba y, segundo, porque me resultaba complicadísimo pensar en dos idiomas. Tenía que escuchar, entender, traducir y hablar y hacerlo todo al mismo tiempo. Para colmo, seguía dando clases de español, con lo cual no tardé mucho en agobiarme.\n" +
@@ -229,6 +301,18 @@ export default {
       category: "вокабуляр",
       title: "Doble moral",
       subtitle: "El otro día me llamaron la atención algunas expresiones del “Nuevo Prisma C2”, uno de los libros que uso para mi preparación al DELE C2, que me evocaron a los personajes principales de “Vivir sin permiso “, Nemo Bandeira y Mario Mendoza.",
+      img: {
+        default: {
+          mobile: '/assets/images/content/doble-moral-mobile@1x.jpg',
+          tablet: '/assets/images/content/doble-moral-tablet@1x.jpg',
+          desktop: '/assets/images/content/doble-moral-desktop@1x.jpg',
+        },
+        retina: {
+          mobile: '/assets/images/content/doble-moral-mobile@2x.jpg',
+          tablet: '/assets/images/content/doble-moral-tablet@2x.jpg',
+          desktop: '/assets/images/content/doble-moral-desktop@2x.jpg',
+        }
+      },
       text: "Ahora adivinad de quién se trata.\n" +
         "\n" +
         "Tener doble moral (иметь двойные стандарты)\n" +
@@ -256,6 +340,18 @@ export default {
       category: "вокабуляр",
       title: "Как сказать на испанском “даже”?",
       subtitle: "Простое, но часто вызывающее сомнения у студентов, слово которое можно выразить на испанском языке разными способами. Рассмотрим на примерах:",
+      img: {
+        default: {
+          mobile: '/assets/images/content/dazhe-mobile@1x.jpg',
+          tablet: '/assets/images/content/dazhe-tablet@1x.jpg',
+          desktop: '/assets/images/content/dazhe-desktop@1x.jpg',
+        },
+        retina: {
+          mobile: '/assets/images/content/dazhe-mobile@2x.jpg',
+          tablet: '/assets/images/content/dazhe-tablet@2x.jpg',
+          desktop: '/assets/images/content/dazhe-desktop@2x.jpg',
+        }
+      },
       text: "incluso - даже\n" +
         "\n" +
         "Crear músculo requiere energía, por tanto, quizás necesites comer más o, INCLUSO, mucho más de lo que comes ahora.\n" +
