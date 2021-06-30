@@ -182,8 +182,8 @@ export default {
     }, {
       id: 4,
       category: "грамматика",
-      title: "¿\"CUANDO MENOS\" o \"CUANTO MENOS\"? 🤔",
-      subtitle: "Por mucho que leamos frases en las que se usa una en lugar de la otra, \"cuando menos\" y \"cuanto menos\" no son dos expresiones equivalentes, ya que significan cosas distintas. Tal y como indica el Diccionario Panhispánico de Dudas junto la Fundéu RAE:",
+      title: "¿Cómo se dice “случайно” en español?",
+      subtitle: "Простое, но часто вызывающее сомнения у студентов, слово которое можно выразить на испанском языке разными способами. Не все, к сожалению, могут употребляться indistintamente, так как выражают порой самые разные оттенки значений. Для вас я отобрала 10 наиболее часто встречающихся эквивалентов этому слову. Рассмотрим на примерах:\n",
       img: {
         default: {
           mobile: '/assets/images/content/random-mobile@1x.jpg',
@@ -196,45 +196,38 @@ export default {
           desktop: '/assets/images/content/random-desktop@2x.jpg',
         }
       },
-      text: "1️⃣ \"Cuando menos\" es la expresión correcta que indica \"por lo menos\" o \"como mínimo\".\n" +
-        "\n" +
-        "✅ No hay tecnología que pueda eliminar el problema (CUANDO MENOS ninguna que pueda ser aplicada de forma económica en el tiempo requerido).\n" +
-        "\n" +
-        "✅ La ministra habló de 50 grandes proyectos. Pero para conocerlos, habrá que esperar CUANDO MENOS a que llegue el 2020.\n" +
-        "\n" +
-        "2️⃣ \"Cuanto menos\", en cambio, se utiliza en las expresiones en las que dos elementos de cada frase están relacionados entre sí:\n" +
-        "\n" +
-        "✅ Con el tiempo desarrolló un inexplicable miedo al sueño. CUANTO MENOS dormía, más la aterrorizaba caer en la inconsciencia cada noche.\n" +
-        "\n" +
-        "✅ Conozco la generosidad de la dama Lunet con sus invitados, y también conozco la glotonería de mi hijo. Y en esto os pido que no dejéis de controlarle en ningún \n" +
-        "momento. CUANTO MENOS se acerque a la mesa de los manjares, mejor para su salud.\n" +
-        "\n" +
-        "Hay un truco para dejar de confundir estas dos expresiones. Si puedes decir la frase con \"por lo menos\", se debe usar CUANDO MENOS. \n" +
-        "\n" +
-        "A continuación revisaremos más las estructuras con \"cuanto\".\n" +
-        "\n" +
-        "3️⃣ Cuanto más/menos  (чем больше/меньше) \n" +
-        "\n" +
-        "✅ \"cuanto\" debe concordar en género y número con sustantivos:\n" +
-        "\n" +
-        "CUANTOS MÁS años tengas, más te va a costar.\n" +
-        "\n" +
-        "CUANTA MÁS fruta, verdura y cereales integrales metas en la dieta, más\n" +
-        "notables serán los cambios.\n" +
-        "\n" +
-        "✅ \"cuanto\" es invariable con verbos y adjetivos:\n" +
-        "\n" +
-        "CUANTO MÁS te esfuerces, más rápido te cansarás.\n" +
-        "\n" +
-        "CUANTO MÁS fuertes son los dolores cervicales, mayor es la carga personal.\n" +
-        "\n" +
-        "✅ \"cuanto\" concuerda en número con el verbo si la secuencia equivale a \"cuantas más/menos personas\":\n" +
-        "\n" +
-        "CUANTOS MENOS seamos alrededor de la mesa, más posibilidades de acuerdo rápido habrá. \n" +
-        "\n" +
-        "❓La pregunta final: ¿Cuando se emplea el indicativo y cuando se usa el subjuntivo en la estructura \"cuanto más/menos\"?\n" +
-        "\n" +
-        "Que no olvidéis darle ❤️ a la publicación."
+      text: "Для вопросов следующего типа прекрасно подойдет futuro de probabilidad:\n" +
+        "¿No tendrás una hermana gemela?\n" +
+        "У тебя случайно нет сестры-близнеца?\n" +
+        "¿No sabrás dónde se celebrará la partida?\n" +
+        "Ты случайно не знаешь где будет проходить игра?\n" +
+        "por casualidad - случайно\n" +
+        "Le conocí por casualidad.\n" +
+        "Я с ним познакомилась случайно.\n" +
+        "acaso - случайно/вдруг\n" +
+        "Si acaso cambiaras de idea, llámame por teléfono.\n" +
+        "Если вдруг передумаешь, позвони мне.\n" +
+        "sin querer - случайно (sin intención)\n" +
+        "Le pegó una patada sin querer.\n" +
+        "Он его случайно (не намеренно) пнул.\n" +
+        "por error - случайно (по ошибке)\n" +
+        "A una mujer le depositaron por error US$1.000 millones en su cuenta bancaria.\n" +
+        "Одной женщине случайно (по ошибке) зачислили один миллион долларов на ее банковский счет.\n" +
+        "al azar - случайно (наугад)\n" +
+        "Eligió un número al azar.\n" +
+        "Он выбрал число наугад.\n" +
+        "involuntariamente -  случайно (непроизвольно)\n" +
+        "Cuando tu trabajo involucra involuntariamente a uno de tus amigos, no hay nada peor que tener que explicarle una decisión que, si bien tomada con criterios racionales, se entendería como injusta.\n" +
+        "Когда в твою работу случайно вовлечен один из твоих друзей, нет ничего хуже чем объяснять ему решение, хоть и основанное на рациональных критериях, может быть интерпретировано как несправедливое.\n" +
+        "inconscientemente - случайно (неосознанно)\n" +
+        "Todo esto sucede inconscientemente, sin ningún esfuerzo por nuestra parte.\n" +
+        "Все это происходит случайно (неосознанно), без каких-либо усилий с нашей стороны.\n" +
+        "accidentalmente/de forma accidental - случайно\n" +
+        "Se enteró de la noticia de forma accidental.\n" +
+        "Он узнал об этом случайно.\n" +
+        "aleatoriamente/de forma aleatoria - случайно (случайным образом)\n" +
+        "Durante la ejecución del trabajo se realizó un control de la calidad al 10 % de las entrevistas, seleccionadas aleatoriamente.\n" +
+        "Во время выполнения работы был осуществлен контроль качества 10-ти % собеседований выбранных случайным образом.\n"
     }, {
       id: 5,
       category: "DELE",
@@ -278,7 +271,7 @@ export default {
       id: 6,
       category: "истории",
       title: "Desafíos",
-      subtitle: "Hoy os cuento sobre una etapa de mi camino profesional que, a pesar de los inconvenientes, me sirvió de mucha utilidad para el desarrollo de mis competencias lingüísticas. Sin embargo, al principio me pareció una auténtica pesadilla.",
+      subtitle: "Hoy os cuento sobre una etapa de mi camino profesional que, a pesar de los inconvenientes, me sirvió de mucha utilidad para el desarrollo de mis competencias lingüísticas. Sin embargo, al principio me pareció una auténtica pesadilla.\n",
       img: {
         default: {
           mobile: '/assets/images/content/Desafíos-mobile@1x.jpg',
@@ -295,7 +288,7 @@ export default {
         "\n" +
         "Al volver a casa tenía ganas de cortar mi diploma en mil pedazos y tragármelos con un par de litros de algo muy fuerte, pero no lo hice, ya que al día siguiente madrugaba. Con el paso del tiempo me fui acostumbrando, aunque era consciente de que eso no era lo mío. Primero, porque el tema no molaba y, segundo, porque me resultaba complicadísimo pensar en dos idiomas. Tenía que escuchar, entender, traducir y hablar y hacerlo todo al mismo tiempo. Para colmo, seguía dando clases de español, con lo cual no tardé mucho en agobiarme.\n" +
         "\n" +
-        "De todas formas, creo que fue allí donde superé la barrera lingüística a la que se enfrentan muchos de los estudiantes de idiomas. Desde entonces no me asombra ningún tema en español, incluso con el que estoy muy poco familiarizada."
+        "De todas formas, creo que fue allí donde superé la barrera lingüística a la que se enfrentan muchos de los estudiantes de idiomas. Desde entonces no me asombra ningún tema en español, incluso con el que estoy muy poco familiarizada. \n"
     }, {
       id: 7,
       category: "вокабуляр",
@@ -315,31 +308,31 @@ export default {
       },
       text: "Ahora adivinad de quién se trata.\n" +
         "\n" +
-        "Tener doble moral (иметь двойные стандарты)\n" +
+        "1) Tener doble moral (иметь двойные стандарты)\n" +
         "En la serie se pone de manifiesto su doble moral.\n" +
         "\n" +
-        "Persona de principios sólidos (человек твердых принципов)\n" +
+        "2) Persona de principios sólidos (человек твердых принципов)\n" +
         "Sin duda alguna, es un hombre de principios sólidos.\n" +
         "\n" +
-        "No tener escrúpulos (беспринципный человек)\n" +
+        "3) No tener escrúpulos (беспринципный человек)\n" +
         "Sin ningún tipo de escrúpulos está dispuesto a cualquier cosa, aunque sus decisiones perjudiquen a los demás.\n" +
         "\n" +
-        "Vulnerar los principios (идти против своих принципов)\n" +
+        "4) Vulnerar los principios (идти против своих принципов)\n" +
         "Se vio obligado a vulnerar sus fundamentales principios.\n" +
         "\n" +
-        "Inculcar valores (внушать ценности)\n" +
+        "5) Inculcar valores (внушать ценности)\n" +
         "Su ansia de poder se debe a los valores que le han inculcado desde niño. \n" +
         "\n" +
-        "Ser intransigente(быть непреклонным)\n" +
+        "6) Ser intransigente(быть непреклонным)\n" +
         "A pesar de un gran sentimiento de culpabilidad, su postura sigue siendo intransigente.\n" +
         "\n" +
-        "Estar sumido en un dilema moral (быть погруженным в нравственную дилемму)\n" +
-        "Ante las circunstancias de la vida está sumido en un dilema moral."
+        "7) Estar sumido en un dilema moral (быть погруженным в нравственную дилемму)\n" +
+        "Ante las circunstancias de la vida está sumido en un dilema moral.\n"
     }, {
       id: 8,
       category: "вокабуляр",
-      title: "Как сказать на испанском “даже”?",
-      subtitle: "Простое, но часто вызывающее сомнения у студентов, слово которое можно выразить на испанском языке разными способами. Рассмотрим на примерах:",
+      title: "¿Cómo se dice “даже” en español?",
+      subtitle: "Ох уж этот испанский с его тысячей эквивалентов для одного и того же слова русском. Сегодня разберем какие в испанском языке существуют варианты для частицы или союза “даже”.",
       img: {
         default: {
           mobile: '/assets/images/content/dazhe-mobile@1x.jpg',
@@ -357,15 +350,24 @@ export default {
         "Crear músculo requiere energía, por tanto, quizás necesites comer más o, INCLUSO, mucho más de lo que comes ahora.\n" +
         "Набор мышечной массы требует энергии, поэтому, скорее всего, тебе нужно есть больше или ДАЖЕ ещё больше чем ты ешь сейчас.\n" +
         "\n" +
+        "Esa película nos gustó a todos, INCLUSO al abuelo.\n" +
+        "Этот фильм понравился всем, даже (включая) дедушке.\n" +
+        "\n" +
         "hasta - даже\n" +
         "\n" +
         "Yo HASTA he reducido la compra de snacks saludables para evitar tentaciones.\n" +
         "Во избежание соблазнов я ДАЖЕ стал покупать меньше полезных снэков.\n" +
         "\n" +
+        "Va a venir HASTA tu abuela.\n" +
+        "ДАЖЕ твоя бабушка приедет.\n" +
+        "\n" +
         "ni siquiera - даже не\n" +
         "\n" +
         "Pero la idea NI SIQUIERA le pasó por la cabeza.\n" +
         "Но ему эта идея ДАЖЕ и в голову не пришла.\n" +
+        "\n" +
+        "No me pagó NI SIQUIERA los atrasos.\n" +
+        "Он мне ДАЖЕ долги НЕ выплатил.\n" +
         "\n" +
         "aun - даже\n" +
         "Les parecía buena idea negar el fuego del Purgatorio, o pensar que el Papa podía equivocarse AUN en asuntos religiosos.\n" +
@@ -378,7 +380,7 @@ export default {
         "ДАЖЕ ЕСЛИ речь идет о небольшом количестве сотрудников, может сложится впечатление, что в данной организации это в порядке вещей.\n" +
         "inclusive - даже\n" +
         "Ritual, arte o INCLUSIVE terapia. El poner la mesa se ha convertido en 'el momento' del día para muchas familias y en el nuevo yoga para quienes viven solos.\n" +
-        "Ритуал, искусство или ДАЖЕ терапия. Сервировка стола стала одним из ключевых моментов дня для многих семей и новым видом йоги для тех кто живет один."
+        "Ритуал, искусство или ДАЖЕ терапия. Сервировка стола стала одним из ключевых моментов дня для многих семей и новым видом йоги для тех кто живет один.\n"
     }
   ]
 }
