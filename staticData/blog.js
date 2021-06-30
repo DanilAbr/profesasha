@@ -45,7 +45,19 @@ export default {
         "\n" +
         "¿Hay algo que os haya llamado la atención?\n" +
         "\n" +
-        "No olvidéis de dejar ♥️ si el contenido os ha parecido interesante"
+        "No olvidéis de dejar ♥️ si el contenido os ha parecido interesante",
+      img: {
+        default: {
+          mobile: '/assets/images/content/Desafíos.jpg',
+          tablet: 'string',
+          desktop: 'string',
+        },
+        retina: {
+          mobile: '/assets/images/content/Desafíos.jpg',
+          tablet: 'string',
+          desktop: 'string',
+        }
+      }
     }, {
       id: 1,
       category: "грамматика",
