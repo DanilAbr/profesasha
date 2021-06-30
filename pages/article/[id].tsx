@@ -2,6 +2,7 @@ import { useRouter } from 'next/router';
 import data from '../../staticData/blog';
 import DefaultPage from '../../layouts/default-page/default-page';
 import { ArticleType } from '../../components/blog-card/blog-card';
+import ButtonBack from "../../components/atoms/button-back/button-back";
 
 export interface Props {
   articles: ArticleType[],
@@ -52,6 +53,9 @@ export default function Article() {
             </p>
           </div>
         </article>
+        <div className='article__button-back'>
+          <ButtonBack />
+        </div>
       </div>
     </DefaultPage>
   )

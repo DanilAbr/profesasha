@@ -4,7 +4,7 @@
 
 .article__content {
   max-width: 414px;
-  margin: 0 auto;
+  margin: 0 auto 40px;
   padding: 0 19px;
 
   @media (min-width: $tablet-width) {
@@ -133,4 +133,9 @@
 
 .article__subtitle {
   margin-bottom: 1.4em;
+}
+
+.article__button-back {
+  width: fit-content;
+  margin: 0 auto;
 }
