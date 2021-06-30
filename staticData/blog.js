@@ -196,38 +196,47 @@ export default {
           desktop: '/assets/images/content/random-desktop@2x.jpg',
         }
       },
-      text: "Для вопросов следующего типа прекрасно подойдет futuro de probabilidad:\n" +
-        "¿No tendrás una hermana gemela?\n" +
+      text: "1️⃣ Для вопросов следующего типа прекрасно подойдет futuro de probabilidad:\n" +
+        "🟢 ¿No tendrás una hermana gemela? \n" +
         "У тебя случайно нет сестры-близнеца?\n" +
-        "¿No sabrás dónde se celebrará la partida?\n" +
+        "🟢 ¿No sabrás dónde se celebrará la partida? \n" +
         "Ты случайно не знаешь где будет проходить игра?\n" +
-        "por casualidad - случайно\n" +
-        "Le conocí por casualidad.\n" +
+        "\n" +
+        "2️⃣ por casualidad - случайно\n" +
+        "🟢 Le conocí por casualidad. \n" +
         "Я с ним познакомилась случайно.\n" +
-        "acaso - случайно/вдруг\n" +
-        "Si acaso cambiaras de idea, llámame por teléfono.\n" +
+        "\n" +
+        "3️⃣ acaso - случайно/вдруг\n" +
+        "🟢 Si acaso cambiaras de idea, llámame por teléfono. \n" +
         "Если вдруг передумаешь, позвони мне.\n" +
-        "sin querer - случайно (sin intención)\n" +
-        "Le pegó una patada sin querer.\n" +
+        "\n" +
+        "4️⃣ sin querer - случайно (sin intención)\n" +
+        "🟢 Le pegó una patada sin querer. \n" +
         "Он его случайно (не намеренно) пнул.\n" +
-        "por error - случайно (по ошибке)\n" +
-        "A una mujer le depositaron por error US$1.000 millones en su cuenta bancaria.\n" +
+        "\n" +
+        "5️⃣ por error - случайно (по ошибке)\n" +
+        "🟢 A una mujer le depositaron por error US$1.000 millones en su cuenta bancaria.\n" +
         "Одной женщине случайно (по ошибке) зачислили один миллион долларов на ее банковский счет.\n" +
-        "al azar - случайно (наугад)\n" +
-        "Eligió un número al azar.\n" +
+        "\n" +
+        "6️⃣ al azar - случайно (наугад)\n" +
+        "🟢 Eligió un número al azar.\n" +
         "Он выбрал число наугад.\n" +
-        "involuntariamente -  случайно (непроизвольно)\n" +
-        "Cuando tu trabajo involucra involuntariamente a uno de tus amigos, no hay nada peor que tener que explicarle una decisión que, si bien tomada con criterios racionales, se entendería como injusta.\n" +
+        "\n" +
+        "7️⃣ involuntariamente -  случайно (непроизвольно)\n" +
+        "🟢 Cuando tu trabajo involucra involuntariamente a uno de tus amigos, no hay nada peor que tener que explicarle una decisión que, si bien tomada con criterios racionales, se entendería como injusta. \n" +
         "Когда в твою работу случайно вовлечен один из твоих друзей, нет ничего хуже чем объяснять ему решение, хоть и основанное на рациональных критериях, может быть интерпретировано как несправедливое.\n" +
-        "inconscientemente - случайно (неосознанно)\n" +
-        "Todo esto sucede inconscientemente, sin ningún esfuerzo por nuestra parte.\n" +
+        "\n" +
+        "8️⃣ inconscientemente - случайно (неосознанно)\n" +
+        "🟢 Todo esto sucede inconscientemente, sin ningún esfuerzo por nuestra parte. \n" +
         "Все это происходит случайно (неосознанно), без каких-либо усилий с нашей стороны.\n" +
-        "accidentalmente/de forma accidental - случайно\n" +
-        "Se enteró de la noticia de forma accidental.\n" +
+        "\n" +
+        "9️⃣ accidentalmente/de forma accidental - случайно\n" +
+        "🟢 Se enteró de la noticia de forma accidental. \n" +
         "Он узнал об этом случайно.\n" +
-        "aleatoriamente/de forma aleatoria - случайно (случайным образом)\n" +
-        "Durante la ejecución del trabajo se realizó un control de la calidad al 10 % de las entrevistas, seleccionadas aleatoriamente.\n" +
-        "Во время выполнения работы был осуществлен контроль качества 10-ти % собеседований выбранных случайным образом.\n"
+        "\n" +
+        "🔟 aleatoriamente/de forma aleatoria - случайно (случайным образом)\n" +
+        "🟢 Durante la ejecución del trabajo se realizó un control de la calidad al 10 % de las entrevistas, seleccionadas aleatoriamente. \n" +
+        "Во время выполнения работы был осуществлен контроль качества 10-ти % собеседований выбранных случайным образом."
     }, {
       id: 5,
       category: "DELE",
@@ -306,28 +315,27 @@ export default {
           desktop: '/assets/images/content/doble-moral-desktop@2x.jpg',
         }
       },
-      text: "Ahora adivinad de quién se trata.\n" +
-        "\n" +
-        "1) Tener doble moral (иметь двойные стандарты)\n" +
+      text: "1️⃣Tener doble moral (иметь двойные стандарты)\n" +
         "En la serie se pone de manifiesto su doble moral.\n" +
-        "\n" +
-        "2) Persona de principios sólidos (человек твердых принципов)\n" +
+        " \n" +
+        "2️⃣Persona de principios sólidos (человек твердых принципов)\n" +
         "Sin duda alguna, es un hombre de principios sólidos.\n" +
-        "\n" +
-        "3) No tener escrúpulos (беспринципный человек)\n" +
+        " \n" +
+        "3️⃣No tener escrúpulos (беспринципный человек)\n" +
         "Sin ningún tipo de escrúpulos está dispuesto a cualquier cosa, aunque sus decisiones perjudiquen a los demás.\n" +
-        "\n" +
-        "4) Vulnerar los principios (идти против своих принципов)\n" +
+        " \n" +
+        "4️⃣Vulnerar los principios (идти против своих принципов)\n" +
         "Se vio obligado a vulnerar sus fundamentales principios.\n" +
-        "\n" +
-        "5) Inculcar valores (внушать ценности)\n" +
-        "Su ansia de poder se debe a los valores que le han inculcado desde niño. \n" +
-        "\n" +
-        "6) Ser intransigente(быть непреклонным)\n" +
+        " \n" +
+        "5️⃣Inculcar valores (внушать ценности)\n" +
+        "Su ansia de poder se debe a los valores que le han inculcado desde niño.\n" +
+        " \n" +
+        "6️⃣Ser intransigente(быть непреклонным)\n" +
         "A pesar de un gran sentimiento de culpabilidad, su postura sigue siendo intransigente.\n" +
-        "\n" +
-        "7) Estar sumido en un dilema moral (быть погруженным в нравственную дилемму)\n" +
-        "Ante las circunstancias de la vida está sumido en un dilema moral.\n"
+        " \n" +
+        "7️⃣Estar sumido en un dilema moral (быть погруженным в нравственную дилемму)\n" +
+        "Ante las circunstancias de la vida está sumido en un dilema moral.\n\n\n" +
+        "Image by Telecinco/Netflix"
     }, {
       id: 8,
       category: "вокабуляр",
@@ -345,42 +353,45 @@ export default {
           desktop: '/assets/images/content/dazhe-desktop@2x.jpg',
         }
       },
-      text: "incluso - даже\n" +
-        "\n" +
-        "Crear músculo requiere energía, por tanto, quizás necesites comer más o, INCLUSO, mucho más de lo que comes ahora.\n" +
+      text: "1️⃣ incluso - даже\n" +
+        " \n" +
+        "🟢 Crear músculo requiere energía, por tanto, quizás necesites comer más o, INCLUSO, mucho más de lo que comes ahora.\n" +
         "Набор мышечной массы требует энергии, поэтому, скорее всего, тебе нужно есть больше или ДАЖЕ ещё больше чем ты ешь сейчас.\n" +
-        "\n" +
-        "Esa película nos gustó a todos, INCLUSO al abuelo.\n" +
+        " \n" +
+        "🟢 Esa película nos gustó a todos, INCLUSO al abuelo.\n" +
         "Этот фильм понравился всем, даже (включая) дедушке.\n" +
-        "\n" +
-        "hasta - даже\n" +
-        "\n" +
-        "Yo HASTA he reducido la compra de snacks saludables para evitar tentaciones.\n" +
+        " \n" +
+        "2️⃣ hasta - даже\n" +
+        " \n" +
+        "🟢 Yo HASTA he reducido la compra de snacks saludables para evitar tentaciones.\n" +
         "Во избежание соблазнов я ДАЖЕ стал покупать меньше полезных снэков.\n" +
-        "\n" +
-        "Va a venir HASTA tu abuela.\n" +
+        " \n" +
+        "🟢 Va a venir HASTA tu abuela.\n" +
         "ДАЖЕ твоя бабушка приедет.\n" +
-        "\n" +
-        "ni siquiera - даже не\n" +
-        "\n" +
-        "Pero la idea NI SIQUIERA le pasó por la cabeza.\n" +
+        " \n" +
+        "3️⃣ ni siquiera - даже не\n" +
+        " \n" +
+        "🟢 Pero la idea NI SIQUIERA le pasó por la cabeza.\n" +
         "Но ему эта идея ДАЖЕ и в голову не пришла.\n" +
-        "\n" +
-        "No me pagó NI SIQUIERA los atrasos.\n" +
+        " \n" +
+        "🟢 No me pagó NI SIQUIERA los atrasos.\n" +
         "Он мне ДАЖЕ долги НЕ выплатил.\n" +
-        "\n" +
-        "aun - даже\n" +
-        "Les parecía buena idea negar el fuego del Purgatorio, o pensar que el Papa podía equivocarse AUN en asuntos religiosos.\n" +
+        " \n" +
+        "4️⃣ aun - даже\n" +
+        "🟢 Les parecía buena idea negar el fuego del Purgatorio, o pensar que el Papa podía equivocarse AUN en asuntos religiosos.\n" +
         "Им казалось неплохой идеей отвергать существование Чистилища или думать что Папа Римский мог ошибиться ДАЖЕ в религиозных делах.\n" +
-        "aunque - даже если\n" +
-        "Es posible seguir adelante con el proyecto AUNQUE yo no esté en Madrid.\n" +
+        "\n" +
+        "5️⃣ aunque - даже если\n" +
+        "🟢 Es posible seguir adelante con el proyecto AUNQUE yo no esté en Madrid.\n" +
         "Развитие проекта возможно ДАЖЕ ЕСЛИ меня не будет в Мадриде.\n" +
-        "incluso si - даже если\n" +
-        "Puede dar la impresión, INCLUSO SI se trata de una pequeña cantidad de empleados, de que este es el tono de la organización.\n" +
+        "\n" +
+        "6️⃣ incluso si - даже если\n" +
+        "🟢 Puede dar la impresión, INCLUSO SI se trata de una pequeña cantidad de empleados, de que este es el tono de la organización.\n" +
         "ДАЖЕ ЕСЛИ речь идет о небольшом количестве сотрудников, может сложится впечатление, что в данной организации это в порядке вещей.\n" +
-        "inclusive - даже\n" +
-        "Ritual, arte o INCLUSIVE terapia. El poner la mesa se ha convertido en 'el momento' del día para muchas familias y en el nuevo yoga para quienes viven solos.\n" +
-        "Ритуал, искусство или ДАЖЕ терапия. Сервировка стола стала одним из ключевых моментов дня для многих семей и новым видом йоги для тех кто живет один.\n"
+        "\n" +
+        "7️⃣ inclusive - даже\n" +
+        "🟢 Ritual, arte o INCLUSIVE terapia. El poner la mesa se ha convertido en 'el momento' del día para muchas familias y en el nuevo yoga para quienes viven solos.\n" +
+        "Ритуал, искусство или ДАЖЕ терапия. Сервировка стола стала одним из ключевых моментов дня для многих семей и новым видом йоги для тех кто живет один."
     }
   ]
 }
