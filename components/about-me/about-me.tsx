@@ -18,6 +18,8 @@ export default function AboutMe() {
               src="assets/images/about-me-photo-mobile@1x.png"
               srcSet="assets/images/about-me-photo-mobile@2x.png 2x"
               alt="Александра Абрамова"
+              width='244'
+              height='493'
             />
           </picture>
         </div>

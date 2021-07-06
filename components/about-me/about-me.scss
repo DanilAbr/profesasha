@@ -1,6 +1,5 @@
 .about-me {
   position: relative;
-
   background-image: url("/assets/images/index-bg-line-6-mobile.png"),
     url("/assets/images/index-bg-line-7-mobile.png");
   background-repeat: no-repeat;
@@ -139,6 +138,16 @@
 .about-me__image {
   display: block;
   object-fit: fill;
+
+  @media (min-width: $tablet-width) {
+    width: 247px;
+    height: 451px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 400px;
+    height: 732px;
+  }
 }
 
 .about-me__text {
