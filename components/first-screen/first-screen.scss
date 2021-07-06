@@ -61,6 +61,16 @@
 
 .first-screen__img {
   display: block;
+
+  @media (min-width: $tablet-width) {
+    width: 401px;
+    height: 431px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 598px;
+    height: 639px;
+  }
 }
 
 .first-screen__content-wrapper {

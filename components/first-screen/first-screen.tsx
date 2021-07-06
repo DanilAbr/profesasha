@@ -15,6 +15,8 @@ export default function FirstScreen() {
             <img
               className="first-screen__img"
               src="assets/images/index-first-photo-mobile@1x.png"
+              width='378'
+              height='403'
               srcSet="assets/images/index-first-photo-mobile@2x.png 2x"
               alt="Александра Абрамова"
             />
@@ -33,5 +35,5 @@ export default function FirstScreen() {
 
       </div>
     </section>
-)
+  )
 }
