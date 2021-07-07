@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import useEscKeyListener from '../../../hooks/useEscKeyListener';
+import useNonTargetMouseClickListener from "../../../hooks/useNonTargetMouseClickListener";
 
 interface Props {
   initialValue: string,
@@ -19,6 +20,7 @@ export default function Filter(props: Props) {
   }
 
   useEscKeyListener(() => setOpenStatus(false));
+  useNonTargetMouseClickListener(() => setOpenStatus(false), 'filter');
 
   return (
     <div className={ `filter ${ isOpen ? 'filter--opened' : '' }` }>

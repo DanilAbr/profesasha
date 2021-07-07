@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import useEscKeyListener from '../../../hooks/useEscKeyListener';
+import useNonTargetMouseClickListener from "../../../hooks/useNonTargetMouseClickListener";
 
 const EMAIL = 'abramova.alexandra@yahoo.com';
 
@@ -8,6 +9,7 @@ export default function MailDisplay() {
   const [ isSaved, setSavedStatus ] = useState(false);
 
   useEscKeyListener(() => setOpenStatus(false));
+  useNonTargetMouseClickListener(() => setOpenStatus(false), 'mail-display')
 
   function copyText() {
     navigator.clipboard.writeText(`${ EMAIL }`)
