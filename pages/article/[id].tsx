@@ -23,7 +23,7 @@ export default function Article() {
       <div className='article'>
         <article className='article__content'>
           <div className='article__item'>
-            <p className='article__category'>{ category }</p>
+            <p className='article__category'>{ category.name }</p>
             <h1 className='article__title'>{ title }</h1>
             { img &&
               <div className='article__image-wrapper'>

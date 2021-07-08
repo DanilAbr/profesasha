@@ -1,9 +1,8 @@
 import DefaultPage from '../layouts/default-page/default-page';
 import BlogCard, { ArticleType } from '../components/blog-card/blog-card';
-import blogData from '../staticData/blog';
 import Filter from '../components/atoms/filter/filter';
 import { categories } from '../constants';
-import { useRef, useState} from 'react';
+import { useRef, useState }  from 'react';
 import Pagination from '../components/atoms/pagination/pagination';
 
 interface Props {
@@ -12,8 +11,8 @@ interface Props {
 
 const CARDS_TO_SHOW = 6;
 
-export default function Blog() {
-  const { articles } = blogData as Props;
+function Blog(props: Props) {
+  const { articles } = props;
 
   const [ activeArticles, setActiveArticles ] = useState( articles );
   const [ showedArticles, setShowedArticles ] = useState( articles.slice(0, CARDS_TO_SHOW) );
@@ -26,7 +25,7 @@ export default function Blog() {
       setShowedArticles( articles.slice(0, CARDS_TO_SHOW) );
     } else {
         const filteredArticles = articles.filter(( article ) => {
-          return article.category === category;
+          return article.category.name === category;
         });
 
         setActiveArticles(filteredArticles);
@@ -80,3 +79,16 @@ export default function Blog() {
     </DefaultPage>
   )
 }
+
+export async function getStaticProps() {
+  const res = await fetch('https://profesasha.herokuapp.com/articles');
+  const articles = await res.json();
+
+  return {
+    props: {
+      articles,
+    },
+  }
+}
+
+export default Blog;

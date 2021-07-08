@@ -2,7 +2,9 @@ import Link from 'next/link';
 
 export interface ArticleType {
   id: number,
-  category: string,
+  category: {
+    name: string,
+  }
   title: string,
   subtitle: string,
   text: string
@@ -30,7 +32,7 @@ export default function BlogCard(props: Props) {
   return (
     <Link href={ `/article/${id}` }>
       <a className='blog-card' aria-label={ title }>
-        <p className='blog-card__category'>{ category }</p>
+        <p className='blog-card__category'>{ category.name }</p>
         <h3 className='blog-card__title'>{ title }</h3>
         <h4 className='blog-card__subtitle'>{ subtitle }</h4>
         { img &&
