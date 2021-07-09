@@ -1,8 +1,8 @@
 import { useRouter } from 'next/router';
-import data from '../../staticData/blog';
 import DefaultPage from '../../layouts/default-page/default-page';
 import { ArticleType } from '../../components/blog-card/blog-card';
 import ButtonBack from "../../components/atoms/button-back/button-back";
+import {useAppContext} from "../../context/AppContext";
 
 export interface Props {
   articles: ArticleType[],
@@ -10,10 +10,11 @@ export interface Props {
 
 export default function Article() {
   const { query } = useRouter();
+  const { articles } = useAppContext().state as Props;
 
-  const articleId = typeof query.id === 'string' ? Number(query.id) : 1;
-  const articleById = data.articles.find(( { id } ) => id === articleId );
-  const defaultArticle = data.articles[0];
+  const articleId = typeof query.id === 'string' ? query.id : 1;
+  const articleById = articles.find(( { id } ) => id === articleId );
+  const defaultArticle = articles[0];
   const currentArticle: ArticleType = articleById ? articleById : defaultArticle;
 
   const { category, img, title, text, subtitle } = currentArticle;

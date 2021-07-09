@@ -2,8 +2,9 @@ import DefaultPage from '../layouts/default-page/default-page';
 import BlogCard, { ArticleType } from '../components/blog-card/blog-card';
 import Filter from '../components/atoms/filter/filter';
 import { categories } from '../constants';
-import { useRef, useState }  from 'react';
+import {useEffect, useRef, useState, useContext} from 'react';
 import Pagination from '../components/atoms/pagination/pagination';
+import { AppContext, ActionCreator } from "../context/AppContext";
 
 interface Props {
   articles: ArticleType[];
@@ -13,6 +14,11 @@ const CARDS_TO_SHOW = 6;
 
 function Blog(props: Props) {
   const { articles } = props;
+  const { dispatch } = useContext(AppContext);
+
+  useEffect(() => {
+    dispatch(ActionCreator.setArticles(articles));
+  }, [])
 
   const [ activeArticles, setActiveArticles ] = useState( articles );
   const [ showedArticles, setShowedArticles ] = useState( articles.slice(0, CARDS_TO_SHOW) );
