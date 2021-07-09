@@ -53,8 +53,6 @@ function reducer(state: AppState, action: Action) {
 export function AppWrapper({ children }: Props) {
   const [ state, dispatch ] = useReducer(reducer, sharedState);
 
-  useEffect(() => { console.log(state) })
-
   return (
     <AppContext.Provider value={{state, dispatch}}>
       {children}
