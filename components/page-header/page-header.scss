@@ -60,7 +60,8 @@
   width: 77px;
   height: 77px;
   padding: 0;
-  border: 6px solid blue;
+  background: $color_pink;
+  border: 6px solid $color_red;
   border-radius: 50%;
 
   @media (min-width: $tablet-width) {
