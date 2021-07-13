@@ -5,23 +5,14 @@
 
 .mail-display__popup-button {
   display: flex;
-  width: 30px;
+  width: 36px;
   height: 30px;
   margin: auto;
-  padding: 2px 0 0;
+  padding: 0 3px;
   background-color: $color_pink;
   border: none;
-  border-radius: 50%;
+  border-radius: 9px;
   outline: none;
-
-  @media (min-width: $tablet-width) {
-    width: 37px;
-    height: 37px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 1px 0 0 2px;
-  }
 
   &:hover,
   &:focus {
@@ -36,11 +27,6 @@
   & svg {
     display: block;
     margin: auto;
-
-    @media (min-width: $desktop-width) {
-      width: 20px;
-      height: 20px;
-    }
   }
 }
 

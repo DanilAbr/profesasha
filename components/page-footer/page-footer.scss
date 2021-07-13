@@ -19,8 +19,8 @@
 
 .page-footer__social {
   display: grid;
-  grid-template-columns: auto auto auto auto;
-  grid-column-gap: 5px;
+  grid-template-columns: repeat(3, auto);
+  gap: 15px;
   margin: 0 auto 24px;
 
   @media (min-width: $tablet-width) {
@@ -30,8 +30,7 @@
 
 .page-footer__profi-link {
   display: flex;
-  margin-left: 10px;
-  padding-top: 2px;
+  padding-left: 4px;
   filter: drop-shadow(2px 2px 0 $color_pink);
 
   &:hover,
@@ -42,11 +41,6 @@
 
   & svg {
     margin: auto;
-
-    @media (min-width: $desktop-width) {
-      width: 75px;
-      height: 15px;
-    }
   }
 }
 
