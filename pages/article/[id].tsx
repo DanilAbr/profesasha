@@ -1,5 +1,6 @@
 import { useRouter } from 'next/router';
 import DefaultPage from '../../layouts/default-page/default-page';
+import { mockArticle } from '../../staticData/blog';
 import { ArticleType } from '../../components/blog-card/blog-card';
 import ButtonBack from "../../components/atoms/button-back/button-back";
 import {useAppContext} from "../../context/AppContext";
@@ -14,7 +15,7 @@ export default function Article() {
 
   const articleId = typeof query.id === 'string' ? query.id : 1;
   const articleById = articles.find(( { id } ) => id === articleId );
-  const defaultArticle = articles[0];
+  const defaultArticle: ArticleType = mockArticle;
   const currentArticle: ArticleType = articleById ? articleById : defaultArticle;
 
   const { category, img, title, text, subtitle } = currentArticle;
