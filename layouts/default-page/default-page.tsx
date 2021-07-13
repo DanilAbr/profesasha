@@ -13,11 +13,11 @@ interface Props {
 export default function DefaultPage(props: Props) {
   const { pageModifier, children } = props;
 
-  useEffect(() => {
-    smoothscroll.polyfill();
-    // @ts-ignore
-    window.__forceSmoothScrollPolyfill__ = true;
-  })
+  // useEffect(() => {
+  //   smoothscroll.polyfill();
+  //   // @ts-ignore
+  //   window.__forceSmoothScrollPolyfill__ = true;
+  // })
 
   return (
     <>
