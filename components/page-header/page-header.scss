@@ -9,6 +9,17 @@
   }
 }
 
+@-webkit-keyframes menuSlide {
+  from {
+    top: 100%;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
 .page-header {
   position: relative;
   z-index: 100;
