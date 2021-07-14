@@ -1,7 +1,6 @@
 import DefaultPage from '../layouts/default-page/default-page';
 import BlogCard, { ArticleType } from '../components/blog-card/blog-card';
 import Filter from '../components/atoms/filter/filter';
-import { categories } from '../constants';
 import {useEffect, useRef, useState, useContext} from 'react';
 import Pagination from '../components/atoms/pagination/pagination';
 import { AppContext, ActionCreator } from "../context/AppContext";
@@ -24,6 +23,7 @@ function Blog(props: Props) {
   const [ showedArticles, setShowedArticles ] = useState( articles.slice(0, CARDS_TO_SHOW) );
 
   const filterContainer = useRef<HTMLDivElement>(null);
+  const categories = Array.from(new Set(articles.map(({ category }) => category.name)));
 
   function handleCategoryChange( category: string ): void {
     if (category === categories[0]) {
