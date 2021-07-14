@@ -4,6 +4,8 @@ import PageFooter from "../../components/page-footer/page-footer";
 import SvgLib from "../../components/svg-lib/svg-lib";
 import Head from 'next/head';
 import smoothscroll from 'smoothscroll-polyfill';
+import {usePageLoadingStatus} from "../../hooks/usePageLoadingStatus";
+import {PageLoader} from "../../components/page-loader/page-loader";
 
 interface Props {
   pageModifier: string,
@@ -19,6 +21,8 @@ export default function DefaultPage(props: Props) {
     window.__forceSmoothScrollPolyfill__ = true;
   })
 
+  const loading = usePageLoadingStatus();
+
   return (
     <>
 
@@ -26,6 +30,7 @@ export default function DefaultPage(props: Props) {
         <title>Александра Абрамова - преподаватель испанского языка</title>
       </Head>
       <div className={ `default-page--${pageModifier}` }>
+        { loading && <PageLoader /> }
         <SvgLib />
         <PageHeader/>
         <main className="default-page__content">

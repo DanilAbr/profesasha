@@ -36,13 +36,13 @@ export default function Filter(props: Props) {
       </button>
       <ul className='filter__options-list'>
 
-        { values
-          .filter(( value ) => value !== activeValue )
-          .map(( value ) => {
+        { values.map(( value ) => {
           return (
             <li className='filter__option-item' key={ value }>
               <button
-                className='filter__option-picker'
+                className={ `filter__option-picker ${
+                  value === activeValue ? 'filter__option-picker--active' : ''
+                }`}
                 onClick={ () => handleValueChange(value) }
               >
                 { value }
