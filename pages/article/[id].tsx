@@ -23,6 +23,9 @@ export default function Article() {
   return (
     <DefaultPage pageModifier='article'>
       <div className='article'>
+        <div className='article__button-back article__button-back--top'>
+          <ButtonBack />
+        </div>
         <article className='article__content'>
           <div className='article__item'>
             <p className='article__category'>{ category.name }</p>
