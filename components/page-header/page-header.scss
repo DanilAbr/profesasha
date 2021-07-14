@@ -14,11 +14,13 @@
   min-height: -webkit-fill-available;
   padding: 20px 16%;
   background: $color_yellow;
+  visibility: visible;
   transition: all .7s ease;
 
   &--hide {
     top: 100vh;
     opacity: 0;
+    visibility:hidden;
   }
 }
 
