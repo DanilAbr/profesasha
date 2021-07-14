@@ -77,6 +77,10 @@
   }
 }
 
+.filter__option-picker--active {
+  color: $color_red;
+}
+
 .filter--opened {
   .filter__options-list {
     display: block;
