@@ -23,7 +23,8 @@ function Blog(props: Props) {
   const [ showedArticles, setShowedArticles ] = useState( articles.slice(0, CARDS_TO_SHOW) );
 
   const filterContainer = useRef<HTMLDivElement>(null);
-  const categories = Array.from(new Set(articles.map(({ category }) => category.name)));
+  let categories = Array.from(new Set(articles.map(({ category }) => category.name)));
+  categories.unshift('все категории');
 
   function handleCategoryChange( category: string ): void {
     if (category === categories[0]) {
