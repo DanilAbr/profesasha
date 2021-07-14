@@ -1,6 +1,6 @@
 .filter {
   position: relative;
-  z-index: 2;
+  z-index: 100;
   width: 200px;
   transition: box-shadow .4s;
 }
@@ -13,7 +13,7 @@
 
 .filter__toggle-button {
   position: relative;
-  z-index: 10;
+  z-index: 2;
   display: block;
   width: 100%;
   padding: 13px 30px;
