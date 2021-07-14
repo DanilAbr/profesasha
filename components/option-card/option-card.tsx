@@ -30,7 +30,7 @@ export default function OptionCard(props: Props) {
             srcSet={ `${ img.default.tablet } 1x, ${ img.retina.tablet } 2x` }
           />
           <img
-            className={ `option-card__image option-card__image--${ id }` }
+            className={ `option-card__image option-card__image--${ id + 1  }` }
             src={ img.default.mobile }
             srcSet={ `${ img.retina.mobile } 2x` }
             alt={ img.alt }
@@ -41,7 +41,7 @@ export default function OptionCard(props: Props) {
         <h2 className="option-card__title">{ title }</h2>
         <strong className="option-card__annotation">{ annotation }</strong>
         <p className="option-card__description">{ description }</p>
-        <Link href={ `/course-info/${ id }` }>
+        <Link href={ `/course-info/${ id + 1 }` }>
           <a className="option-card__more-button button-secondary">
             Подробнее о курсе
           </a>

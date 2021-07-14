@@ -35,7 +35,7 @@ export default function CourseInfo() {
   const [ isModalOpened, setModalStatus ] = useState(false);
 
   const courseId = typeof query.id === 'string' ? Number(query.id) : 0;
-  const courseById = data.options.find(( { id } ) => id === courseId );
+  const courseById = data.options.find(( { id } ) => id + 1 === courseId );
   const defaultCourse = data.options[0];
   const currentCourse: CourseType = courseById ? courseById : defaultCourse;
 

@@ -7,7 +7,7 @@ export default function SocialLink() {
       aria-label='instagram'
     >
       <img
-        src="assets/images/social-link-insta-logo.png"
+        src="/assets/images/social-link-insta-logo.png"
         width='24'
         height='24'
         alt='Логотип Instagram'
