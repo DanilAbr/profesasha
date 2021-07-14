@@ -41,6 +41,7 @@ export default function MailDisplay() {
           className='mail-display__copy-button'
           aria-label='скопировать адрес электронной почты'
           onClick={ copyText }
+          disabled={ isSaved }
         >
           { !isSaved &&
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 477.867 477.867" width='15' height='15'>
