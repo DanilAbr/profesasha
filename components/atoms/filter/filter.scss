@@ -2,11 +2,13 @@
   position: relative;
   z-index: 2;
   width: 200px;
+  transition: box-shadow .4s;
 }
 
 .filter--opened {
   box-shadow: 0 4px 4px 0 rgba($color_black, .25);
   border-radius: 7px;
+  transition: 0s;
 }
 
 .filter__toggle-button {
@@ -37,6 +39,7 @@
     position: absolute;
     top: 17px;
     right: 10px;
+    transition: .4s;
   }
 }
 
@@ -45,13 +48,16 @@
   z-index: 1;
   right: 0;
   bottom: 8px;
-  display: none;
   width: 100%;
+  visibility: hidden;
+  opacity: 0;
   padding: 14px 20px 4px;
   background-color: $color_pink;
   border-radius: 7px;
   box-shadow: 0 4px 4px 0 rgba($color_black, .25);
-  transform: translateY(100%);
+  transform: translateY(100%) scale(1, 0);
+  transform-origin: center top;
+  transition: .2s;
 }
 
 .filter__option-picker {
@@ -83,7 +89,9 @@
 
 .filter--opened {
   .filter__options-list {
-    display: block;
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(100%) scale(1, 1);
   }
 
   .filter__toggle-button {
