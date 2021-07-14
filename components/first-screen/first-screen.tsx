@@ -27,9 +27,8 @@ export default function FirstScreen() {
           <p className="first-screen__text first-screen__text--top">Привет, меня зовут</p>
           <h1 className="first-screen__title">Александра Абрамова</h1>
           <p className="first-screen__text first-screen__text--bottom">
-            Я более пяти лет знакомлю и влюбляю людей в испанский язык.
-            Если ты давно мечтаешь заговорить на самой красивом
-            языке в мире, то ты обратился по адресу.
+            Я&nbsp;более пяти лет знакомлю и&nbsp;влюбляю людей в&nbsp;испанский язык. Если ты&nbsp;давно
+            мечтаешь заговорить на&nbsp;самой красивом языке в&nbsp;мире, то&nbsp;ты&nbsp;обратился по&nbsp;адресу.
           </p>
         </div>
 

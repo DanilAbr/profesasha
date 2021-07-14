@@ -94,31 +94,20 @@
 }
 
 .first-screen__text--top {
-  margin-top: -10px;
-  margin-bottom: 6px;
+  margin: -10px 0 6px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 0;
-    margin-bottom: 18px;
+    margin: 0 0 18px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 8px;
-    font-size: 18px;
-    line-height: 24px;
+    margin: 0 0 8px;
   }
 }
 
 .first-screen__text--bottom {
-  @media (min-width: $tablet-width) {
-    font-size: 17px;
-    line-height: 24px;
-  }
-
   @media (min-width: $desktop-width) {
-    padding-right: 100px;
-    font-size: 17px;
-    line-height: 23px;
+    padding: 0 100px 0 0;
   }
 }
 
@@ -128,9 +117,9 @@
   font-size: 45px;
   line-height: 44px;
   font-weight: 800;
-  color: #880006;
+  color: $color_red;
 
-  @media (min-width: 350px) {
+  @media (min-width: 340px) {
     font-size: 50px;
     line-height: 49px;
     font-weight: 800;
@@ -147,8 +136,4 @@
     font-size: 64px;
     line-height: 63px;
   }
-}
-
-.first-screen__register {
-  width: 209px;
 }
