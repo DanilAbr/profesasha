@@ -3,7 +3,9 @@ import { useState } from 'react';
 import DefaultPage from '../../layouts/default-page/default-page';
 import ButtonBack from '../../components/atoms/button-back/button-back';
 import AppointmentModal from '../../components/appointment-modal/appointment-modal';
-import data from '../../staticData/classOptions';
+import data from '../../staticData/class-options';
+
+const sanitize = require('sanitize-html-react');
 
 export interface CourseType {
   "id": number,
@@ -35,7 +37,7 @@ export default function CourseInfo() {
   const [ isModalOpened, setModalStatus ] = useState(false);
 
   const courseId = typeof query.id === 'string' ? Number(query.id) : 0;
-  const courseById = data.options.find(( { id } ) => id + 1 === courseId );
+  const courseById = data.options.find(( { id } ) => id === courseId );
   const defaultCourse = data.options[0];
   const currentCourse: CourseType = courseById ? courseById : defaultCourse;
 
@@ -75,9 +77,7 @@ export default function CourseInfo() {
           </picture>
           <section className='course-info__description'>
             <h2 className='course-info__description-title'>Для кого этот курс?</h2>
-            <p className='course-info__description-text'>
-              { description }
-            </p>
+            <p className='course-info__description-text' dangerouslySetInnerHTML={{__html: sanitize(description)}} />
           </section>
           <section className='course-info__price'>
             <h2 className='course-info__price-title'>Стоимость</h2>

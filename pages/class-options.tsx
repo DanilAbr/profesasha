@@ -1,7 +1,7 @@
 import { InView } from 'react-intersection-observer';
 import DefaultPage from '../layouts/default-page/default-page';
 import OptionCard from "../components/option-card/option-card";
-import data from '../staticData/classOptions';
+import data from '../staticData/class-options';
 import { CourseType } from './course-info/[id]';
 import PageDownButton from '../components/atoms/page-down-button/page-down-button';
 import {useCallback, useState} from 'react';
