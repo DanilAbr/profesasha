@@ -1,31 +1,30 @@
 .course-info {
-  max-width: 550px;
-  margin: 0 auto;
-  padding-top: 28px;
+  padding: 28px 0 0;
 
   @media (min-width: $tablet-width) {
     max-width: 768px;
-    padding-top: 50px;
+    margin: 0 auto;
+    padding: 50px 0 0;
   }
 
   @media (min-width: $desktop-width) {
     max-width: 940px;
-    padding-top: 38px;
+    padding: 38px 0 0;
   }
 }
 
 .course-info__title-wrapper {
+  display: flex;
   justify-content: center;
   align-items: center;
-  display: flex;
-  margin-bottom: 73px;
+  margin: 0 0 73px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 162px;
+    margin: 0 0 162px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 208px;
+    margin: 0 0 208px;
   }
 }
 
@@ -55,31 +54,34 @@
 
   @media (min-width: $tablet-width) {
     max-width: 100%;
-    padding-top: 12px;
+    padding: 12px 0 0;
     font-size: 24px;
     line-height: 33px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 0;
+    padding: 0;
     font-size: 36px;
     line-height: 49px;
   }
 }
 
 .course-info__content {
-  margin-bottom: 81px;
+  margin: 0 0 50px;
   padding: 0 25px;
+
+  @media (min-width: 375px) {
+    margin: 0 0 70px;
+  }
 
   @media (min-width: $tablet-width) {
     position: relative;
-    margin-bottom: 131px;
-    padding-left: 387px;
-    padding-right: 60px;
+    margin: 0 0 131px;
+    padding: 0 60px 0 387px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 117px;
+    margin: 0 0 117px;
     padding-left: 488px;
   }
 }
@@ -106,109 +108,71 @@
 }
 
 .course-info__description {
-  margin-bottom: 17px;
-  padding: 0 7px;
+  margin: 0 0 17px;
 
-  @media (min-width: $tablet-width) {
-    margin-bottom: 15px;
-  }
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 26px;
+  @media (min-width: $desktop-width) {
+    margin: 0 0 26px;
   }
 }
 
 .course-info__description-title {
-  margin-top: 0;
-  margin-bottom: 10px;
-  font-size: 18px;
-  line-height: 24px;
+  margin: 0 0 10px;
+  font-size: 19px;
+  line-height: 25px;
   font-weight: 700;
 }
 
 .course-info__description-text {
-  margin-top: 0;
-  font-size: 12px;
-  line-height: 16px;
-  font-weight: 300;
-
   @media (min-width: $tablet-width) {
     padding-left: 4px;
-    font-size: 13px;
-    line-height: 18px;
-  }
-
-  @media (min-width: $desktop-width) {
-    font-size: 14px;
-    line-height: 19px;
   }
 }
 
 .course-info__price {
-  margin-bottom: 42px;
-  padding: 0 7px;
+  margin: 0 0 30px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 25px;
+    margin: 0 0 25px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 60px;
+    margin: 0 0 60px;
   }
 }
 
 .course-info__price-title {
-  margin-top: 0;
-  margin-bottom: 10px;
-  font-size: 18px;
-  line-height: 24px;
+  margin: 0 0 10px;
+  font-size: 19px;
+  line-height: 25px;
   font-weight: 700;
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 9px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-bottom: 10px;
-  }
 }
 
 .course-info__price-list {
-  margin-bottom: 6px;
+  margin: 0 0 6px;
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 10px;
+    margin: 0 0 10px;
   }
 }
 
-.course-info__price-item {
-  margin-bottom: 5px;
+.course-info__price-item:not(:last-child) {
+  margin: 0 0 5px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 1px;
-  }
-
-  &:last-child {
-    margin-bottom: 0;
+    margin: 0 0 1px;
   }
 }
 
 .course-info__price-value {
-  font-size: 11px;
-  line-height: 15px;
+  font-size: 13px;
+  line-height: 17px;
   font-weight: 600;
   color: $color_red_bright;
-
-  @media (min-width: $desktop-width) {
-    font-size: 13px;
-    line-height: 17px;
-  }
 }
 
 .course-info__price-duration {
-  font-size: 12px;
-  line-height: 16px;
-  font-weight: 300;
+  font-size: 13px;
+  line-height: 17px;
   white-space: pre-wrap;
 
   @media (min-width: $desktop-width) {
@@ -218,9 +182,8 @@
 }
 
 .course-info__price-notice {
-  margin: 0;
-  font-size: 11px;
-  line-height: 15px;
+  font-size: 12px;
+  line-height: 16px;
   font-weight: 300;
 
   @media (min-width: $desktop-width) {
@@ -241,12 +204,26 @@
   }
 }
 
-.course-info__appointment-button {
-  width: 44%;
+.course-info__buttons-wrap {
   min-width: 157px;
-  margin-right: auto;
+  width: 44%;
+
+  @media (min-width: 375px) {
+    display: flex;
+    width: auto;
+  }
+}
+
+.course-info__appointment-button {
+  margin: 0 0 50px;
   font-size: 13px;
   line-height: 18px;
+
+  @media (min-width: 375px) {
+    flex-shrink: 0;
+    margin: 0 auto 0 0;
+    width: 50%;
+  }
 
   @media (min-width: $tablet-width) {
     margin-left: 6px;
@@ -255,14 +232,5 @@
 
   @media (min-width: $desktop-width) {
     margin-left: 8px;
-  }
-}
-
-.course-info__back {
-  display: flex;
-  padding: 0 25px;
-
-  @media (min-width: $tablet-width) {
-    justify-content: center;
   }
 }

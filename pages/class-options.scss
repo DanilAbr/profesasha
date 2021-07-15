@@ -1,6 +1,6 @@
 .class-options {
   padding-top: 47px;
-  padding-bottom: 180px;
+  padding-bottom: 120px;
   background-image:
     url("/assets/images/bg-header-image-1.png"),
     url("/assets/images/options-bg-line-1-mobile.png"),
@@ -11,7 +11,7 @@
     left 83% top -112px,
     left -23px top 883px,
     right -137px top 66%,
-    left -173px top 98%;
+    left -173px bottom;
 
   @media (min-width: $tablet-width) {
     padding-top: 57px;

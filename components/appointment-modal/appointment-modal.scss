@@ -7,7 +7,7 @@
   width: 100vw;
   max-width: 100%;
   height: 100vh;
-  background-color: rgba(#000000, .2);
+  background-color: rgba(#000, .2);
   overflow: auto;
 }
 
@@ -20,7 +20,7 @@
   width: 98%;
   max-width: 850px;
   margin: auto;
-  padding: 54px 35px 60px 35px;
+  padding: 54px 35px 60px;
   border-radius: 5px;
   background-color: $color_pink;
 }
@@ -77,10 +77,9 @@
   }
 
   &::placeholder {
-    position: relative;
     font-size: 15px;
     line-height: 20px;
-    font-weight: 200;
+    opacity: 0.7;
   }
 }
 
@@ -116,7 +115,7 @@
   width: 35px;
   height: 35px;
   border-width: 0;
-  background-color: transparent;
+  background: transparent;
 
   @media (min-width: $tablet-width) {
     width: 40px;

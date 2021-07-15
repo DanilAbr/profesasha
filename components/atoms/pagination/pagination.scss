@@ -15,7 +15,7 @@
   padding: 10px;
   font-size: 22px;
   line-height: 30px;
-  font-weight: 400;
+  font-weight: 300;
   text-decoration: none;
   color: inherit;
 
@@ -30,6 +30,7 @@
 }
 
 .pagination__link--active {
+  font-weight: 700;
   color: $color_red;
 }
 
