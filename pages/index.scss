@@ -1,4 +1,6 @@
 .index {
+  margin: 0 0 70px;
+
   @media (min-width: $tablet-width) {
     padding-bottom: 20px;
     background-image: url("/assets/images/index-bg-line-3-tablet.png");
