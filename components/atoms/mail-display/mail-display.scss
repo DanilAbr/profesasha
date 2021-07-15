@@ -9,7 +9,7 @@
   height: 30px;
   margin: auto;
   padding: 0 3px;
-  background-color: $color_pink;
+  background: $color_pink;
   border: none;
   border-radius: 9px;
   outline: none;
@@ -51,13 +51,13 @@
 
 .mail-display__value {
   margin-right: 5px;
-  padding: 3px 5px;
+  padding: 5px;
   font: inherit;
   font-size: 13px;
   line-height: 18px;
   font-weight: 400;
   color: $color_black_1;
-  background-color: $color_white;
+  background: $color_white;
   border-radius: 4px;
 
   &:hover,
@@ -68,14 +68,14 @@
 }
 
 .mail-display__copy-button {
-  padding-top: 2px;
+  padding: 2px 6px 0;
   border: 1px solid $color_black_1;
   border-radius: 4px;
-  background-color: $color_white;
+  background: $color_white;
 
   &:hover,
   &:focus {
-    background-color: $color_yellow;
+    background: $color_yellow;
   }
 }
 
@@ -83,5 +83,4 @@
   position: absolute;
   right: 7px;
   top: -28px;
-  display: block;
 }

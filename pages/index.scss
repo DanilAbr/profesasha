@@ -8,14 +8,14 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin: 0 0 150px;
     background-image: url("/assets/images/index-bg-line-3-desktop.png");
     background-position: right calc(20% - 194px) top 667px;
   }
 }
 
-
 .index__first-screen {
-  margin: 0 0 99px;
+  margin: 0 0 100px;
 
   @media (min-width: $desktop-width) {
     margin: 0 0 208px;
