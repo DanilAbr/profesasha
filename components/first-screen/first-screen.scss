@@ -84,17 +84,6 @@
   }
 }
 
-.first-screen__text {
-  margin: 0;
-  font-size: 17px;
-  line-height: (25 / 17);
-  font-weight: 300;
-
-  @media (min-width: $desktop-width) {
-    font-size: 21px;
-  }
-}
-
 .first-screen__text--top {
   margin: -10px 0 6px;
 
