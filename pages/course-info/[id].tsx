@@ -98,18 +98,17 @@ export default function CourseInfo() {
             </p>
           </section>
 
-          <div className='course-info__buttons-wrap'>
-            <button
-              className='course-info__appointment-button button-primary js-appointment-button'
-              onClick={ () => setModalStatus(true) }
-            >
-              Записаться на курс
-            </button>
-
-            <ButtonBack />
-          </div>
+          <button
+            className='course-info__appointment-button button-primary js-appointment-button'
+            onClick={ () => setModalStatus(true) }
+          >
+            Записаться на курс
+          </button>
         </div>
 
+        <div className='course-info__button-back-wrap'>
+          <ButtonBack />
+        </div>
 
         <AppointmentModal
           isShowed={ isModalOpened }
