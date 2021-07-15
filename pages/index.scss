@@ -4,7 +4,7 @@
   @media (min-width: $tablet-width) {
     background-image: url("/assets/images/index-bg-line-3-tablet.png");
     background-repeat: no-repeat;
-    background-position: right calc(20% - 320px) top 500px;
+    background-position: right calc(20% - 320px) top 580px;
   }
 
   @media (min-width: $desktop-width) {
@@ -33,6 +33,6 @@
 
   @media (min-width: $desktop-width) {
     width: 1152px;
-    padding: 0 500px 0 142px;
+    padding: 0 555px 0 142px;
   }
 }

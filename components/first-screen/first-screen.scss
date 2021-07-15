@@ -84,6 +84,12 @@
   }
 }
 
+.first-screen__text {
+  & .nowrap {
+    white-space: nowrap;
+  }
+}
+
 .first-screen__text--top {
   margin: -10px 0 6px;
 

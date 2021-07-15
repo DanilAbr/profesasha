@@ -22,13 +22,23 @@ export default function AppointmentModal(props: Props) {
     }
   },[ isShowed ]);
 
-  function sendMessage(evt: FormEvent) {
+  async function sendMessage(evt: FormEvent) {
     evt.preventDefault();
-    fetch('/api/appointment', {
+    await fetch('/api/appointment', {
       method: "POST",
       body: JSON.stringify({ username: userName, email, message }),
       headers: new Headers({ "Content-Type": "application/json" }),
-    }).then(() => onCloseButtonClick());
+    });
+    onCloseButtonClick();
+    setUserName('');
+    setEmail('');
+    setMessage('');
+  }
+
+  function resizeTextarea(evt: any) {
+    const textarea = evt.target;
+    textarea.style.height = "";
+    textarea.style.height = textarea.scrollHeight + 4 + "px"
   }
 
   return (
@@ -60,6 +70,7 @@ export default function AppointmentModal(props: Props) {
             required
           />
           <textarea
+            onInput={(evt) => resizeTextarea(evt)}
             onChange={ (evt) => setMessage(evt.target.value)}
             value={ message }
             className="appointment-modal__message-input"

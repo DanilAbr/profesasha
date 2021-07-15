@@ -208,18 +208,13 @@
     width: 50%;
     min-width: 200px;
   }
-  //
-  //@media (min-width: $tablet-width) {
-  //  margin-left: 6px;
-  //  padding: 7px;
-  //}
-
-  //@media (min-width: $desktop-width) {
-  //  margin-left: 8px;
-  //}
 }
 
 .course-info__button-back-wrap {
   width: max-content;
   margin: 0 auto 30px;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }

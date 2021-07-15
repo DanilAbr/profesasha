@@ -1,5 +1,5 @@
 .about-me {
-  min-height: 500px;
+  min-height: 460px;
   position: relative;
   background-image:
     url("/assets/images/index-bg-line-6-mobile.png"),
@@ -128,7 +128,6 @@
 
 .about-me__image {
   display: block;
-  object-fit: fill;
 
   @media (min-width: $tablet-width) {
     width: 247px;

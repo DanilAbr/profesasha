@@ -4,13 +4,12 @@
   padding: 9px;
   text-decoration: none;
   text-align: center;
-  color: #ffffff;
+  color: #fff;
   border: 2px solid $color_red;
   border-radius: 5px;
   background-color: $color_red;
-  cursor: pointer;
 
-  @include nunito(16px, 22px, 400);
+  @include nunito(16px, 22px, 300);
 
   &:hover,
   &:focus {
