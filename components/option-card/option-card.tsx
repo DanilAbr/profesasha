@@ -41,7 +41,6 @@ export default function OptionCard(props: Props) {
       </div>
       <div className="option-card__content">
         <h2 className="option-card__title">{ title }</h2>
-        <strong className="option-card__annotation">{ annotation }</strong>
         <p className="option-card__description" dangerouslySetInnerHTML={{__html: sanitize(description)}} />
         <Link href={ `/course-info/${ id }` }>
           <a className="option-card__more-button button-secondary">

@@ -76,12 +76,13 @@
   }
 
   @media (min-width: $desktop-width) {
+    width: 320px;
     border-radius: 10px;
   }
 }
 
 .option-card__title {
-  margin: 0 0 17px;
+  margin: 0 0 21px;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
@@ -92,28 +93,28 @@
   }
 }
 
-.option-card__annotation {
-  display: block;
-  margin-bottom: 17px;
-  font-size: 16px;
-  line-height: 22px;
-  font-weight: 700;
-  color: $color_black_1;
-
-  @media (min-width: $tablet-width) {
-    margin: 0 0 21px;
-  }
-}
+//.option-card__annotation {
+//  display: block;
+//  margin-bottom: 17px;
+//  font-size: 16px;
+//  line-height: 22px;
+//  font-weight: 700;
+//  color: $color_black_1;
+//
+//  @media (min-width: $tablet-width) {
+//    margin: 0 0 21px;
+//  }
+//}
 
 .option-card__description {
   display: -webkit-box;
-  max-height: 80px;
+  max-height: 90px;
   margin: 0 0 21px;
   font-size: 15px;
   line-height: 21px;
   font-weight: 300;
   color: $color_black_1;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
   overflow: hidden;
 
