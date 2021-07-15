@@ -136,4 +136,19 @@
   }
 }
 
+.appointment-modal__succeed-window {
+  width: 90vw;
+  max-width: 500px;
+  margin: auto;
+  padding: 2em;
+  background-color: $color_pink;
+  border-radius: 5px;
+}
 
+.appointment-modal__succeed-message {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+  text-align: center;
+  color: $color_black_1;
+}
