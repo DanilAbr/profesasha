@@ -2,7 +2,6 @@
   margin: 0 0 70px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 20px;
     background-image: url("/assets/images/index-bg-line-3-tablet.png");
     background-repeat: no-repeat;
     background-position: right calc(20% - 320px) top 500px;
@@ -16,25 +15,24 @@
 
 
 .index__first-screen {
-  margin-bottom: 109px;
+  margin: 0 0 99px;
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 208px;
+    margin: 0 0 208px;
   }
 }
 
-.index__about-me {
-  margin-bottom: 100px;
+.index__button-options-wrap {
+  padding: 0 7%;
+  margin: 70px auto 0;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 50px;
+    width: 768px;
+    padding: 0 365px 0 64px;
   }
-}
 
-.index__options {
-  width: calc(100% - 60px);
-  max-width: 364px;
-  margin: 0 auto;
-  padding-left: 30px;
-  padding-right: 30px;
+  @media (min-width: $desktop-width) {
+    width: 1152px;
+    padding: 0 500px 0 142px;
+  }
 }

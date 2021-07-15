@@ -53,11 +53,11 @@ export default function Home() {
         >
           <AboutMe />
         </div>
-        <Link href='/class-options'>
-          <a
-            className='index__options button-primary'
-          >Варианты занятий</a>
-        </Link>
+        <div className='index__button-options-wrap'>
+          <Link href='/class-options'>
+            <a className='button-primary'>Варианты занятий</a>
+          </Link>
+        </div>
       </div>
     </DefaultPage>
   )

@@ -54,9 +54,12 @@ function Blog(props: Props) {
       <div className='blog'>
         <div className='blog__content'>
           <h1 className='blog__title'>Блог</h1>
-          <p className='blog__note'>{
-            `  Авторские статьи как на русском, так и на испанском.\n  Как подоготовиться к DELE? С чего начать изучение испанского языка? Как выйти на новый уровень в изучаемом языке? Что послушать или посмотреть на испанском?\n  Ответы на эти и другие вопросы вы сможете найти в этом блоге.`
-          }</p>
+          <p className='blog__note'>
+            Авторские статьи как на&nbsp;русском, так и&nbsp;на&nbsp;испанском. Как&nbsp;подоготовиться к&nbsp;DELE?
+            С&nbsp;чего начать изучение испанского языка? Как выйти на&nbsp;новый уровень в&nbsp;изучаемом языке?
+            Что послушать или посмотреть на&nbsp;испанском? Oтветы на&nbsp;эти и&nbsp;другие вопросы вы&nbsp;сможете
+            найти в&nbsp;этом блоге.
+          </p>
           <div className='blog__filter' ref={ filterContainer }>
             <Filter
               values={ categories }

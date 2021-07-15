@@ -8,9 +8,15 @@ body {
   position: relative;
   margin: 0;
   font-family: Nunito, Arial, serif;
-  line-height: 120%;
+  font-size: 17px;
+  line-height: (25 / 17);
+  font-weight: 300;
   color: $color_black_1;
   background: $color_pink;
+
+  @media (min-width: $desktop-width) {
+    font-size: 19px;
+  }
 }
 
 button,
@@ -18,7 +24,7 @@ a {
   cursor: pointer;
 }
 
-ul {
+ul, p {
   list-style: none;
   margin: 0;
   padding: 0;

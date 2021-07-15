@@ -7,11 +7,11 @@
   align-items: center;
   display: none;
   padding: 20px;
-  border-width: 0;
-  background-color: transparent;
+  border: 0;
+  background: transparent;
   transition: .2s;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     display: flex;
   }
 
