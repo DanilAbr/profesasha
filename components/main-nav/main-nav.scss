@@ -1,15 +1,21 @@
-.main-nav__item {
-  margin-bottom: 56px;
+.main-nav__item:not(:last-child) {
+  margin: 0 0 56px;
 
-  &:last-child {
-    margin-bottom: 0;
+  @media (orientation: landscape) {
+    margin: 0 0 16px
   }
 }
 
+.main-nav__svg {
+  flex-shrink: 0;
+  margin-left: 10px;
+  transition: .1s;
+}
+
 .main-nav__link {
+  display: flex;
   justify-content: space-between;
   align-items: center;
-  display: flex;
   padding: 20px 0 0 2px;
   font-size: 24px;
   line-height: 33px;
@@ -24,23 +30,14 @@
     color: $color_red;
     border-color: $color_red;
     padding-left: 12px;
+
+    .main-nav__svg {
+      margin-right: -5px;
+      fill: $color_red;
+    }
   }
 
   &:active {
     opacity: .8;
-  }
-}
-
-.main-nav__svg {
-  flex-shrink: 0;
-  margin-left: 10px;
-  transition: .1s;
-}
-
-.main-nav__link:hover,
-.main-nav__link:focus {
-  .main-nav__svg {
-    margin-right: -5px;
-    fill: $color_red;
   }
 }
