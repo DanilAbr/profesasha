@@ -48,6 +48,8 @@
 
 .page-header__menu-wrapper {
   flex-grow: 1;
+  max-height: calc(100vh - 120px);
+  overflow: auto;
   margin: auto 0;
   padding-bottom: 25px;
 }
