@@ -36,7 +36,11 @@ export default function Home() {
             испанский онлайн, подготовка к DELE,  обучение разговорному испанскому, экзаменатор DELE, испанский
             язык по скайпу` }
         />
-        <meta name='viewport' content='initial-scale=1.0, width=device-width' />
+        <meta
+          name='description'
+          content={ `Индивидуальные занятия испанским языком. Подготовка к
+            DELE с аккредитованным Институтом Сервантеса экзаменатором.` }
+        />
       </Head>
 
       <PageDownButton
