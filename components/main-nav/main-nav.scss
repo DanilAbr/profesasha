@@ -1,7 +1,7 @@
 .main-nav__item:not(:last-child) {
   margin: 0 0 56px;
 
-  @media (orientation: landscape) {
+  @media (orientation: landscape) and (max-height: 400px) {
     margin: 0 0 16px
   }
 }
