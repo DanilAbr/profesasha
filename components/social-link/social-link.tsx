@@ -4,7 +4,8 @@ export default function SocialLink() {
       className='social-link'
       href='//www.instagram.com/profesasha/?r=nametag'
       target='_blank'
-      aria-label='instagram'
+      rel='noopener noreferrer'
+      aria-label='instagram Profesasha'
     >
       <img
         src="/assets/images/social-link-insta-logo.png"
