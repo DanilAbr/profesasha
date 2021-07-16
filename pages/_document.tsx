@@ -11,8 +11,6 @@ class MyDocument extends Document {
       <Html lang='ru-RU' >
         <Head>
           <link rel="shortcut icon" href="/favicon.png" type="image/png" />
-          <meta name='viewport' content='initial-scale=1.0, width=device-width' />
-          <title>Преподаватель испанского языка</title>
         </Head>
         <body>
         <Main />
