@@ -11,6 +11,7 @@ export default function PageFooter() {
           className='page-footer__profi-link'
           href='https://chuvashia.profi.ru/profile/YanushkinaAU/reviews/'
           target='_blank'
+          rel='noopener noreferrer'
           aria-label='отзывы на профу.ру'
         >
           <svg width='100' height='20'>

@@ -1,5 +1,5 @@
 import MainNav from "../main-nav/main-nav";
-import { useState } from "react";
+import {useEffect, useState} from 'react';
 import useEscKeyListener from '../../hooks/useEscKeyListener';
 import useNonTargetMouseClickListener from "../../hooks/useNonTargetMouseClickListener";
 
@@ -12,6 +12,11 @@ export default function PageHeader() {
   function changeMenuStatus() {
     setMenuStatus((prev) => !prev);
   }
+
+  useEffect(() => {
+    const body: any = document.querySelector('body');
+    body.style.overflow = isMenuOpened ? 'hidden' : 'auto';
+  }, [!isMenuOpened]);
 
   return (
     <header className="page-header">
