@@ -14,6 +14,7 @@ export default function FirstScreen() {
             />
             <img
               className="first-screen__img"
+              loading='lazy'
               src="assets/images/index-first-photo-mobile@1x.png"
               width='378'
               height='403'

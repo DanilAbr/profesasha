@@ -15,6 +15,7 @@ export default function AboutMe() {
             />
             <img
               className="about-me__image"
+              loading='lazy'
               src="assets/images/about-me-photo-mobile@1x.png"
               srcSet="assets/images/about-me-photo-mobile@2x.png 2x"
               alt="Александра Абрамова"
