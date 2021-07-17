@@ -14,9 +14,9 @@ export default function PageHeader() {
   }
 
   useEffect(() => {
-    const body: any = document.querySelector('body');
-    body.style.overflow = isMenuOpened ? 'hidden' : 'auto';
-  }, [!isMenuOpened]);
+    const body = document.querySelector('body');
+    if (body) { body.style.overflow = isMenuOpened ? 'hidden' : 'auto' }
+  }, [isMenuOpened]);
 
   return (
     <header className="page-header">
