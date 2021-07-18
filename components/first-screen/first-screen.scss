@@ -29,8 +29,8 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
-    margin: 0 auto;
     max-width: 768px;
+    margin: 0 auto;
     padding: 0;
   }
 
@@ -41,8 +41,8 @@
 }
 
 .first-screen__img-wrapper {
-  justify-content: center;
   display: flex;
+  justify-content: center;
   margin: 0 -30px;
   overflow-x: hidden;
 

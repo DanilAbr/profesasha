@@ -8,8 +8,8 @@
   padding: 0 19px;
 
   @media (min-width: $tablet-width) {
-    max-width: 100%;
     width: 520px;
+    max-width: 100%;
     padding: 0;
   }
 
@@ -21,8 +21,8 @@
 .article__item {
   position: relative;
   padding: 34px 11px 20px;
-  background-color: $color_pink;
   border-radius: 15px;
+  background-color: $color_pink;
   box-shadow: 1px 4px 17px 0 rgba($color_black, .25);
 
   @media (min-width: $tablet-width) {
@@ -75,8 +75,8 @@
 .article__category {
   position: absolute;
   z-index: 2;
-  left: 12px;
   top: 20px;
+  left: 12px;
   width: fit-content;
   margin-top: 0;
   margin-bottom: 0;
@@ -85,13 +85,13 @@
   line-height: 10px;
   font-weight: 700;
   color: $color_white;
-  background-color: $color_orange;
   border-radius: 4px;
+  background-color: $color_orange;
 
   @media (min-width: $tablet-width) {
+    left: 22px;
     font-size: 11px;
     line-height: 15px;
-    left: 22px;
   }
 
   @media (min-width: $desktop-width) {
@@ -115,10 +115,10 @@
 .article__text,
 .article__subtitle {
   margin: 0;
-  white-space: pre-wrap;
   font-size: 12px;
   line-height: 16px;
   font-weight: 300;
+  white-space: pre-wrap;
 
   @media (min-width: $tablet-width) {
     font-size: 15px;

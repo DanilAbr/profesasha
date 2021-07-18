@@ -3,9 +3,9 @@
   padding-top: 31px;
 
   @media (min-width: $tablet-width) {
+    display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    display: flex;
     width: 642px;
     padding-top: 69px;
   }
@@ -37,8 +37,8 @@
 }
 
 .option-card__image-wrapper {
-  justify-content: center;
   display: flex;
+  justify-content: center;
   max-width: 354px;
   overflow: hidden;
 
@@ -99,7 +99,6 @@
   margin: 0 0 21px;
   font-size: 15px;
   line-height: 21px;
-  font-weight: 300;
   color: $color_black_1;
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
@@ -125,8 +124,8 @@
 
   .option-card__image-wrapper {
     @media (min-width: $tablet-width) {
-      justify-content: flex-end;
       order: 2;
+      justify-content: flex-end;
     }
 
     @media (min-width: $desktop-width) {

@@ -27,9 +27,9 @@
 
   &:hover,
   &:focus {
+    padding-left: 12px;
     color: $color_red;
     border-color: $color_red;
-    padding-left: 12px;
 
     .main-nav__svg {
       margin-right: -5px;

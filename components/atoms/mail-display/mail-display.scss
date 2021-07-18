@@ -9,10 +9,10 @@
   height: 30px;
   margin: auto;
   padding: 0 3px;
-  background: $color_pink;
   border: none;
   border-radius: 9px;
   outline: none;
+  background: $color_pink;
 
   &:hover,
   &:focus {
@@ -32,12 +32,12 @@
 
 .mail-display__popup {
   position: absolute;
-  left: 0;
   top: 0;
+  left: 0;
   display: none;
   padding: 4px;
-  background: $color_yellow;
   border-radius: 4px;
+  background: $color_yellow;
   transform: translate(-50%, -110%);
 
   @media (min-width: $tablet-width) {
@@ -54,11 +54,11 @@
   padding: 5px;
   font: inherit;
   font-size: 13px;
-  font-weight: 700;
   line-height: 18px;
+  font-weight: 700;
   color: $color_black_1;
-  background: $color_white;
   border-radius: 4px;
+  background: $color_white;
 
   &:hover,
   &:focus {
@@ -81,6 +81,6 @@
 
 .mail-display__check-icon {
   position: absolute;
-  right: 7px;
   top: -28px;
+  right: 7px;
 }

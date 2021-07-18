@@ -1,6 +1,6 @@
 .blog {
-  padding: 54px 0 0;
   margin: 0 0 70px;
+  padding: 54px 0 0;
 
   @media (min-width: $tablet-width) {
     padding: 57px 0 0;
@@ -47,13 +47,13 @@
 
 .blog__note {
   margin: 0 0 33px;
-  background: $color_pink;
   border-radius: 10px;
+  background: $color_pink;
   box-shadow: 0 0 10px 0 rgba($color_pink, .8);
 
   @media (min-width: $tablet-width) {
-    text-align: center;
     margin: 0 0 15px;
+    text-align: center;
   }
 
   @media (min-width: $desktop-width) {

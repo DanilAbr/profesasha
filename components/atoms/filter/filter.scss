@@ -6,8 +6,8 @@
 }
 
 .filter--opened {
-  box-shadow: 0 4px 4px 0 rgba($color_black, .25);
   border-radius: 7px;
+  box-shadow: 0 4px 4px 0 rgba($color_black, .25);
   transition: 0s;
 }
 
@@ -21,10 +21,10 @@
   font-size: 18px;
   line-height: 24px;
   font-weight: 600;
-  color: $color_black_1;
   white-space: nowrap;
-  background-color: $color_pink;
+  color: $color_black_1;
   border: none;
+  background-color: $color_pink;
 
   &:hover,
   &:focus {
@@ -46,18 +46,18 @@
 .filter__options-list {
   position: absolute;
   z-index: 1;
-  right: 0;
   bottom: 8px;
+  right: 0;
   width: 100%;
-  visibility: hidden;
-  opacity: 0;
   padding: 14px 20px 4px;
-  background-color: $color_pink;
+  opacity: 0;
   border-radius: 7px;
+  background-color: $color_pink;
   box-shadow: 0 4px 4px 0 rgba($color_black, .25);
   transform: translateY(100%) scale(1, 0);
   transform-origin: center top;
   transition: .2s;
+  visibility: hidden;
 }
 
 .filter__option-picker {
@@ -69,9 +69,9 @@
   line-height: 24px;
   font-weight: 600;
   text-align: left;
-  background-color: $color_pink;
   border: none;
   border-top: 1px solid rgba($color_black, .15);
+  background-color: $color_pink;
 
   &:hover,
   &:focus {
@@ -89,9 +89,9 @@
 
 .filter--opened {
   .filter__options-list {
-    visibility: visible;
     opacity: 1;
     transform: translateY(100%) scale(1, 1);
+    visibility: visible;
   }
 
   .filter__toggle-button {

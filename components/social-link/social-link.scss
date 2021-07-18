@@ -1,12 +1,12 @@
 .social-link {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   width: 30px;
   height: 30px;
-  background-color: $color_pink;
   border-radius: 9px;
   outline: none;
+  background-color: $color_pink;
 
   &:hover,
   &:focus {

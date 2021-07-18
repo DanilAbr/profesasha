@@ -70,59 +70,59 @@
 .page-loader {
   position: fixed;
   z-index: 999999;
-  width: 100vw;
-  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100vw;
+  min-height: 100vh;
   background-color: rgba(#ffffff, .7);
 }
 
 .page-loader__book {
   --color: #000;
   --duration: 6.8s;
+  position: relative;
   width: 32px;
   height: 12px;
-  position: relative;
   margin: 32px 0 0 0;
   //Demo
   zoom: 1.5;
   .inner {
+    position: relative;
     width: 32px;
     height: 12px;
-    position: relative;
-    transform-origin: 2px 2px;
     transform: rotateZ(-90deg);
+    transform-origin: 2px 2px;
     animation: book var(--duration) ease infinite;
     .left,
     .right {
+      position: absolute;
+      top: 0;
       width: 60px;
       height: 4px;
-      top: 0;
       border-radius: 2px;
       background: var(--color);
-      position: absolute;
       &:before {
         content: '';
+        position: absolute;
+        top: -10px;
+        left: 6px;
         width: 48px;
         height: 4px;
         border-radius: 2px;
         background: inherit;
-        position: absolute;
-        top: -10px;
-        left: 6px;
       }
     }
     .left {
       right: 28px;
-      transform-origin: 58px 2px;
       transform: rotateZ(90deg);
+      transform-origin: 58px 2px;
       animation: left var(--duration) ease infinite;
     }
     .right {
       left: 28px;
-      transform-origin: 2px 2px;
       transform: rotateZ(-90deg);
+      transform-origin: 2px 2px;
       animation: right var(--duration) ease infinite;
     }
     .middle {
@@ -135,22 +135,22 @@
     }
   }
   ul {
-    margin: 0;
-    padding: 0;
     list-style: none;
     position: absolute;
-    left: 50%;
     top: 0;
+    left: 50%;
+    margin: 0;
+    padding: 0;
     li {
+      position: absolute;
+      top: -10px;
+      right: 0;
+      width: 48px;
       height: 4px;
       border-radius: 2px;
-      transform-origin: 100% 2px;
-      width: 48px;
-      right: 0;
-      top: -10px;
-      position: absolute;
       background: var(--color);
       transform: rotateZ(0deg) translateX(-18px);
+      transform-origin: 100% 2px;
       animation-duration: var(--duration);
       animation-timing-function: ease;
       animation-iteration-count: infinite;
