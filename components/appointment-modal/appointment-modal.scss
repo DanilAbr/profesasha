@@ -63,13 +63,13 @@
   width: 100%;
   margin-bottom: 63px;
   padding: 4px 0;
+  font-size: 15px;
+  line-height: 20px;
   color: $color_black;
   border-width: 0;
   border-bottom: 1px solid $color_black_2;
   outline: none;
   background-color: transparent;
-
-  @include nunito(15px, 20px, 300);
 
   &:hover,
   &:focus {

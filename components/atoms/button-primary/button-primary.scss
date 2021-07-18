@@ -4,12 +4,12 @@
   padding: 9px;
   text-decoration: none;
   text-align: center;
+  font-size: 16px;
+  line-height: 22px;
   color: #fff;
   border: 2px solid $color_red;
   border-radius: 5px;
   background-color: $color_red;
-
-  @include nunito(16px, 22px, 300);
 
   &:hover,
   &:focus {
