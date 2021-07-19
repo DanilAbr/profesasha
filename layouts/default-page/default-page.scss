@@ -36,8 +36,12 @@
     }
 
     @media (min-width: $desktop-width) {
-      background-image: url("/assets/images/index-bg-line-5-desktop.png");
-      background-position: right calc(20% - 291px) bottom -210px
+      background-image:
+        url("/assets/images/index-bg-line-5-desktop.png"),
+        url("/assets/images/index-bg-line-4-desktop.png");
+      background-position:
+        right calc(20% - 291px) bottom -210px,
+        right calc(20% - -723px) bottom -63px;
     }
   }
 }
