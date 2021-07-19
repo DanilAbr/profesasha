@@ -1,5 +1,5 @@
 .article {
-  padding-top: 102px;
+  padding: 102px 0 0;
 }
 
 .article__content {
@@ -73,25 +73,15 @@
 }
 
 .article__category {
-  position: absolute;
-  z-index: 2;
-  top: 20px;
-  left: 12px;
   width: fit-content;
-  margin-top: 0;
-  margin-bottom: 0;
   padding: 2px 12px;
-  font-size: 7px;
-  line-height: 10px;
   font-weight: 700;
   color: $color_white;
   border-radius: 4px;
-  background-color: $color_orange;
+  background: $color_orange;
 
   @media (min-width: $tablet-width) {
     left: 22px;
-    font-size: 11px;
-    line-height: 15px;
   }
 
   @media (min-width: $desktop-width) {
@@ -114,11 +104,8 @@
 
 .article__text,
 .article__subtitle {
-  margin: 0;
   font-size: 12px;
   line-height: 16px;
-  font-weight: 300;
-  white-space: pre-wrap;
 
   @media (min-width: $tablet-width) {
     font-size: 15px;
