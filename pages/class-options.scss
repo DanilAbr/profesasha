@@ -1,5 +1,5 @@
 .class-options {
-  padding: 47px 0 120px;
+  padding: 47px 0 220px;
   background-image:
     url("/assets/images/bg-header-image-1.png"),
     url("/assets/images/options-bg-line-1-mobile.png"),
@@ -8,9 +8,9 @@
   background-repeat: no-repeat;
   background-position:
     left 83% top -112px,
-    left -23px top 35%,
-    right calc(50% - 40px) top 68%,
-    left -173px bottom;
+    left -23px top 33%,
+    right calc(50% - 40px) top 65%,
+    left -173px bottom 4%;
 
   @media (min-width: $tablet-width) {
     padding-top: 57px;
@@ -21,9 +21,9 @@
       url("/assets/images/options-bg-line-3-mobile.png");
     background-position:
       left 50% top -109px,
-      left -23px top 39%,
-      right -137px top 70%,
-      left -110px top 100%;
+      left -23px top 37%,
+      right -137px top 65%,
+      left -110px top 93%;
   }
 
   @media (min-width: $desktop-width) {
@@ -70,7 +70,7 @@
 }
 
 .class-options__list {
-  width: max-content;
+  width: fit-content;
   margin: 0 auto;
   padding: 0 7%;
 

@@ -1,8 +1,7 @@
 .index {
-  margin: 0 0 60px;
+  margin: 0 0 100px;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 100px;
     background-image: url("/assets/images/index-bg-line-3-tablet.png");
     background-repeat: no-repeat;
     background-position: right calc(20% - 320px) top 580px;

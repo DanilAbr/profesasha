@@ -1,9 +1,10 @@
 .course-info {
   padding: 28px 0 0;
+  margin: 0 0 90px;
 
   @media (min-width: $tablet-width) {
     max-width: 768px;
-    margin: 0 auto;
+    margin: 0 auto 90px;
     padding: 50px 0 0;
   }
 
@@ -190,7 +191,7 @@
 
 .course-info__button-back-wrap {
   width: max-content;
-  margin: 0 auto 30px;
+  margin: 0 auto;
 
   @media (min-width: $desktop-width) {
     display: none;

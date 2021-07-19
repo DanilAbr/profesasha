@@ -36,7 +36,6 @@ export default function BlogCard(props: Props) {
       <a className='blog-card' aria-label={ title }>
         <p className='blog-card__category'>{ category.name }</p>
         <h3 className='blog-card__title'>{ title }</h3>
-        <p className='blog-card__subtitle'>{ subtitle }</p>
         { img &&
           <img
             className='blog-card__image'
@@ -45,7 +44,9 @@ export default function BlogCard(props: Props) {
             alt={ title }
           />
         }
-        <div className='blog-card__text' dangerouslySetInnerHTML={{__html: sanitize(text)}} />
+        <p className='blog-card__subtitle'>{ subtitle }</p>
+
+        {/*<div className='blog-card__text' dangerouslySetInnerHTML={{__html: sanitize(text)}} />*/}
       </a>
     </Link>
   )
