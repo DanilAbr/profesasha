@@ -5,6 +5,8 @@ import { ArticleType } from '../../components/blog-card/blog-card';
 import ButtonBack from "../../components/atoms/button-back/button-back";
 import {useAppContext} from "../../context/AppContext";
 
+const sanitize = require('sanitize-html-react');
+
 export interface Props {
   articles: ArticleType[],
 }
@@ -19,6 +21,8 @@ export default function Article() {
   const currentArticle: ArticleType = articleById ? articleById : defaultArticle;
 
   const { category, img, title, text, subtitle } = currentArticle;
+
+  console.log(currentArticle);
 
   return (
     <DefaultPage pageModifier='article'>
@@ -53,9 +57,7 @@ export default function Article() {
             <p className='article__subtitle'>
               { subtitle }
             </p>
-            <p className='article__text'>
-              { text }
-            </p>
+            <div className='article__text' dangerouslySetInnerHTML={{__html: sanitize(text)}} />
           </div>
         </article>
         <div className='article__button-back'>
