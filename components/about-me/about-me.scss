@@ -18,21 +18,6 @@
     background-image: url("/assets/images/about-me-photo-bg-desktop.png");
     background-position: center 8px;
   }
-
-  &::before {
-    content: '';
-    position: absolute;
-    z-index: -1;
-    bottom: -245px;
-    left: -70px;
-    width: 350px;
-    height: 460px;
-    background: url("/assets/images/index-bg-line-8-mobile.png") center no-repeat;
-
-    @media (min-width: $tablet-width) {
-      display: none;
-    }
-  }
 }
 
 .about-me__content {
@@ -46,9 +31,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 1152px;
     max-width: 1152px;
-    padding: 0 500px 0 132px;
+    padding: 0 500px 0 107px;
   }
 }
 

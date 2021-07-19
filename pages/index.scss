@@ -1,7 +1,8 @@
 .index {
-  margin: 0 0 70px;
+  margin: 0 0 60px;
 
   @media (min-width: $tablet-width) {
+    margin: 0 0 100px;
     background-image: url("/assets/images/index-bg-line-3-tablet.png");
     background-repeat: no-repeat;
     background-position: right calc(20% - 320px) top 580px;
@@ -23,16 +24,17 @@
 }
 
 .index__button-options-wrap {
-  margin: 70px auto 0;
+  margin: 42px auto 0;
   padding: 0 7%;
 
   @media (min-width: $tablet-width) {
+    margin: 42px auto 0;
     width: 768px;
     padding: 0 365px 0 64px;
   }
 
   @media (min-width: $desktop-width) {
     width: 1152px;
-    padding: 0 555px 0 142px;
+    padding: 0 523px 0 117px;
   }
 }

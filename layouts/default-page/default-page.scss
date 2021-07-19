@@ -26,23 +26,18 @@
 
 .default-page--index {
   &::before {
+    background-image: url("/assets/images/index-bg-line-8-mobile.png");
+    background-repeat: no-repeat;
+    background-position: left calc(20% - 75px) bottom -26px;
+
     @media (min-width: $tablet-width) {
-      background-image:
-        url("/assets/images/index-bg-line-4-tablet.png"),
-        url("/assets/images/index-bg-line-5-tablet.png");
-      background-repeat: no-repeat;
-      background-position:
-        left calc(50% + 90px) bottom -30px,
-        left calc(20% - 130px) bottom
+      background-image: url("/assets/images/index-bg-line-5-tablet.png");
+      background-position: right calc(20% - 92px) bottom -42px;
     }
 
     @media (min-width: $desktop-width) {
-      background-image:
-        url("/assets/images/index-bg-line-4-desktop.png"),
-        url("/assets/images/index-bg-line-5-desktop.png");
-      background-position:
-        right calc(50% + 392px) bottom -90px,
-        right calc(20% - 291px) bottom -210px
+      background-image: url("/assets/images/index-bg-line-5-desktop.png");
+      background-position: right calc(20% - 291px) bottom -210px
     }
   }
 }
