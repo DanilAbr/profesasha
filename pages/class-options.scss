@@ -1,6 +1,5 @@
 .class-options {
-  padding-top: 47px;
-  padding-bottom: 120px;
+  padding: 47px 0 120px;
   background-image:
     url("/assets/images/bg-header-image-1.png"),
     url("/assets/images/options-bg-line-1-mobile.png"),
@@ -9,8 +8,8 @@
   background-repeat: no-repeat;
   background-position:
     left 83% top -112px,
-    left -23px top 883px,
-    right -137px top 66%,
+    left -23px top 35%,
+    right calc(50% - 40px) top 68%,
     left -173px bottom;
 
   @media (min-width: $tablet-width) {
@@ -22,9 +21,9 @@
       url("/assets/images/options-bg-line-3-mobile.png");
     background-position:
       left 50% top -109px,
-      left -23px top 589px,
-      right -137px top 61%,
-      left -110px top 96%;
+      left -23px top 39%,
+      right -137px top 70%,
+      left -110px top 100%;
   }
 
   @media (min-width: $desktop-width) {
@@ -36,18 +35,18 @@
       url("/assets/images/options-bg-line-3-mobile.png");
     background-position:
       left 50% top -254px,
-      left -4% top 36%,
-      right -10% top 64%,
-      left -10% top 96%;
+      left -4% top 39%,
+      right -10% top 71%,
+      left -10% top 99%;
   }
 
   @media (min-width: $desktop-width-xl) {
     margin: 0 auto;
     background-position:
       left 50% top -254px,
-      left 10% top 36%,
-      right 10% top 64%,
-      left 10% top 96%;
+      left 10% top 37%,
+      right 10% top 69%,
+      left 10% top 99%;
   }
 }
 
@@ -55,28 +54,24 @@
   max-width: 330px;
   margin: 0 auto 90px;
   font-size: 40px;
-  line-height: 37px;
-  font-weight: 700;
+  line-height: 1;
   text-align: center;
   color: $color_black_1;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 104px;
     font-size: 50px;
-    line-height: 91%;
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 157px;
     font-size: 72px;
-    line-height: 95%;
   }
 }
 
 .class-options__list {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  width: max-content;
+  margin: 0 auto;
   padding: 0 7%;
 
   @media (min-width: $tablet-width) {
@@ -84,30 +79,14 @@
   }
 }
 
-.class-options__item {
-  margin: 0 auto 97px;
+.class-options__item:not(:last-child) {
+  margin: 0 0 97px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 73px;
+    margin: 0 0 73px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 128px;
-  }
-
-  &:nth-child(2) {
-    margin-bottom: 200px;
-
-    @media (min-width: $tablet-width) {
-      margin-bottom: 238px;
-    }
-
-    @media (min-width: $desktop-width) {
-      margin-bottom: 169px;
-    }
-  }
-
-  &:last-child {
-    margin-bottom: 0;
+    margin: 0 0 128px;
   }
 }
