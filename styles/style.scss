@@ -2,6 +2,7 @@
   "fonts",
   "variables",
   "global",
+
   "components/atoms/button-primary/button-primary",
   "components/atoms/button-secondary/button-secondary",
   "components/atoms/page-down-button/page-down-button",
@@ -9,7 +10,6 @@
   "components/atoms/filter/filter",
   "components/atoms/mail-display/mail-display",
   "components/atoms/pagination/pagination",
-  "layouts/default-page/default-page",
 
   "components/main-nav/main-nav",
   "components/appointment-modal/appointment-modal",
@@ -20,8 +20,11 @@
   "components/page-header/page-header",
   "components/blog-card/blog-card",
   "components/page-loader/page-loader",
-  "../pages/class-options",
-  "../pages/blog",
-  "pages/article/article",
+
+  "layouts/default-page/default-page",
+
+  "pages/index",
+  "pages/class-options",
   "pages/course-info/course-info",
-  "../pages/index";
+  "pages/blog",
+  "pages/article/article";
