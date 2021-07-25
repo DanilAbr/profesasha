@@ -46,9 +46,6 @@
   min-height: 200px;
   margin: 0 0 33px;
   font-size: 15px;
-  border-radius: 10px;
-  background: $color_pink;
-  box-shadow: 0 0 10px 0 rgba($color_pink, .8);
 
   @media (min-width: 375px) {
     min-height: auto;
@@ -69,7 +66,7 @@
 .blog__filter {
   display: flex;
   justify-content: flex-end;
-  margin-bottom: 32px;
+  margin: 0 0 32px;
 
   @media (min-width: $tablet-width) {
     margin: 0 0 16px;
@@ -174,19 +171,3 @@
     }
   }
 }
-//  @media (min-width: $desktop-width) {
-//    background-image:
-//      url("/assets/images/bg-header-image-desktop-1.png"),
-//      url("/assets/images/blog-bg-line-1-tablet.png"),
-//      url("/assets/images/blog-bg-line-2-tablet.png"),
-//      url("/assets/images/blog-bg-line-3-desktop.png"),
-//      url("/assets/images/blog-bg-line-5-desktop.png"),
-//      url("/assets/images/blog-bg-line-4-desktop.png");
-//    background-position:
-//      left calc(50% + 24px) top -272px,
-//      left calc(20% - 487px) top 425px,
-//      right calc(20% - 227px) top 916px,
-//      left calc(20% - 214px) top 1358px,
-//      left calc(20% - 163px) top 1709px,
-//      right calc(20% - 222px) top 1879px;
-//  }

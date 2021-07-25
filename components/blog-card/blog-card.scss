@@ -43,7 +43,7 @@
   background: $color_orange;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 15px;
+    margin: 0 0 15px;
     padding: 4px 12px 2px;
   }
 
@@ -55,8 +55,6 @@
 .blog-card__title {
   min-height: 50px;
   margin: 0 0 10px;
-  font-size: 17px;
-  line-height: 25px;
   font-weight: 700;
 }
 

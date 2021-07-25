@@ -59,12 +59,12 @@
   color: $color_black_1;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 104px;
+    margin: 0 auto 104px;
     font-size: 50px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 157px;
+    margin: 0 auto 157px;
     font-size: 72px;
   }
 }

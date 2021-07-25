@@ -1,93 +1,78 @@
 .article {
-  padding: 102px 0 0;
+  padding: 102px 0 70px;
 }
 
 .article__content {
-  max-width: 414px;
-  margin: 0 auto 40px;
-  padding: 0 19px;
+  padding: 0 3%;
+  max-width: 520px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    width: 520px;
-    max-width: 100%;
     padding: 0;
   }
 
   @media (min-width: $desktop-width) {
-    width: 709px;
+    max-width: 709px;
   }
 }
 
 .article__item {
   position: relative;
-  padding: 34px 11px 20px;
+  padding: 8% 4%;
   border-radius: 15px;
-  background-color: $color_pink;
+  background: $color_pink;
   box-shadow: 1px 4px 17px 0 rgba($color_black, .25);
 
   @media (min-width: $tablet-width) {
-    padding: 48px 22px;
+    padding: 38px 25px;
     border-radius: 20px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 55px 38px;
+    padding: 36px 40px;
   }
 }
 
 .article__title {
-  margin-top: 0;
-  margin-bottom: 17px;
-  font-size: 30px;
-  line-height: 41px;
-  font-weight: 700;
+  margin: 0 0 17px;
+  font-size: 25px;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 38px;
-    font-size: 24px;
-    line-height: 33px;
+    margin: 0 0 27px;
+    text-align: left;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 26px;
     font-size: 30px;
-    line-height: 41px;
   }
 }
 
 .article__image-wrapper {
   position: relative;
   z-index: 1;
-  margin-bottom: 34px;
-  padding-bottom: 44%;
+  margin: 0 0 34px;
+  padding: 0 0 44%;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 27px;
-    padding-bottom: 65%;
+    margin: 0 0 27px;
+    padding: 0 0 65%;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 38px;
-    padding-bottom: 48%;
+    margin: 0 0 38px;
+    padding: 0 0 48%;
   }
 }
 
 .article__category {
   width: fit-content;
   padding: 2px 12px;
+  margin: 0 0 13px;
   font-weight: 700;
   color: $color_white;
   border-radius: 4px;
   background: $color_orange;
-
-  @media (min-width: $tablet-width) {
-    left: 22px;
-  }
-
-  @media (min-width: $desktop-width) {
-    top: 27px;
-    left: 38px;
-  }
 }
 
 .article__image {
@@ -102,31 +87,11 @@
   object-position: center;
 }
 
-.article__text,
 .article__subtitle {
-  font-size: 12px;
-  line-height: 16px;
-
-  @media (min-width: $tablet-width) {
-    font-size: 15px;
-    line-height: 20px;
-  }
-
-  @media (min-width: $desktop-width) {
-    font-size: 18px;
-    line-height: 24px;
-  }
-}
-
-.article__subtitle {
-  margin-bottom: 1.4em;
+  margin: 0 0 1.4em;
 }
 
 .article__button-back {
   max-width: fit-content;
-  margin: 0 auto;
-}
-
-.article__button-back--top {
-  margin-bottom: 30px;
+  margin: 50px auto 0;
 }

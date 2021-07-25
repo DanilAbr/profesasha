@@ -27,8 +27,7 @@
 }
 
 .appointment-modal__title {
-  margin-top: 0;
-  margin-bottom: 76px;
+  margin: 0 0 76px;
   font-size: 40px;
   line-height: 54px;
   font-weight: 700;
@@ -36,11 +35,7 @@
 }
 
 .appointment-modal__note {
-  margin-top: 0;
-  margin-bottom: 70px;
-  font-size: 17px;
-  line-height: 23px;
-  font-weight: 600;
+  margin: 0 0 70px;
   text-align: center;
 }
 
@@ -62,7 +57,7 @@
 .appointment-modal__message-input {
   display: block;
   width: 100%;
-  margin-bottom: 63px;
+  margin: 0 0 63px;
   padding: 4px 0;
   font-size: 15px;
   line-height: 20px;
@@ -161,9 +156,7 @@
 }
 
 .appointment-modal__succeed-message {
-  font-size: 18px;
-  line-height: 22px;
-  font-weight: 600;
+  font-weight: 700;
   text-align: center;
   color: $color_black_1;
 }
