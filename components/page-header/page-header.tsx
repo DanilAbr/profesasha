@@ -15,6 +15,7 @@ export default function PageHeader() {
 
   useEffect(() => {
     const body = document.querySelector('body');
+    console.log(isMenuOpened)
     if (body && body.clientWidth < 1023) {
       body.style.overflow = isMenuOpened ? 'hidden' : 'auto';
     }
