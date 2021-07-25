@@ -36,16 +36,8 @@
     border-color: $color_red;
 
     .main-nav__svg {
-      margin: 0 0 -5px;
+      margin-right: -5px;
       fill: $color_red;
     }
-  }
-
-  &:active {
-    opacity: .8;
-  }
-
-  &__button-to-form-wrap {
-
   }
 }
