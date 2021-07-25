@@ -1,4 +1,4 @@
-import Document, {Html, Head, Main, NextScript, DocumentContext} from 'next/document'
+import Document, { DocumentContext, Head, Html, Main, NextScript } from 'next/document'
 
 class MyDocument extends Document {
   static async getInitialProps(ctx: DocumentContext) {
@@ -8,7 +8,7 @@ class MyDocument extends Document {
 
   render() {
     return (
-      <Html lang='ru-RU' >
+      <Html lang="ru-RU">
         <Head>
           <link rel="shortcut icon" href="/favicon.png" type="image/png" />
         </Head>

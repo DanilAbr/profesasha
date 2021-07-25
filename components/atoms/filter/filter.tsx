@@ -1,19 +1,19 @@
 import { useState } from 'react';
 import useEscKeyListener from '../../../hooks/useEscKeyListener';
-import useNonTargetMouseClickListener from "../../../hooks/useNonTargetMouseClickListener";
+import useNonTargetMouseClickListener from '../../../hooks/useNonTargetMouseClickListener';
 
 interface Props {
   initialValue: string,
   values: string[],
-  onFilterChange: ( value: string ) => void,
+  onFilterChange: (value: string) => void,
 }
 
-export default function Filter(props: Props) {
+export default function Filter(props:Props) {
   const { values, onFilterChange, initialValue } = props;
   const [ activeValue, setActiveValue ] = useState(initialValue);
   const [ isOpen, setOpenStatus ] = useState(false);
 
-  function handleValueChange(value: string): void {
+  function handleValueChange(value:string):void {
     onFilterChange(value);
     setActiveValue(value);
     setOpenStatus(false);
@@ -25,32 +25,27 @@ export default function Filter(props: Props) {
   return (
     <div className={ `filter ${ isOpen ? 'filter--opened' : '' }` }>
       <button
-        className='filter__toggle-button'
-        aria-label={ `${ isOpen ? 'закрыть' : 'открыть'} фильтр` }
-        onClick={ () => setOpenStatus(( prev ) => !prev ) }
+        className="filter__toggle-button"
+        aria-label={ `${ isOpen ? 'закрыть' : 'открыть' } фильтр` }
+        onClick={ () => setOpenStatus((prev) => !prev) }
       >
         { activeValue }
-        <svg width='16' height='15'>
-          <use xlinkHref='#icon-toggle-arrow' />
+        <svg width="16" height="15">
+          <use xlinkHref="#icon-toggle-arrow" />
         </svg>
       </button>
-      <ul className='filter__options-list'>
+      <ul className="filter__options-list">
 
-        { values.map(( value ) => {
-          return (
-            <li className='filter__option-item' key={ value }>
-              <button
-                className={ `filter__option-picker ${
-                  value === activeValue ? 'filter__option-picker--active' : ''
-                }`}
-                onClick={ () => handleValueChange(value) }
-              >
-                { value }
-              </button>
-            </li>
-          )
-        }) }
-
+        { values.map((value) => (
+          <li className="filter__option-item" key={ value }>
+            <button
+              className={ `filter__option-picker ${ value === activeValue ? 'filter__option-picker--active' : '' }` }
+              onClick={ () => handleValueChange(value) }
+            >
+              { value }
+            </button>
+          </li>
+        )) }
       </ul>
     </div>
   )

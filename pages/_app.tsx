@@ -8,10 +8,11 @@ function MyApp({ Component, pageProps }: AppProps) {
     <AppWrapper>
       <Head>
         <title>Александра Абрамова - преподаватель испанского языка</title>
-        <meta name='viewport' content='initial-scale=1.0, width=device-width' />
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-      <Component {...pageProps} />
+      <Component { ...pageProps } />
     </AppWrapper>
   )
 }
+
 export default MyApp

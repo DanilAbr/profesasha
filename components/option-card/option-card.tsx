@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from 'next/link';
 import { CourseType } from '../../pages/course-info/[id]';
 
 const sanitize = require('sanitize-html-react');
@@ -9,8 +9,8 @@ interface Props {
 }
 
 export default function OptionCard(props: Props) {
-  const {data, isReversed} = props;
-  const {id, icon, description, annotation, img, title} = data;
+  const { data, isReversed } = props;
+  const { id, icon, description, img, title } = data;
 
   return (
     <div className={ `option-card ${ isReversed ? 'option-card--reversed' : '' }` }>
@@ -19,7 +19,7 @@ export default function OptionCard(props: Props) {
         width={ icon.width }
         height={ icon.height }
       >
-        <use xlinkHref={ `#${ icon.id }` }/>
+        <use xlinkHref={ `#${ icon.id }` } />
       </svg>
       <div className="option-card__image-wrapper">
         <picture>
@@ -32,7 +32,7 @@ export default function OptionCard(props: Props) {
             srcSet={ `${ img.default.tablet } 1x, ${ img.retina.tablet } 2x` }
           />
           <img
-            className={ `option-card__image option-card__image--${ id  }` }
+            className={ `option-card__image option-card__image--${ id }` }
             src={ img.default.mobile }
             srcSet={ `${ img.retina.mobile } 2x` }
             alt={ img.alt }
@@ -41,11 +41,9 @@ export default function OptionCard(props: Props) {
       </div>
       <div className="option-card__content">
         <h2 className="option-card__title">{ title }</h2>
-        <p className="option-card__description" dangerouslySetInnerHTML={{__html: sanitize(description)}} />
+        <p className="option-card__description" dangerouslySetInnerHTML={ { __html: sanitize(description) } } />
         <Link href={ `/course-info/${ id }` }>
-          <a className="option-card__more-button button-secondary">
-            Подробнее о курсе
-          </a>
+          <a className="option-card__more-button button-secondary">Подробнее о курсе</a>
         </Link>
       </div>
     </div>

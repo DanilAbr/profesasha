@@ -1,4 +1,4 @@
-import { useRouter } from "next/router";
+import { useRouter } from 'next/router';
 
 export default function ButtonBack() {
   const router = useRouter();
@@ -6,10 +6,10 @@ export default function ButtonBack() {
   return (
     <a
       className="button-back"
-      onClick={() => router.back()}
+      onClick={ () => router.back() }
     >
       <svg className="button-back__icon" width="8" height="88" fill="none">
-        <use xlinkHref="#icon-long-arrow"></use>
+        <use xlinkHref="#icon-long-arrow" />
       </svg>
       Назад
     </a>

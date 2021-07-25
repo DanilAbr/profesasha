@@ -1,7 +1,7 @@
-import MainNav from "../main-nav/main-nav";
-import {useEffect, useState} from 'react';
+import MainNav from '../main-nav/main-nav';
+import { useEffect, useState } from 'react';
 import useEscKeyListener from '../../hooks/useEscKeyListener';
-import useNonTargetMouseClickListener from "../../hooks/useNonTargetMouseClickListener";
+import useNonTargetMouseClickListener from '../../hooks/useNonTargetMouseClickListener';
 
 export default function PageHeader() {
   const [ isMenuOpened, setMenuStatus ] = useState(false);
@@ -18,22 +18,23 @@ export default function PageHeader() {
     if (body && body.clientWidth < 1023) {
       body.style.overflow = isMenuOpened ? 'hidden' : 'auto';
     }
-  }, [isMenuOpened]);
+  }, [ isMenuOpened ]);
 
   return (
     <header className="page-header">
-      <div className={ `page-header__menu-pre-wrapper ${!isMenuOpened ? "page-header__menu-pre-wrapper--hide" : ""}` }>
+      <div
+        className={ `page-header__menu-pre-wrapper ${ !isMenuOpened ? 'page-header__menu-pre-wrapper--hide' : '' }` }>
         <div className="page-header__menu-wrapper">
-          <MainNav onItemClick={ changeMenuStatus }/>
+          <MainNav onItemClick={ changeMenuStatus } />
         </div>
       </div>
 
       <div className="page-header__button-wrapper">
         <button
-          className={ `page-header__toggle-menu-button ${!isMenuOpened ? "page-header__toggle-menu-button--open-menu" : ""}` }
+          className={ `page-header__toggle-menu-button ${ !isMenuOpened ? 'page-header__toggle-menu-button--open-menu' : '' }` }
           onClick={ changeMenuStatus }
           type="button"
-          aria-label={ `${isMenuOpened ? "Закрыть меню" : "Открыть меню"}` }
+          aria-label={ `${ isMenuOpened ? 'Закрыть меню' : 'Открыть меню' }` }
         />
       </div>
     </header>

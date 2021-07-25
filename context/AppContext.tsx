@@ -1,7 +1,7 @@
-import {createContext, ReactNode, useContext, useEffect, useReducer} from 'react';
-import { ArticleType } from "../components/blog-card/blog-card";
+import { createContext, ReactNode, useContext, useReducer } from 'react';
+import { ArticleType } from '../components/blog-card/blog-card';
 
-type PropertiesType<T> = T extends {[key: string]: infer U} ? U : never;
+type PropertiesType<T> = T extends { [key: string]: infer U } ? U : never;
 type Action = ReturnType<PropertiesType<typeof ActionCreator>>
 
 interface Props {
