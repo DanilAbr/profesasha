@@ -1,9 +1,9 @@
 import { useRouter } from 'next/router';
-import { useState } from 'react';
 import DefaultPage from '../../layouts/default-page/default-page';
 import ButtonBack from '../../components/atoms/button-back/button-back';
-import AppointmentModal from '../../components/appointment-modal/appointment-modal';
 import data from '../../staticData/class-options';
+import { ActionCreator, AppContext } from '../../context/AppContext';
+import { useContext } from 'react';
 
 const sanitize = require('sanitize-html-react');
 
@@ -34,7 +34,7 @@ export interface CourseType {
 
 export default function CourseInfo() {
   const { query } = useRouter();
-  const [ isModalOpened, setModalStatus ] = useState(false);
+  const { dispatch } = useContext(AppContext);
 
   const courseId = typeof query.id === 'string' ? Number(query.id) : 0;
   const courseById = data.options.find(( { id } ) => id === courseId );
@@ -42,10 +42,6 @@ export default function CourseInfo() {
   const currentCourse: CourseType = courseById ? courseById : defaultCourse;
 
   const { img, description, icon, title }  = currentCourse;
-
-  function handleModalClose() {
-    setModalStatus(false);
-  }
 
   return (
     <DefaultPage pageModifier='course-info'>
@@ -100,7 +96,7 @@ export default function CourseInfo() {
 
           <button
             className='course-info__appointment-button button-primary js-appointment-button'
-            onClick={ () => setModalStatus(true) }
+            onClick={ () => dispatch(ActionCreator.openForm()) }
           >
             Записаться на курс
           </button>
@@ -109,12 +105,6 @@ export default function CourseInfo() {
         <div className='course-info__button-back-wrap'>
           <ButtonBack />
         </div>
-
-        <AppointmentModal
-          isShowed={ isModalOpened }
-          onCloseButtonClick={ handleModalClose }
-        />
-
       </div>
     </DefaultPage>
   )

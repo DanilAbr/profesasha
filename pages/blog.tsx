@@ -40,7 +40,7 @@ function Blog(props:Props) {
     }
   }
 
-  function handlePageChoose(pageNumber:number):void {
+  function handlePageChoose(pageNumber: number): void {
     const startIndex = (pageNumber - 1) * CARDS_TO_SHOW;
     setShowedArticles(activeArticles.slice(startIndex, CARDS_TO_SHOW + startIndex));
 
@@ -78,12 +78,12 @@ function Blog(props:Props) {
           </ul>
 
           { activeArticles.length > CARDS_TO_SHOW &&
-          <div className="blog__pagination">
-            <Pagination
-              pagesCount={ Math.ceil(activeArticles.length / CARDS_TO_SHOW) }
-              onPageLinkClick={ handlePageChoose }
-            />
-          </div>
+            <div className="blog__pagination">
+              <Pagination
+                pagesCount={ Math.ceil(activeArticles.length / CARDS_TO_SHOW) }
+                onPageLinkClick={ handlePageChoose }
+              />
+            </div>
           }
         </div>
       </div>

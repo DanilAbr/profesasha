@@ -1,4 +1,4 @@
-.main-nav__item:not(:last-child) {
+.main-nav__item {
   margin: 0 0 56px;
 
   @media (orientation: landscape) and (max-height: 400px) {
@@ -16,13 +16,17 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
   padding: 20px 0 0 2px;
+  font: inherit;
   font-size: 24px;
   line-height: 33px;
   font-weight: 700;
   text-decoration: none;
   color: $color_black_1;
+  border: 0;
   border-bottom: 1px solid $color_black;
+  background: transparent;
   transition: .1s;
 
   &:hover,
@@ -39,5 +43,9 @@
 
   &:active {
     opacity: .8;
+  }
+
+  &__button-to-form-wrap {
+
   }
 }

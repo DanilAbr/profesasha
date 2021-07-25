@@ -12,6 +12,7 @@ type ArticlesType = [] | ArticleType[];
 
 interface AppState {
   articles: ArticlesType,
+  isFormOpened: boolean,
 }
 
 export interface Context {
@@ -21,6 +22,7 @@ export interface Context {
 
 const sharedState: AppState = {
   articles: [],
+  isFormOpened: false,
 }
 
 export const AppContext = createContext<Context>({
@@ -29,7 +31,9 @@ export const AppContext = createContext<Context>({
 });
 
 const ActionType = {
-  SET_ARTICLES: 'SET_ARTICLES'
+  SET_ARTICLES: 'SET_ARTICLES',
+  OPEN_FORM: 'OPEN-FORM',
+  CLOSE_FORM: 'CLOSE_FORM',
 } as const
 
 export const ActionCreator = {
@@ -38,19 +42,34 @@ export const ActionCreator = {
       type: ActionType.SET_ARTICLES,
       payload: payload
     } as const
-  }
+  },
+  openForm() {
+    return {
+      type: ActionType.OPEN_FORM,
+    }
+  },
+  closeForm() {
+    return {
+      type: ActionType.CLOSE_FORM,
+    }
+  },
 }
 
 function reducer(state: AppState, action: Action) {
   switch ( action.type ) {
     case ActionType.SET_ARTICLES:
-      return { articles: action.payload }
+      return { ...state, articles: action.payload }
+    case ActionType.OPEN_FORM:
+      return { ...state, isFormOpened: true };
+    case ActionType.CLOSE_FORM:
+      return { ...state, isFormOpened: false };
     default:
       return state;
   }
 }
 
 export function AppWrapper({ children }: Props) {
+  // @ts-ignore
   const [ state, dispatch ] = useReducer(reducer, sharedState);
 
   return (

@@ -1,27 +1,27 @@
-import { FormEvent, useEffect, useRef, useState } from 'react';
+import { FormEvent, useContext, useEffect, useRef, useState } from 'react';
 import useEscKeyListener from '../../hooks/useEscKeyListener';
+import { ActionCreator, AppContext } from '../../context/AppContext';
 
-interface Props {
-  isShowed:boolean,
-  onCloseButtonClick:() => void,
-}
-
-export default function AppointmentModal(props:Props) {
-  const { isShowed, onCloseButtonClick } = props;
-
+export default function AppointmentModal() {
   const nameInput = useRef<HTMLInputElement>(null);
   const [ userName, setUserName ] = useState('');
   const [ email, setEmail ] = useState('');
   const [ message, setMessage ] = useState('');
   const [ isMessageSent, setMessageSentStatus ] = useState(false);
 
+  const { state: { isFormOpened }, dispatch } = useContext(AppContext);
+
   useEscKeyListener(onCloseButtonClick);
 
   useEffect(() => {
-    if (nameInput.current && isShowed) {
+    if (nameInput.current && isFormOpened) {
       nameInput.current.focus();
     }
-  }, [ isShowed ]);
+  }, [ isFormOpened ]);
+
+  function onCloseButtonClick() {
+    dispatch(ActionCreator.closeForm());
+  }
 
   function showSucceedMessage() {
     setMessageSentStatus(true);
@@ -53,14 +53,14 @@ export default function AppointmentModal(props:Props) {
     }
   }
 
-  function resizeTextarea(evt:any) {
+  function resizeTextarea(evt: any) {
     const textarea = evt.target;
     textarea.style.height = '';
     textarea.style.height = textarea.scrollHeight + 4 + 'px'
   }
 
   return (
-    <section className={ `appointment-modal ${ !isShowed ? 'appointment-modal--closed' : '' }` }>
+    <section className={ `appointment-modal ${ !isFormOpened ? 'appointment-modal--closed' : '' }` }>
       { !isMessageSent && (
         <div className="appointment-modal__container">
           <h2 className="appointment-modal__title">Запишитесь</h2>

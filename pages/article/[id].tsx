@@ -8,7 +8,7 @@ import { useAppContext } from '../../context/AppContext';
 const sanitize = require('sanitize-html-react');
 
 export interface Props {
-  articles:ArticleType[],
+  articles: ArticleType[],
 }
 
 export default function Article() {
@@ -17,8 +17,8 @@ export default function Article() {
 
   const articleId = typeof query.id === 'string' ? query.id : 1;
   const articleById = articles.find(({ id }) => id === articleId);
-  const defaultArticle:ArticleType = mockArticle;
-  const currentArticle:ArticleType = articleById ? articleById : defaultArticle;
+  const defaultArticle: ArticleType = mockArticle;
+  const currentArticle: ArticleType = articleById ? articleById : defaultArticle;
 
   const { category, img, title, text, subtitle } = currentArticle;
 
@@ -49,9 +49,7 @@ export default function Article() {
                 </picture>
               </div>
             }
-            <p className="article__subtitle">
-              { subtitle }
-            </p>
+            <p className="article__subtitle">{ subtitle }</p>
             <div className="article__text" dangerouslySetInnerHTML={ { __html: sanitize(text) } } />
           </div>
         </article>
