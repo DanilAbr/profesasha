@@ -15,17 +15,13 @@ export default function PageHeader() {
 
   useEffect(() => {
     const body = document.querySelector('body');
-    console.log('isMenuOpened', isMenuOpened);
-    console.log('body ДО', body);
-    // @ts-ignore
-    console.log('body.clientWidth', body.clientWidth);
-    console.log('body && body.clientWidth < 1023', body && body.clientWidth < 1023)
     if (body) {
-      if (body.clientWidth < 1023) {
-        body.style.overflow = isMenuOpened ? 'hidden' : 'auto';
+      if (body.clientWidth < 1000) {
+          body.style.overflow = isMenuOpened ? 'hidden' : 'auto';
       } else {
         body.style.overflow = 'auto';
       }
+
     }
   }, [ isMenuOpened ]);
 
