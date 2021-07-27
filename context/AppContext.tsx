@@ -32,7 +32,7 @@ export const AppContext = createContext<Context>({
 
 const ActionType = {
   SET_ARTICLES: 'SET_ARTICLES',
-  OPEN_FORM: 'OPEN-FORM',
+  OPEN_FORM: 'OPEN_FORM',
   CLOSE_FORM: 'CLOSE_FORM',
 } as const
 
@@ -58,7 +58,7 @@ export const ActionCreator = {
 function reducer(state: AppState, action: Action) {
   switch ( action.type ) {
     case ActionType.SET_ARTICLES:
-      return { ...state, articles: action.payload }
+      return { ...state, articles: action.payload };
     case ActionType.OPEN_FORM:
       return { ...state, isFormOpened: true };
     case ActionType.CLOSE_FORM:

@@ -1,5 +1,7 @@
 import Link from 'next/link';
 
+const sanitize = require('sanitize-html-react');
+
 export interface ArticleType {
   id: number,
   category: {
@@ -33,7 +35,7 @@ export default function BlogCard(props: Props) {
     <Link href={ `/article/${ id }` }>
       <a className="blog-card" aria-label={ title }>
         <p className="blog-card__category">{ category.name }</p>
-        <h3 className="blog-card__title">{ title }</h3>
+        <h3 className="blog-card__title" dangerouslySetInnerHTML={ { __html: sanitize(title) } } />
         { img &&
           <img
             className="blog-card__image"
@@ -42,7 +44,7 @@ export default function BlogCard(props: Props) {
             alt={ title }
           />
         }
-        <p className="blog-card__subtitle">{ subtitle }</p>
+        <p className="blog-card__subtitle" dangerouslySetInnerHTML={ { __html: sanitize(subtitle) } } />
       </a>
     </Link>
   )

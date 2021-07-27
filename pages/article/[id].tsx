@@ -28,7 +28,7 @@ export default function Article() {
         <article className="article__content">
           <div className="article__item">
             <p className="article__category">{ category.name }</p>
-            <h1 className="article__title">{ title }</h1>
+            <h1 className="article__title" dangerouslySetInnerHTML={ { __html: sanitize(title) } } />
             { img &&
               <div className="article__image-wrapper">
                 <picture>
@@ -49,7 +49,7 @@ export default function Article() {
                 </picture>
               </div>
             }
-            <p className="article__subtitle">{ subtitle }</p>
+            <p className="article__subtitle" dangerouslySetInnerHTML={ { __html: sanitize(subtitle) } } />
             <div className="article__text" dangerouslySetInnerHTML={ { __html: sanitize(text) } } />
           </div>
         </article>

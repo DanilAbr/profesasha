@@ -91,6 +91,40 @@
   margin: 0 0 1.4em;
 }
 
+.article__text {
+  ul {
+    padding: 5px 0;
+  }
+
+  ul:last-child {
+    padding-bottom: 0;
+  }
+
+  h4 {
+    margin: 0;
+  }
+
+  h4 + p {
+    margin: 13px 0 0;
+  }
+
+  li:not(:last-child) {
+    margin: 0 0 17px;
+    padding-bottom: 13px;
+    border-bottom: 1px solid $color_pink_1;
+  }
+
+  li p + p {
+    margin: 13px 0 0;
+  }
+
+  em {
+    display: block;
+    margin-top: 25px;
+    font-size: 14px;
+  }
+}
+
 .article__button-back {
   max-width: fit-content;
   margin: 50px auto 0;

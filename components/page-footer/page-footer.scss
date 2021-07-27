@@ -47,6 +47,11 @@
     opacity: .8;
     background-color: $color_yellow;
   }
+
+  svg {
+    width: 25px;
+    height: 25px;
+  }
 }
 
 .page-footer__profi-link {
@@ -67,7 +72,7 @@
 
 .page-footer__copyright {
   margin: 0;
-  font-size: 13px;
+  font-size: 14px;
   line-height: 120%;
   color: #000;
   background-color: $color_pink;

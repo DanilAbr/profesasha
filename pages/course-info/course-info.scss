@@ -131,8 +131,7 @@
 
 .course-info__price {
   margin: 0 0 29px;
-  font-size: 13px;
-  line-height: 17px;
+  font-size: 15px;
 
   @media (min-width: $desktop-width) {
     margin: 0 0 40px;
@@ -168,6 +167,8 @@
 }
 
 .course-info__price-notice {
+  font-size: 14px;
+
   @media (min-width: $tablet-width) {
     padding-left: 4px;
   }
