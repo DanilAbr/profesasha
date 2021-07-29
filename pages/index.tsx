@@ -4,7 +4,6 @@ import FirstScreen from '../components/first-screen/first-screen';
 import Link from 'next/link';
 import PageDownButton from '../components/atoms/page-down-button/page-down-button';
 import { useEffect, useState } from 'react';
-import Head from 'next/head';
 import { useInView } from 'react-intersection-observer';
 
 export default function Home() {
@@ -29,17 +28,6 @@ export default function Home() {
 
   return (
     <DefaultPage pageModifier="index">
-      <Head>
-        <meta
-          name="keywords"
-          content={ `уроки испанского онлайн, преподаватель испанского языка,  репетитор по испанскому языку, испанский онлайн, подготовка к DELE,  обучение разговорному испанскому, экзаменатор DELE, испанский язык по скайпу` }
-        />
-        <meta
-          name="description"
-          content={ `Индивидуальные занятия испанским языком. Подготовка к DELE с аккредитованным Институтом Сервантеса экзаменатором.` }
-        />
-      </Head>
-
       <PageDownButton
         onClick={ scrollDown }
         shouldDisappear={ isAboutMeViewed }
