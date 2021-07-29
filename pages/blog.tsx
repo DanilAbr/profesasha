@@ -9,7 +9,7 @@ interface Props {
   articles:ArticleType[];
 }
 
-const CARDS_TO_SHOW = 6;
+const CARDS_TO_SHOW = 8;
 
 function Blog(props:Props) {
   const { articles } = props;
