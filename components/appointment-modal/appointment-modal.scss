@@ -8,7 +8,7 @@
   max-width: 100%;
   height: 100vh;
   padding: 1% 0;
-  background-color: rgba(#000, .2);
+  background: rgba(#000, .2);
   overflow: auto;
 }
 
@@ -23,7 +23,7 @@
   margin: auto;
   padding: 54px 35px 60px;
   border-radius: 5px;
-  background-color: $color_pink;
+  background: $color_pink;
 }
 
 .appointment-modal__title {
@@ -66,7 +66,7 @@
   border: 0;
   border-bottom: 1px solid $color_black_2;
   outline: none;
-  background-color: transparent;
+  background: transparent;
 
   &:hover,
   &:focus {
@@ -153,7 +153,7 @@
   margin: auto;
   padding: 2em;
   border-radius: 5px;
-  background-color: $color_pink;
+  background: $color_pink;
 }
 
 .appointment-modal__succeed-message {

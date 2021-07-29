@@ -36,16 +36,16 @@
   height: 30px;
   border-radius: 9px;
   outline: none;
-  background-color: $color_pink;
+  background: $color_pink;
 
   &:hover,
   &:focus {
-    background-color: $color_yellow;
+    background: $color_yellow;
   }
 
   &:active {
     opacity: .8;
-    background-color: $color_yellow;
+    background: $color_yellow;
   }
 
   svg {
@@ -75,7 +75,7 @@
   font-size: 14px;
   line-height: 120%;
   color: #000;
-  background-color: $color_pink;
+  background: $color_pink;
 
   @media ($tablet-width) {
     margin-left: 20px;

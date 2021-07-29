@@ -16,12 +16,12 @@
 
   &:hover,
   &:focus {
-    background-color: $color_yellow;
+    background: $color_yellow;
   }
 
   &:active {
     opacity: .8;
-    background-color: $color_yellow;
+    background: $color_yellow;
   }
 
   & svg {

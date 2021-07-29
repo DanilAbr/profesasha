@@ -23,7 +23,7 @@
   color: inherit;
   white-space: nowrap;
   border: none;
-  background-color: $color_pink;
+  background: $color_pink;
 
   &:hover,
   &:focus {
@@ -51,7 +51,7 @@
   padding: 14px 20px 4px;
   opacity: 0;
   border-radius: 7px;
-  background-color: $color_pink;
+  background: $color_pink;
   box-shadow: 0 4px 4px 0 rgba($color_black, .25);
   transform: translateY(100%) scale(1, 0);
   transform-origin: center top;
@@ -68,7 +68,7 @@
   text-align: left;
   border: none;
   border-top: 1px solid rgba($color_black, .15);
-  background-color: $color_pink;
+  background: $color_pink;
 
   &:hover,
   &:focus {

@@ -132,7 +132,7 @@
       left: calc(50% - 31px / 2);
       width: 31px;
       height: 2px;
-      background-color: $color_black_1;
+      background: $color_black_1;
     }
 
     @media (min-width: $desktop-width) {
