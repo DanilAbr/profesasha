@@ -18,6 +18,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           name="description"
           content="Индивидуальные занятия испанским языком. Подготовка к DELE с аккредитованным Институтом Сервантеса экзаменатором."
         />
+        <meta name="google-site-verification" content="439QefqYxXhNGfC-AAE3o0uoI4sOWgmhESqLWOdtcug" />
       </Head>
       <Component { ...pageProps } />
     </AppWrapper>
