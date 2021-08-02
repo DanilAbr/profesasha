@@ -1,6 +1,4 @@
 export function PageLoader() {
-  const numbers = [ ...Array(18).keys() ];
-
   return (
     <div className="page-loader">
       <div className="page-loader__book">
@@ -10,7 +8,24 @@ export function PageLoader() {
           <div className="right" />
         </div>
         <ul>
-          { numbers.map((number) => <li key={ number } />) }
+          <li/>
+          <li/>
+          <li/>
+          <li/>
+          <li/>
+          <li/>
+          <li/>
+          <li/>
+          <li/>
+          <li/>
+          <li/>
+          <li/>
+          <li/>
+          <li/>
+          <li/>
+          <li/>
+          <li/>
+          <li/>
         </ul>
       </div>
     </div>
