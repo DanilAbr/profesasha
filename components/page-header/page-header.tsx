@@ -15,9 +15,13 @@ export default function PageHeader() {
 
   useEffect(() => {
     const body = document.querySelector('body');
+    const html = window.document.documentElement;
 
     if (body) {
       body.style.overflow = (body.clientWidth < 1000 && isMenuOpened)
+        ? 'hidden'
+        : 'auto';
+      html.style.overflow = (body.clientWidth < 1000 && isMenuOpened)
         ? 'hidden'
         : 'auto';
     }
