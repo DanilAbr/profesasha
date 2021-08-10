@@ -21,9 +21,9 @@ export default function PageHeader() {
       body.style.overflow = (body.clientWidth < 1000 && isMenuOpened)
         ? 'hidden'
         : 'auto';
-      html.style.overflow = (body.clientWidth < 1000 && isMenuOpened)
-        ? 'hidden'
-        : 'auto';
+      body.style['-webkit-overflow-scrolling'] = (body.clientWidth < 1000 && isMenuOpened)
+        ? 'touch'
+        : '';
     }
   }, [ isMenuOpened ]);
 
