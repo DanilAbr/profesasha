@@ -17,7 +17,6 @@
   background: $color_yellow;
   transition: all .7s ease;
   visibility: visible;
-  touch-action: none;
 
   @media (min-width: 375px) {
     padding: 20px 13%;
