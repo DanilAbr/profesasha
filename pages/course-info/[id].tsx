@@ -79,11 +79,11 @@ export default function CourseInfo() {
             <h2 className='course-info__price-title'>Стоимость</h2>
             <ul className='course-info__price-list'>
               <li className='course-info__price-item'>
-                <span className='course-info__price-value'>1 500 RUB</span>
+                <span className='course-info__price-value'>2 000 RUB</span>
                 <span className='course-info__price-duration'>  /  60 минут</span>
               </li>
               <li className='course-info__price-item'>
-                <span className='course-info__price-value'>2 000 RUB</span>
+                <span className='course-info__price-value'>2 500 RUB</span>
                 <span className='course-info__price-duration'>  /  90 минут</span>
               </li>
             </ul>
